@@ -2,11 +2,13 @@
   "handle": "astridwilde",
   "added": "2026-11-27",
   "capture": {
-    "surfaces": ["posts"],
-    "since_days": 90,
-    "max_posts": 1500,
-    "max_minutes": 45,
-    "max_permalinks": 60
+    "surfaces": [
+      "posts"
+    ],
+    "max_posts": 12000,
+    "max_minutes": 300,
+    "max_permalinks": 60,
+    "since": "2022-01-01"
   },
-  "focus": "Default dossier: who this account is, what it argues, which positions and predictions it has put on record, who and what it amplifies, and which posts carry the signal."
+  "focus": "Default dossier: who this account is, what it argues, which positions and predictions it has put on record, who and what it amplifies, and which posts carry the signal. Relevance rule (operator, 2026-11-27): the map considers only posts with real content. Posts with no substantive content of their own (e.g. 'More of this on my timeline forever', bare reactions, emoji, one-line agreement, engagement bait) are skipped. posts.jsonl stays complete; the keep/skip decision per post is recorded in triage.jsonl and the map's counts of considered posts come from it."
 }
