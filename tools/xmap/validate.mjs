@@ -6,6 +6,7 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { accountDir, readJson, readJsonl, snowflakeDate, cmpIdDesc, parseArgs } from './lib/util.mjs';
+import { timelineOwnIds } from './lib/net.mjs';
 
 export const MAP_SECTIONS = ['Identity', 'Coverage', 'Themes', 'Theses and claims', 'Positions and predictions', 'Network', 'Sources and links', 'Signal posts', 'Open questions'];
 const norm = s => s.normalize('NFKC').replace(/[\u2018\u2019]/g, "'").replace(/[\u201c\u201d]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
@@ -29,10 +30,33 @@ export function validate(handle, opts = {}) {
   check('data.profile', profile && profile.handle && profile.handle.toLowerCase() === handle.toLowerCase(), profile ? `followers=${profile.followers}` : 'profile.json missing');
   check('data.stats_current', stats && stats.posts_total === posts.length, stats ? `stats.posts_total=${stats.posts_total}` : 'stats.json missing: run xmap stats');
   const lastRun = stats && stats.runs[stats.runs.length - 1];
-  check('run.latest_ok', lastRun && lastRun.status === 'ok', lastRun ? `run=${lastRun.run_id} status=${lastRun.status} ${lastRun.stops.join(' ')}` : 'no run');
+  // The latest run passes when it ended ok, or when it was stopped (blocked, error) only after X had already served
+  // the account's own timeline past the configured window start: then nothing inside the window is missing.
+  let covered = '';
+  if (lastRun && lastRun.status !== 'ok') {
+    const acct = readJson(path.join(dir, 'account.json'), {}) || {};
+    const cap = acct.capture || {};
+    const sinceStr = cap.since || (cap.since_days != null ? new Date(Date.parse(lastRun.run_id.replace(/^(\d{4})(\d\d)(\d\d)T.*/, '$1-$2-$3')) - cap.since_days * 864e5).toISOString().slice(0, 10) : null);
+    if (sinceStr) {
+      const since = new Date(sinceStr + 'T00:00:00Z');
+      const older = timelineOwnIds(path.join(dir, 'raw', lastRun.run_id), handle).map(snowflakeDate).filter(d => d && d < since);
+      if (older.length) covered = ` window_covered: timeline served ${older.length} own posts before since=${sinceStr}`;
+    }
+  }
+  check('run.latest_ok', lastRun && (lastRun.status === 'ok' || covered), lastRun ? `run=${lastRun.run_id} status=${lastRun.status} ${lastRun.stops.join(' ')}${covered}` : 'no run');
   check('run.signed_in', (lastRun && lastRun.auth === 'session') || opts.allowLoggedOut, lastRun ? `auth=${lastRun.auth}` : '');
   const trunc = posts.filter(p => p.truncated).length;
   check('data.full_text', trunc === 0, `truncated=${trunc}`);
+
+  // Relevance triage (when the account uses it): one decision per post, in posts.jsonl order, none left unjudged.
+  const triageFile = path.join(dir, 'triage.jsonl');
+  const triage = fs.existsSync(triageFile) ? readJsonl(triageFile) : null;
+  if (triage) {
+    const same = triage.length === posts.length && triage.every((t, i) => t.id === posts[i].id);
+    const unjudged = triage.filter(t => /^review:/.test(t.reason || '')).length;
+    check('triage.current', same && !unjudged, `triage=${triage.length} posts=${posts.length} kept=${triage.filter(t => t.keep).length} unjudged=${unjudged}${same ? '' : ' (stale: run xmap triage)'}`);
+  }
+  const kept = triage ? new Set(triage.filter(t => t.keep).map(t => t.id)) : null;
 
   const mapFile = path.join(dir, 'map.md');
   if (fs.existsSync(mapFile) || opts.requireMap) {
@@ -47,6 +71,10 @@ export function validate(handle, opts = {}) {
     const cites = [...md.matchAll(/\[p:(\d+)\]/g)].map(m => m[1]);
     const dangling = [...new Set(cites.filter(id => !byId.has(id)))];
     check('map.citations_resolve', cites.length > 0 && !dangling.length, `citations=${cites.length} unresolved=${dangling.slice(0, 8).join(',') || 0}`);
+    if (kept) {
+      const skipped = [...new Set(cites.filter(id => byId.has(id) && !kept.has(id)))];
+      check('map.citations_kept', !skipped.length, `skipped posts cited: ${skipped.slice(0, 8).join(',') || 0}`);
+    }
     // Every analytic section must rest on cited posts.
     const parts = md.split(/^## /m).slice(1).map(s => ({ head: s.split('\n')[0].trim(), body: s }));
     const uncited = parts.filter(s => ['Themes', 'Theses and claims', 'Positions and predictions', 'Signal posts'].includes(s.head) && !/\[p:\d+\]/.test(s.body) && !/^_?none (found|captured)/im.test(s.body)).map(s => s.head);

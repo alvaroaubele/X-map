@@ -14,6 +14,7 @@ const { snowflakeDate, parseMetrics, cmpIdDesc, netOperationKept } = await impor
 const { normalize, entities } = await import('../tools/xmap/normalize.mjs');
 const { stats } = await import('../tools/xmap/stats.mjs');
 const { validate, MAP_SECTIONS } = await import('../tools/xmap/validate.mjs');
+const { firstPass, triage } = await import('../tools/xmap/triage.mjs');
 
 test('snowflake id -> exact UTC time; pre-snowflake ids yield null', () => {
   assert.equal(snowflakeDate('1926763616964899185').toISOString().slice(0, 10), '2025-05-25');
@@ -226,4 +227,65 @@ test('capture stores only target-profile API responses, never operator-session o
   // A timeline server error is retried through the page's own Retry button, bounded at two attempts.
   assert.match(src, /stale >= 3 && timelineError && retries < 3/);
   assert.match(src, /getByText\(\/\^\(Retry\|Try again\)\$\/\)/);
+});
+
+test('triage first pass: filler, bare reactions and empty quotes skip; tickers and substance keep; the rest is review', () => {
+  const p = (text, extra = {}) => ({ kind: 'quote', text, links: [], cashtags: [], ...extra });
+  assert.equal(firstPass(p('requesting more of this on the timeline, forever!!')).decision, 'skip');
+  assert.equal(firstPass(p("he's right")).decision, 'skip', 'one-line agreement skips even though the quoted post has content');
+  assert.equal(firstPass(p('cosigned')).decision, 'skip');
+  assert.equal(firstPass(p('🎯')).decision, 'skip');
+  assert.equal(firstPass(p('i audibly gasped')).decision, 'review');
+  assert.equal(firstPass(p('suddenly feeling very uncreative for buying $TAN', { cashtags: ['TAN'] })).decision, 'keep');
+  assert.equal(firstPass(p('opt out at https://redact.dev', { links: ['https://redact.dev'] })).decision, 'keep');
+  assert.equal(firstPass(p('we used to do product engineering now we do data engineering pick an industry, make better sensors for an economically valuable modality')).decision, 'keep');
+  assert.equal(firstPass(p('the era of high margin software is over')).decision, 'review', 'short theses need judgment, not a word count');
+  assert.equal(firstPass({ kind: 'repost', text: 'anything', links: [], cashtags: [] }).decision, 'skip');
+});
+
+test('triage writes one decision per post, applies overrides, and validate enforces it', () => {
+  const dir = path.join(tmp, 'accounts', 'astridwilde'); // dataset from the normalize test above
+  const posts = fs.readFileSync(path.join(dir, 'posts.jsonl'), 'utf8').trim().split('\n').map(l => JSON.parse(l));
+  fs.rmSync(path.join(dir, 'triage_overrides.jsonl'), { force: true });
+  let r = triage('astridwilde');
+  assert.equal(r.posts, posts.length);
+  const reviewIds = fs.readFileSync(path.join(dir, 'triage.jsonl'), 'utf8').trim().split('\n').map(l => JSON.parse(l)).filter(t => t.reason.startsWith('review:')).map(t => t.id);
+  assert.equal(r.unjudged, reviewIds.length);
+  if (reviewIds.length) assert.ok(validate('astridwilde').some(x => x.name === 'triage.current' && !x.ok), 'unjudged review posts fail triage.current');
+  // Judge every review post; reverse one first-pass keep on reading.
+  const pinned = '1926763616964899185';
+  const lines = [...reviewIds.map(id => ({ id, keep: id !== pinned, reason: 'test judgment' })), ...(reviewIds.includes(pinned) ? [] : [{ id: pinned, keep: false, reason: 'test override' }])];
+  fs.writeFileSync(path.join(dir, 'triage_overrides.jsonl'), lines.map(o => JSON.stringify(o)).join('\n') + '\n');
+  r = triage('astridwilde');
+  assert.equal(r.unjudged, 0);
+  const t = fs.readFileSync(path.join(dir, 'triage.jsonl'), 'utf8').trim().split('\n').map(l => JSON.parse(l));
+  assert.deepEqual(t.map(x => x.id), posts.map(p => p.id), 'same order as posts.jsonl');
+  assert.equal(t.find(x => x.id === pinned).keep, false);
+  assert.match(t.find(x => x.id === pinned).reason, /^judged skip: /);
+  const res = validate('astridwilde');
+  assert.ok(res.find(x => x.name === 'triage.current').ok);
+  // The map from the normalize test cites the pinned post, now a skip.
+  assert.ok(!res.find(x => x.name === 'map.citations_kept').ok);
+  fs.rmSync(path.join(dir, 'triage.jsonl')); fs.rmSync(path.join(dir, 'triage_overrides.jsonl'));
+});
+
+test('timelineOwnIds: own timeline entries only, never quoted posts; decides window coverage of a stopped run', async () => {
+  const { timelineOwnIds } = await import('../tools/xmap/lib/net.mjs');
+  const rd = fs.mkdtempSync(path.join(os.tmpdir(), 'xmap-cov-'));
+  fs.mkdirSync(path.join(rd, 'net'));
+  const body = fs.readFileSync(path.join(here, 'fixtures', 'net-UserOriginalsTimeline.json'));
+  fs.writeFileSync(path.join(rd, 'net', '0001-UserOriginalsTimeline.json.gz'), zlib.gzipSync(body));
+  const own = timelineOwnIds(rd, 'astridwilde');
+  assert.ok(own.length > 0);
+  // Quoted posts by other accounts appear in the response but are not timeline entries of this account.
+  const all = [...body.toString().matchAll(/"rest_id":"(\d{18,20})"/g)].map(m => m[1]);
+  assert.ok(new Set(all).size > new Set(own).size);
+  assert.deepEqual(timelineOwnIds(rd, 'someoneelse'), []);
+  const dates = own.map(snowflakeDate);
+  const oldest = new Date(Math.min(...dates));
+  // A window starting after the oldest served post is covered; one starting before it is not.
+  assert.ok(dates.some(d => d < new Date(oldest.getTime() + 864e5)));
+  assert.ok(!dates.some(d => d < oldest));
+  const src = fs.readFileSync(path.join(here, '..', 'tools', 'xmap', 'validate.mjs'), 'utf8');
+  assert.match(src, /lastRun\.status === 'ok' \|\| covered/);
 });

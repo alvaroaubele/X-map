@@ -111,3 +111,27 @@ export function enrich(raw, net) {
   }
   return out;
 }
+
+// Ids of the account's own posts that X served as timeline entries (tweet_results, never quoted or reposted
+// posts) in one run's stored profile-timeline responses. Shows how far back the timeline was actually served,
+// independently of how far the page rendered before the run stopped.
+export function timelineOwnIds(runDir, handle) {
+  const ids = []; const h = handle.toLowerCase();
+  const walk = o => {
+    if (Array.isArray(o)) { o.forEach(walk); return; }
+    if (!o || typeof o !== 'object') return;
+    for (const [k, v] of Object.entries(o)) {
+      if (k === 'tweet_results' && v && v.result) {
+        const t = tweetOf(v.result);
+        if (isTweet(t) && (screenName(t) || '').toLowerCase() === h) ids.push(t.rest_id);
+      }
+      if (k !== 'quoted_status_result' && k !== 'retweeted_status_result') walk(v);
+    }
+  };
+  const net = path.join(runDir, 'net');
+  if (!fs.existsSync(net)) return ids;
+  for (const f of fs.readdirSync(net).filter(f => /User(Originals|Tweets\w*)Timeline|UserTweets\w*\.json\.gz$/.test(f)).sort()) {
+    try { walk(JSON.parse(zlib.gunzipSync(fs.readFileSync(path.join(net, f))).toString('utf8'))); } catch { /* not JSON: skip */ }
+  }
+  return ids;
+}
