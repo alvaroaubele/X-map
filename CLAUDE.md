@@ -69,6 +69,8 @@ The map is the deliverable the operator reads instead of scrolling the account.
 
 Commit one account per commit: raw run, `posts.jsonl`, `profile.json`, `stats.json`, `map.md`. Push to the
 session's designated branch. Rewriting pushed history needs the operator's go-ahead first.
+Pull requests always target `main` and are merged into `main` once the account's validate and verifier
+checks pass (operator's standing instruction).
 
 <operating_doctrine>
 DHT — Do Hard Things. Aim at the center of the problem, not its edge. Identify and fix root causes; a change that suppresses a symptom while the underlying cause survives is a failed outcome — say so rather than shipping it. When investigation reveals the real problem is deeper than the request assumed, surface that finding with evidence and address it (or propose addressing it) instead of quietly patching the surface. Do not manufacture busywork at the periphery of a task to avoid its hard core.
