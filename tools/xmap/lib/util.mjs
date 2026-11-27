@@ -19,9 +19,11 @@ export function snowflakeDate(id) {
 export const cmpIdDesc = (a, b) => { const x = BigInt(a), y = BigInt(b); return x === y ? 0 : x > y ? -1 : 1; };
 
 // "11 replies, 35 reposts, 547 likes, 124 bookmarks, 135384 views" -> exact integers.
+// Signed-in labels also carry the viewer's own state ("82 likes, Liked, 1 bookmark"): a count must start with a
+// digit and the keyword must end at a word boundary, or ", Liked" would read as a like count of 0.
 export function parseMetrics(label) {
   const out = {};
-  for (const m of (label || '').matchAll(/([\d,.]+)\s+(repl(?:y|ies)|reposts?|likes?|bookmarks?|views?|quotes?)/gi)) {
+  for (const m of (label || '').matchAll(/(\d[\d,.]*)\s+(repl(?:y|ies)|reposts?|likes?|bookmarks?|views?|quotes?)\b/gi)) {
     const key = { rep: 'replies', repo: 'reposts', lik: 'likes', boo: 'bookmarks', vie: 'views', quo: 'quotes' }[
       /^repo/i.test(m[2]) ? 'repo' : m[2].slice(0, 3).toLowerCase()];
     out[key] = Number(m[1].replace(/[,.]/g, ''));
@@ -50,3 +52,13 @@ export function parseArgs(argv, spec = {}) {
   }
   return out;
 }
+
+// GraphQL operations capture may store under raw/<run>/net/: only responses about the target profile and its posts.
+// Everything else the signed-in page loads (HomeTimeline, sidebar recommendations, trends, pinned lists, Grok
+// account JWTs) belongs to the operator's session, not to the account, and carries credentials or private feed data.
+export const NET_KEEP = new Set([
+  'UserByScreenName', 'UserByRestId', 'ProfileSpotlightsQuery',
+  'UserTweets', 'UserOriginalsTimeline', 'UserTweetsAndReplies', 'UserMedia', 'UserHighlightsTweets',
+  'TweetDetail', 'TweetResultByRestId', 'TweetResultsByRestIds', 'SmartTagAttachmentQuery',
+]);
+export const netOperationKept = op => NET_KEEP.has(op);
