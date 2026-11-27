@@ -72,7 +72,7 @@
 {"id": "2118526296431137146", "keep": true, "reason": "self-credit on beta call"}
 {"id": "2118251118451139020", "keep": true, "reason": "relationship position"}
 {"id": "2118195794130202721", "keep": false, "reason": "joke"}
-{"id": "2118189269659549701", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2118189269659549701", "keep": false, "reason": "quoted post unavailable; nothing to endorse"}
 {"id": "2118122041102815370", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2118097923703812567", "keep": true, "reason": "company claim (Sezzle)"}
 {"id": "2118007605692150095", "keep": true, "reason": "forecast"}
@@ -106,7 +106,7 @@
 {"id": "2113771312443482188", "keep": false, "reason": "joke"}
 {"id": "2113767504053145694", "keep": false, "reason": "congratulation"}
 {"id": "2113465988259999801", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2113439841010782388", "keep": true, "reason": "endorsed forecast"}
+{"id": "2113439841010782388", "keep": true, "reason": "endorsement:forecast"}
 {"id": "2113301585828933696", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2113136395103662210", "keep": true, "reason": "claim"}
 {"id": "2113113152372330520", "keep": true, "reason": "claim"}
@@ -211,7 +211,7 @@
 {"id": "2099300553285071073", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2099300165857194198", "keep": false, "reason": "reaction"}
 {"id": "2099172216672002370", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2098970700497441097", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2098970700497441097", "keep": true, "reason": "endorsement:claim"}
 {"id": "2098817069118832891", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2098782348951146977", "keep": false, "reason": "praise"}
 {"id": "2098597192537932121", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -241,7 +241,7 @@
 {"id": "2096257547326177480", "keep": true, "reason": "claim"}
 {"id": "2096020578272739500", "keep": false, "reason": "praise"}
 {"id": "2095695818439504054", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2095645075674141042", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2095645075674141042", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
 {"id": "2095630364626866295", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2095453664265568391", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2095452120166318468", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -294,7 +294,7 @@
 {"id": "2088462277724840193", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2088406890896409007", "keep": false, "reason": "site complaint"}
 {"id": "2088325421691806113", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2088290436716827115", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2088290436716827115", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
 {"id": "2087980032102949322", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2087761992878891266", "keep": false, "reason": "engagement question"}
 {"id": "2087636590046949560", "keep": true, "reason": "forecast"}
@@ -309,7 +309,7 @@
 {"id": "2085808880219832612", "keep": true, "reason": "benchmark claim"}
 {"id": "1926763616964899185", "keep": true, "reason": "pinned statement"}
 {"id": "2085416126633456028", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2085216935500001395", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2085216935500001395", "keep": true, "reason": "endorsement:forecast"}
 {"id": "2085014860753203531", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2084900669383954721", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2084894188227768391", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -340,13 +340,13 @@
 {"id": "2079439910386426290", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2079423237768028396", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2079103041975005613", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2079069601359712316", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2079069601359712316", "keep": true, "reason": "endorsement:claim"}
 {"id": "2078916062478012724", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2078761253640732924", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2078720620926562578", "keep": true, "reason": "memory thesis"}
 {"id": "2078642096966369323", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2078641057609469962", "keep": true, "reason": "market sentiment claim"}
-{"id": "2078313414913658979", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2078313414913658979", "keep": true, "reason": "endorsement:claim"}
 {"id": "2077975632546578861", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2077780381017964845", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2077606068528832813", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -375,7 +375,7 @@
 {"id": "2074369597139193946", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2074160685517517090", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2073863986194559129", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2073483963260453173", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2073483963260453173", "keep": true, "reason": "endorsement:position"}
 {"id": "2073248548683166056", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2072393419708830171", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2072366883874152826", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -512,22 +512,22 @@
 {"id": "2032989467833938282", "keep": true, "reason": "forecast"}
 {"id": "2032542660058296425", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2032540542626902334", "keep": true, "reason": "research thesis"}
-{"id": "2031884354851651683", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2031884354851651683", "keep": true, "reason": "endorsement:forecast"}
 {"id": "2031804543143682263", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2031582861690868032", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2031582861690868032", "keep": true, "reason": "endorsement:claim"}
 {"id": "2031515224646500611", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2031109817121780221", "keep": true, "reason": "market claim"}
 {"id": "2030369832986873942", "keep": true, "reason": "policy claim"}
-{"id": "2030368318469869574", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2030368318469869574", "keep": true, "reason": "own forecast in few words"}
 {"id": "2030119186882875466", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2029610872403038370", "keep": true, "reason": "research stance"}
-{"id": "2029297639750348857", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2029297639750348857", "keep": true, "reason": "endorsement:position"}
 {"id": "2029268094993268991", "keep": true, "reason": "self-disclosure"}
 {"id": "2029049768190853127", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2029001241188286548", "keep": true, "reason": "claim"}
 {"id": "2028917479985299923", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2028697000427020362", "keep": true, "reason": "technical claim"}
-{"id": "2028597222569660680", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2028597222569660680", "keep": true, "reason": "endorsement:claim"}
 {"id": "2028557409145524643", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2028341814009438512", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2028286751526318319", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -548,7 +548,7 @@
 {"id": "2025348263508083119", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2025093796682498383", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2024621069462835632", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2024580136839074249", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2024580136839074249", "keep": true, "reason": "own position in few words (none of us own enough)"}
 {"id": "2024546896505950389", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2023999657270210719", "keep": true, "reason": "data thesis"}
 {"id": "2023999237172699397", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -566,7 +566,7 @@
 {"id": "2021439836473917735", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2021375611672088802", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2021367213270368336", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2020944375606542342", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2020944375606542342", "keep": true, "reason": "endorsement:claim"}
 {"id": "2020263583922434454", "keep": true, "reason": "position (game developers)"}
 {"id": "2020221419981074858", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2019863598630338745", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -575,7 +575,7 @@
 {"id": "2019571496826663092", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2019485232844652914", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2019264755802992912", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2019252338956128297", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2019252338956128297", "keep": true, "reason": "endorsement:claim"}
 {"id": "2019178357674635732", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2018795898252468529", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2018793316847092211", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -619,7 +619,7 @@
 {"id": "2011563162420789583", "keep": true, "reason": "forecast"}
 {"id": "2011190563912274013", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2011190562846876019", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2010710446488379399", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2010710446488379399", "keep": true, "reason": "endorsement:forecast"}
 {"id": "2010684397893083634", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2010071754660839715", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2009706373878280372", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -628,7 +628,7 @@
 {"id": "2009376533987606604", "keep": true, "reason": "model result"}
 {"id": "2009372376266354973", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2009120203146424506", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "2008764706127818914", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "2008764706127818914", "keep": false, "reason": "quoted post unavailable; nothing to endorse"}
 {"id": "2008619967743508620", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2008030737665298767", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "2007640832179077165", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -775,7 +775,7 @@
 {"id": "1976453575137165372", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1976351667655410022", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1975996983249862836", "keep": true, "reason": "forecast (long/short software)"}
-{"id": "1975946313243197540", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1975946313243197540", "keep": true, "reason": "endorsement:forecast"}
 {"id": "1975756187422630073", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1975689050343563597", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1975479771137253807", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -783,7 +783,7 @@
 {"id": "1975294331432124884", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1975038133319487728", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1974988695553130718", "keep": true, "reason": "position (Japan)"}
-{"id": "1974909873155649624", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1974909873155649624", "keep": true, "reason": "endorsement:claim"}
 {"id": "1974718004194890185", "keep": true, "reason": "number"}
 {"id": "1974718002257068290", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1974287210070569389", "keep": true, "reason": "research claim"}
@@ -793,7 +793,7 @@
 {"id": "1972170758832218499", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1971718360678519280", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1971438297240211846", "keep": true, "reason": "position (inference)"}
-{"id": "1971300247176609907", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1971300247176609907", "keep": true, "reason": "endorsement:claim"}
 {"id": "1970938103738269780", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1970937692738465960", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1970876316888309927", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -822,19 +822,19 @@
 {"id": "1963797799608471874", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1963623210684912027", "keep": true, "reason": "dated forecast"}
 {"id": "1962860419615461708", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1962475529346703861", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1962475529346703861", "keep": true, "reason": "own forecast in few words (UK long yields)"}
 {"id": "1962469683740938637", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1961248484301865160", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1959064497647493192", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1958982962923676120", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1957891128482804046", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1957891128482804046", "keep": true, "reason": "endorsement:claim"}
 {"id": "1957886124543864918", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1957298701778690374", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1957285885579325640", "keep": true, "reason": "claim"}
 {"id": "1956168394325287376", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1955849648784204054", "keep": true, "reason": "position disclosure"}
-{"id": "1955849546614894605", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1954935230282002935", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1955849546614894605", "keep": true, "reason": "endorsement:forecast"}
+{"id": "1954935230282002935", "keep": false, "reason": "quoted post unavailable; nothing to endorse"}
 {"id": "1953600042843222423", "keep": true, "reason": "position (share of net worth)"}
 {"id": "1953456696677851523", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1953184945977081956", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -842,7 +842,7 @@
 {"id": "1953136680560672778", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1953130699281842549", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1953130697209856130", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1952855077141791214", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1952855077141791214", "keep": true, "reason": "endorsement:position"}
 {"id": "1952734297422540859", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1952478376230518850", "keep": true, "reason": "position"}
 {"id": "1951470734309728327", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -864,7 +864,7 @@
 {"id": "1947671877172007374", "keep": true, "reason": "moral thesis"}
 {"id": "1947090526865645693", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1946778049657377231", "keep": true, "reason": "number"}
-{"id": "1946420371072364948", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1946420371072364948", "keep": true, "reason": "endorsement:forecast"}
 {"id": "1946393717545546220", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1946334042653446513", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1945955125010547174", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -892,7 +892,7 @@
 {"id": "1937141535906435283", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1936084087166714054", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1936083346486108335", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1935830594547556620", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1935830594547556620", "keep": true, "reason": "endorsement:position"}
 {"id": "1935080251404730762", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1934473562842361934", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1933722509486039248", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -901,7 +901,7 @@
 {"id": "1931383692863393973", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1930800154204102963", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1930735222896869695", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1930672850375188661", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1930672850375188661", "keep": true, "reason": "endorsement:position"}
 {"id": "1930494474758565960", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1929266899273060492", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1928746005694177359", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -921,7 +921,7 @@
 {"id": "1924502402436337825", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1924264337444946037", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1924163721758458194", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1923440355736944994", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1923440355736944994", "keep": true, "reason": "endorsement:claim"}
 {"id": "1922804659372069289", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1921952451508285541", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1921233693676310675", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -930,7 +930,7 @@
 {"id": "1920844637830353347", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1920617723819970567", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1920088290717466719", "keep": true, "reason": "position (AdX divestiture)"}
-{"id": "1919821421187866928", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1919821421187866928", "keep": true, "reason": "endorsement:position"}
 {"id": "1919174038309458162", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1918439799847043291", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1918350687496487090", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -950,7 +950,7 @@
 {"id": "1914863515187470727", "keep": true, "reason": "self-disclosure (product waitlist)"}
 {"id": "1914839396173644065", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1914833326755734012", "keep": true, "reason": "position (Bridgit)"}
-{"id": "1914796478989787334", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1914796478989787334", "keep": true, "reason": "endorsement:forecast"}
 {"id": "1913259797904085377", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1911863925236502914", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1911863923244208520", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -968,8 +968,8 @@
 {"id": "1906418474177777865", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1906418460558754266", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1906058380994908460", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1905382703186505987", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1905094804754842010", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1905382703186505987", "keep": true, "reason": "endorsement:forecast"}
+{"id": "1905094804754842010", "keep": true, "reason": "endorsement:claim"}
 {"id": "1904966654850990438", "keep": true, "reason": "self-disclosure"}
 {"id": "1902988584619217025", "keep": true, "reason": "self-disclosure"}
 {"id": "1902158153661477222", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -983,13 +983,13 @@
 {"id": "1898947057286574488", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1898754840609632267", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1897926061742018860", "keep": true, "reason": "market thesis"}
-{"id": "1897761980091609354", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1897761980091609354", "keep": true, "reason": "rejection:position"}
 {"id": "1897524829760131369", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1897171262038008098", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1897164618717651373", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1896975190137143656", "keep": true, "reason": "position (calls)"}
 {"id": "1896946302887547079", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1896942331661787503", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1896942331661787503", "keep": true, "reason": "endorsement:claim (of 'a corner of fintwit' named in its own earlier post)"}
 {"id": "1896633118129574171", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1896605521752555865", "keep": true, "reason": "position (Regeneron)"}
 {"id": "1895930881770226017", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1093,7 +1093,7 @@
 {"id": "1848490238391550093", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1848489202096144541", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1848440512711139505", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1847410296824221971", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1847410296824221971", "keep": true, "reason": "own claim ('lol called it')"}
 {"id": "1847138883483345385", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1846912181482246436", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1846680579707654169", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1114,7 +1114,7 @@
 {"id": "1839687455320244379", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1837989365357990340", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1836972789808394707", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1836617233763577882", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1836617233763577882", "keep": true, "reason": "own position in few words (not priced in)"}
 {"id": "1834978153133212031", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1832844103731814699", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1831935200575811851", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1151,7 +1151,7 @@
 {"id": "1742013888596672918", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1741737369286725716", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1741699310725857627", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1741028858605039703", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1741028858605039703", "keep": true, "reason": "endorsement:claim"}
 {"id": "1740931228004745305", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1740784971844096229", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1739694782761603222", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1173,10 +1173,10 @@
 {"id": "1700637785613647944", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1700138307668287879", "keep": true, "reason": "forecast"}
 {"id": "1700138063954170217", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1699067061656535470", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1699067061656535470", "keep": true, "reason": "endorsement:forecast"}
 {"id": "1698894720729297385", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1698773612508193053", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1698581814510854548", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1698581814510854548", "keep": true, "reason": "endorsement:claim"}
 {"id": "1697827123665502298", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1697622477470589069", "keep": true, "reason": "timing claim"}
 {"id": "1696673039155687737", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1187,7 +1187,7 @@
 {"id": "1695607505387487237", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1695607449871679983", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1695572311682973948", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1695349935137489204", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1695349935137489204", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
 {"id": "1695235438980862051", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1694837389506793546", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1694361110252818782", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1205,7 +1205,7 @@
 {"id": "1690077010742353920", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1689490793340481536", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1688366675115347970", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1687595651658563584", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1687595651658563584", "keep": true, "reason": "endorsement:claim (endorses @ODELL's earlier call, not the quoted Dexerto report)"}
 {"id": "1686819732216074240", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1686373008313909249", "keep": true, "reason": "position (long gamma)"}
 {"id": "1685725408560631808", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
@@ -1227,7 +1227,7 @@
 {"id": "1681164591047536646", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1681162857407471619", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1681148049245220864", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
-{"id": "1680962488098238464", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
+{"id": "1680962488098238464", "keep": true, "reason": "endorsement:claim"}
 {"id": "1680958327407407105", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1680678686121693184", "keep": false, "reason": "no claim, position, number or disclosure in own words"}
 {"id": "1679851224513015808", "keep": true, "reason": "position closed (BTC miner L/S)"}
@@ -1867,3 +1867,237 @@
 {"id": "2084897847103893636", "keep": false, "reason": "long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id": "2085210393329467414", "keep": false, "reason": "long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id": "1687108120991129600", "keep": false, "reason": "curiosity about another account, no claim"}
+{"id": "1882073376203923822", "keep": false, "reason": "endorses a one-line tool remark ('uv just works'), no substantive claim"}
+{"id": "1883186503565881645", "keep": true, "reason": "endorsement:forecast"}
+{"id": "1894865816681881734", "keep": true, "reason": "endorsement:position"}
+{"id": "1908881348007502311", "keep": true, "reason": "endorsement:position"}
+{"id": "1917228190390718617", "keep": true, "reason": "endorsement:position"}
+{"id": "1924845639592247312", "keep": false, "reason": "the endorsed claim sits in a nested quote that was not captured"}
+{"id": "1947502058904453442", "keep": true, "reason": "endorsement:claim"}
+{"id": "1950209976619720899", "keep": true, "reason": "endorsement:claim"}
+{"id": "1960200883855347989", "keep": false, "reason": "endorses engagement bait"}
+{"id": "1967917900737692083", "keep": true, "reason": "endorsement:claim"}
+{"id": "1979754893801140733", "keep": true, "reason": "endorsement:forecast"}
+{"id": "1983584134015644078", "keep": true, "reason": "endorsement:claim"}
+{"id": "2003892626496618635", "keep": true, "reason": "endorsement:claim"}
+{"id": "2008040888732393481", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2019243890625425462", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2022589029603250470", "keep": true, "reason": "endorsement:claim"}
+{"id": "2042034016468267415", "keep": true, "reason": "endorsement:claim"}
+{"id": "2080564579105735070", "keep": true, "reason": "endorsement:claim"}
+{"id": "2080819643426726294", "keep": true, "reason": "endorsement:claim"}
+{"id": "2083802560100708498", "keep": true, "reason": "endorsement:position"}
+{"id": "2085568505878073374", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2090729978312761470", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2101658960575041691", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2103104786044252214", "keep": true, "reason": "endorsement:claim"}
+{"id": "2103632844606046409", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2106769111162478659", "keep": true, "reason": "endorsement:claim"}
+{"id": "2107667119198613992", "keep": true, "reason": "endorsement:claim"}
+{"id": "2108625307611914613", "keep": true, "reason": "endorsement:claim"}
+{"id": "2109389950206755098", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2111106813244694752", "keep": true, "reason": "endorsement:claim"}
+{"id": "2111881302534484415", "keep": true, "reason": "endorsement:claim"}
+{"id": "2113841250218438955", "keep": true, "reason": "endorsement:position"}
+{"id": "2117317470436630930", "keep": true, "reason": "endorsement:claim"}
+{"id": "2117877125143519742", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2121280785546350737", "keep": true, "reason": "endorsement:claim"}
+{"id": "2122148876748800406", "keep": true, "reason": "endorsement:claim"}
+{"id": "2123227939613626610", "keep": true, "reason": "endorsement:claim"}
+{"id": "2123876308488999213", "keep": true, "reason": "endorsement:claim"}
+{"id": "2124736263664328966", "keep": true, "reason": "endorsement:claim"}
+{"id": "2126069848719650891", "keep": true, "reason": "endorsement:claim"}
+{"id": "2012255196991385840", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
+{"id": "2056404827115336184", "keep": true, "reason": "endorsement:position (linked article, as with 2113439841010782388)"}
+{"id": "2114570336503234619", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
+{"id": "2121345680992309712", "keep": false, "reason": "endorsement of a quoted post that is filler, a joke or a picture"}
+{"id": "2036453124337180927", "keep": true, "reason": "endorsement:forecast"}
+{"id": "2121459562985451989", "keep": true, "reason": "endorsement:claim"}
+{"id": "1682211526651035648", "keep": true, "reason": "own position in few words (long tin on China stimulus)"}
+{"id": "1695131046889787692", "keep": true, "reason": "endorsement:position (its own $BB thesis)"}
+{"id": "1832498695247724973", "keep": true, "reason": "endorsement:forecast"}
+{"id": "1840589723288383659", "keep": true, "reason": "own position in few words (long China)"}
+{"id": "1887961751549002136", "keep": true, "reason": "endorsement:position"}
+{"id": "1989062104025010494", "keep": true, "reason": "endorsement:claim"}
+{"id": "1998651513187741780", "keep": true, "reason": "self-disclosure in few words (purpose: eliminate work)"}
+{"id": "2016546451879526861", "keep": true, "reason": "endorsement:claim"}
+{"id": "2017067840260755948", "keep": true, "reason": "own position in few words (still undervalued)"}
+{"id": "2026049135925948422", "keep": true, "reason": "rejection:claim"}
+{"id": "2046736290335568178", "keep": true, "reason": "own position in few words (Anthropic still undervalued at $1.05T)"}
+{"id": "2057137109497176365", "keep": true, "reason": "endorsement:claim"}
+{"id": "2115235119292469400", "keep": true, "reason": "own advice with a link"}
+{"id": "2117851365288624311", "keep": true, "reason": "endorsement:claim (its own datacenter-ballot forecast unfolding)"}
+{"id": "2126204678702792894", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2123984490825646355", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2123127734469906661", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2121974472135889159", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2121720338316943642", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2121119080086446136", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2121091788295618672", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2120570191977529747", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2120018487343255567", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2119482719856201990", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2118794854167904564", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2117891075402871172", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2117844083330912762", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2117696327698309505", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2117288891489382803", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2117116294160097497", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2115494992445841512", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2115489349471207706", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2113306552476291149", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2113003328124981323", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2112275094513058106", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2111967470634619122", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2110617916760834269", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2110506304704016649", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2110089760601723159", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2109459595588731386", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2109426473170088011", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2108584474179244506", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2108214931082678328", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2107966251624698184", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2107943864128639201", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2105331952052314495", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2105041803946901516", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2103536774647836784", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2102947008793161783", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2102412527468494954", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2101761255824368060", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2101328251691880578", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2101219937310171576", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2101215527691559327", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2100603910054432942", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2099831543732596931", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2097381461523644461", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2097336061592842489", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2095673021805842649", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2095587238772122063", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2094863281383190800", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2094860783666794512", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2093051607135228227", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2091286240221905359", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2089779896642126148", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2081705406863433927", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2081652692334813320", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2080401450828751277", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2077938670586462553", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2077623722719277158", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2077363832817930362", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2076710230965334259", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2076218560230408235", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2075287444547948859", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2075272917458587838", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2074997767219621969", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2073902071024427391", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2069619580503552336", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2067320596661498051", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2066351133023699273", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2060023304975700296", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2058614944418222352", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2056963634233057789", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2054413476454662298", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2054200179470028862", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2052833933361139984", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2051163572097675408", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2046725256124227978", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2041925542279311816", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2041233991991521392", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2038914399029846191", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2038856608844046694", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2034327718465245544", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2033977667251540322", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2032541197332554069", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2031623043848745084", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2029402710320263346", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2029097442071986640", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2029033556031471960", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2028466137521086589", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2026747661404327944", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2024685125729165483", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2023962982003138659", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2023630124038369425", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2022512746634588565", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2022003966985613828", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2021314181715099724", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2016358904817713650", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2016065482445729860", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2012225292173980068", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2007356816792137811", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2005924037986509103", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2005803401767199029", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2004083357328855084", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2002740889257714089", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1999734060302893416", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1998247266243797156", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1997501877366452722", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1997081270162194727", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1995716446261813378", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1995376401474806153", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1994934286940868882", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1994473095911059763", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1988995037947130230", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1988994508470776164", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1985674437992333657", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1983836718093758482", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1981128464771186730", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1979021487722885219", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1976484450927263868", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1976125616589242843", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1975215835137618281", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1975083108975407164", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1975072564956553605", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1974992054087487962", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1973399250798043493", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1971419301279392246", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1968814546350465512", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1965094086060507511", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1964089010764062997", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1963314162207199367", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1956038959412486230", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1952775010805817385", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1947686552639078837", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1946296206155722769", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1939413866980737320", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1925757910237200482", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1920483667836551433", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1915399732182343710", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1914011540191412416", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1902748019159970132", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1900010122346467602", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1899237681147855286", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1883908040728174905", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1882911335727665485", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1880097990800732542", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1877062121940222247", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1876333274106323322", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1869165059211210758", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1867365152502558968", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1856237005371298230", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1856006370278961227", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1851446930913554529", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1850684268881854710", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1846016520637309408", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1843458225901117477", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1832866977985212536", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1805409587677610355", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1747824106257764522", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1746771227384086619", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1746732607440834790", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1745838789480812926", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1745196277720404274", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1737692413806981211", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1735447427359084977", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1727422648991559798", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1702727158295306284", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1700630404418699274", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1699047106584182849", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1696923003567718724", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1695977864112533505", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1695217028813262912", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1694887645099540551", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1691508230168735744", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1689532613290262528", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1684935329680343040", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "1683939169159245828", "keep": false, "reason": "short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id": "2116690570517283203", "keep": false, "reason": "quoted post unavailable; nothing to endorse"}
