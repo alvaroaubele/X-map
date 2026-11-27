@@ -289,3 +289,18 @@ test('timelineOwnIds: own timeline entries only, never quoted posts; decides win
   const src = fs.readFileSync(path.join(here, '..', 'tools', 'xmap', 'validate.mjs'), 'utf8');
   assert.match(src, /lastRun\.status === 'ok' \|\| covered/);
 });
+
+test('triage first pass: endorsement or rejection of a quoted post goes to review (operator exception)', () => {
+  const quoted = { handle: 'statusfailed', text: 'Prediction: within ~1 year, formal methods will produce a capability spike in AI-assisted coding.' };
+  const q = (text, qt = quoted) => ({ kind: 'quote', text, links: [], cashtags: [], quoted: qt });
+  for (const t of ['cosigned', "he's right", 'Unconditionally endorsed', 'absolutely unequivocally correct', 'tweets that will age well', '🎯', 'real btw', 'dead wrong', 'lol no'])
+    assert.equal(firstPass(q(t)).decision, 'review', t);
+  assert.match(firstPass(q('cosigned')).reason, /endorsement or rejection/);
+  // Not endorsements: reactions and stock filler still skip.
+  assert.equal(firstPass(q('unreal')).decision, 'skip');
+  assert.equal(firstPass(q('requesting more of this on the timeline, forever!!')).decision, 'skip');
+  // An endorsement of a picture, or of a post X would not show, has nothing to endorse.
+  assert.equal(firstPass(q("he's right", { handle: 'x', text: '' })).decision, 'skip');
+  assert.equal(firstPass(q("he's right", { unavailable: true, notice: 'This post is unavailable.' })).decision, 'skip');
+  assert.equal(firstPass({ kind: 'post', text: "he's right", links: [], cashtags: [], quoted: null }).decision, 'skip');
+});

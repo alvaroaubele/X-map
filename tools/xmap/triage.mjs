@@ -7,6 +7,8 @@
 // ticker, link commentary or self-disclosure. A quote post whose own words are filler is skipped even when the quoted
 // post has content. Decisions come from two layers:
 //   1. a deterministic first pass (below), which keeps or skips the clear cases and marks the rest `review`;
+//   Exception: a quote whose own words only endorse or reject the quoted post ("cosigned", "he's right", "🎯", "wrong")
+//   goes to review, because it is kept when the quoted post carries a forecast, claim or position.
 //   2. accounts/<handle>/triage_overrides.jsonl, one {"id","keep","reason"} per judged post. Overrides decide every
 //      review post and may reverse a first-pass decision on reading. A review post with no override is skipped and
 //      counted as unjudged, so an incomplete judgment pass is visible rather than silent.
@@ -30,6 +32,20 @@ export const FILLER = new RegExp('^(' + [
   'unconditionally free', 'absurd returns',
 ].join('|') + ')$', 'iu');
 
+// Endorsement or rejection of the quoted post, and nothing else (operator exception, 2026-11-27): such a quote is
+// kept when the quoted post carries a forecast, claim or position, so it goes to review instead of being auto-skipped.
+export const ENDORSE = new RegExp('^\\W*(' + [
+  '(un(conditionally|qualified)\\s*)?(co-?signed|endorsed)', "(he|she|they)('s| is| are)?( so| dead| absolutely| more)? right( btw| as usual| than not( tbh)?)?",
+  '(absolutely |dead |unequivocally )*(correct|right)', 'agreed', 'true', 'so true', 'facts', '(somehow |absolutely )?real( btw)?', 'based', 'this',
+  'exactly', '100%', '\\+1', 'yes+', 'this is the way', '(hard |can )?vouch', 'fact check: true', "when you're right,? you're right",
+  'and they were dead right', "(tweets|takes)( that| i)? will (continue to |unfortunately )?age (unbelievably |very |\\*very\\* )?well",
+  'this will age (unbelievably |very )?well', 'i believe this( fwiw)?', '(he|she|this guy) gets it',
+].join('|') + ')\\W*$', 'iu');
+export const REJECT = /^\W*(dead wrong|wrong|lol no|no|nope|cope|fake news|false|not true|incorrect|doubt it)\W*$/iu;
+const AGREE_EMOJI = /^[\s🎯💯✅👆☝️🤝]+$/u;
+const endorsementShaped = (p, t) => !!(p.quoted && p.quoted.handle && (p.quoted.text || '').trim() && !p.quoted.unavailable)
+  && (ENDORSE.test(t) || REJECT.test(t) || (t && AGREE_EMOJI.test(t)));
+
 const core = t => (t || '').replace(URL_RE, ' ').replace(MENTION_RE, ' ').replace(/\s+/g, ' ').trim();
 const words = t => t.match(/[A-Za-z0-9$%']+/g) || [];
 
@@ -40,6 +56,7 @@ export function firstPass(p) {
   const norm = t.toLowerCase().replace(/[^\p{L}\p{N}_' )]+/gu, '').trim();
   const bare = t.replace(/[^\p{L}\p{N}_$%]+/gu, ' ').trim().toLowerCase().replace(/^[!?. ]+|[!?. ]+$/g, '');
   if (p.kind === 'repost') return { decision: 'skip', reason: "repost: not the account's own words" };
+  if (endorsementShaped(p, t)) return { decision: 'review', reason: 'review: endorsement or rejection of the quoted post' };
   if ((p.cashtags || []).length) return { decision: 'keep', reason: 'auto: ticker' };
   if (!w.length && !contentLinks.length) return { decision: 'skip', reason: 'auto: no own words (media/emoji/link only)' };
   if (FILLER.test(norm) || FILLER.test(bare)) return { decision: 'skip', reason: 'auto: stock filler phrase' };
