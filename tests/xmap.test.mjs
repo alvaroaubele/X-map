@@ -85,6 +85,8 @@ test('normalize -> stats -> validate, including map citation and quotation check
     fs.writeFileSync(path.join(rd, 'articles.jsonl.gz'), zlib.gzipSync(rows.map((p, i) => JSON.stringify({ run_id: runId, surface: 'posts', seq: i, captured_at: '2026-11-27T10:00:00.000Z', ...p })).join('\n')));
     fs.writeFileSync(path.join(rd, 'run.json'), JSON.stringify({ run_id: runId, handle: 'astridwilde', status: 'ok', auth, posts_captured: rows.length, since: '2026-08-29', profile: snapshot.profile, surfaces: [{ surface: 'posts', stop_reason: 'reached_since' }] }));
   };
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'astridwilde', gate: { confirmed: '2026-11-27' }, capture: { since: '2026-08-29' } }));
   mkRun('20261127T100000Z', snapshot.posts);
   let r = await normalize('astridwilde');
   assert.equal(r.posts, 5);
@@ -216,7 +218,49 @@ test('normalize re-reads stale rows from raw_html and fills gaps from the run\'s
   const s = stats('signedin');
   assert.deepEqual(s.by_kind, { post: 1, quote: 7, reply: 2 });
   assert.equal(s.top_domains.find(d => d.key === 'youtu.be').n, 1);
-  assert.deepEqual(validate('signedin').filter(x => !x.ok).map(x => x.name), []);
+  // No account.json yet: the review gate has not been answered, and validate says so.
+  assert.ok(validate('signedin').some(x => x.name === 'account.gate' && !x.ok));
+  fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'signedin', gate: { confirmed: '2026-11-27' }, capture: { since: '2026-08-29' } }));
+  // The fixture page shows the first 10 posts of a timeline response that served more: the cross-check reports the
+  // posts X served inside the window that the page reading does not hold. Quotes agree with the API on all 10.
+  let res = validate('signedin');
+  assert.deepEqual(res.filter(x => !x.ok).map(x => x.name), ['xcheck.timeline_ids_captured']);
+  assert.match(res.find(x => x.name === 'xcheck.quotes_agree').detail, /compared=10 api_quotes=\d+ disagree=0/);
+  // A window that starts after everything the page did not render: nothing inside it is missing.
+  const held = Object.keys(posts).map(id => snowflakeDate(id)).filter(Boolean).sort((a, b) => a - b);
+  const pinnedOut = held.filter(d => d > new Date('2026-01-01'));
+  fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'signedin', gate: { confirmed: '2026-11-27' }, capture: { since: pinnedOut[0].toISOString().slice(0, 10) } }));
+  const lostNow = validate('signedin').find(x => x.name === 'xcheck.timeline_ids_captured');
+  assert.match(lostNow.detail, /api_own_in_window=\d+ missing_from_posts=\d+/);
+
+  // Regression for extractor 1.0.0 (docs/LESSONS.md A2): a quote the page reading holds as a plain post, or one
+  // the API had to supply because the page showed no card, fails the cross-check.
+  const file = path.join(dir, 'posts.jsonl'), orig = fs.readFileSync(file, 'utf8');
+  const rows = orig.trim().split('\n').map(l => JSON.parse(l));
+  const q = rows.find(p => p.id === '2126204678702792894');
+  const saved = q.quoted;
+  q.quoted = null; q.kind = 'post';
+  fs.writeFileSync(file, rows.map(r => JSON.stringify(r)).join('\n') + '\n');
+  assert.match(validate('signedin').find(x => x.name === 'xcheck.quotes_agree').detail, /disagree=1 e\.g\. 2126204678702792894/);
+  q.quoted = { ...saved, from: 'net' }; q.kind = 'quote';
+  fs.writeFileSync(file, rows.map(r => JSON.stringify(r)).join('\n') + '\n');
+  assert.ok(!validate('signedin').find(x => x.name === 'xcheck.quotes_agree').ok);
+  fs.writeFileSync(file, orig);
+
+  // run.latest_ok is about the window, not the exit status: a run that ended "ok" on max_posts has not read the
+  // window unless X had already served own posts from before its start.
+  const runFile = path.join(rd, 'run.json'), man = JSON.parse(fs.readFileSync(runFile, 'utf8'));
+  const setStop = (status, stop) => { fs.writeFileSync(runFile, JSON.stringify({ ...man, status, surfaces: [{ surface: 'posts', stop_reason: stop }] })); stats('signedin'); };
+  const latestOk = () => validate('signedin').find(x => x.name === 'run.latest_ok');
+  const setSince = d => fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'signedin', gate: { confirmed: '2026-11-27' }, capture: { since: d } }));
+  setSince('2020-01-01');
+  for (const stop of ['max_posts', 'max_minutes', 'read_budget', 'server_error']) { setStop('ok', stop); assert.ok(!latestOk().ok, `${stop} leaves the window open`); }
+  assert.match(latestOk().detail, /window not fully read/);
+  setStop('blocked', 'blocked:rate_limited'); assert.ok(!latestOk().ok);
+  setStop('ok', 'reached_since'); assert.ok(latestOk().ok);
+  setSince('2026-11-27'); // X served own posts older than this
+  setStop('ok', 'max_posts'); assert.match(latestOk().detail, /window_covered/);
+  setStop('blocked', 'blocked:rate_limited'); assert.ok(latestOk().ok);
 });
 
 test('capture stores only target-profile API responses, never operator-session ones', () => {
@@ -286,8 +330,6 @@ test('timelineOwnIds: own timeline entries only, never quoted posts; decides win
   // A window starting after the oldest served post is covered; one starting before it is not.
   assert.ok(dates.some(d => d < new Date(oldest.getTime() + 864e5)));
   assert.ok(!dates.some(d => d < oldest));
-  const src = fs.readFileSync(path.join(here, '..', 'tools', 'xmap', 'validate.mjs'), 'utf8');
-  assert.match(src, /lastRun\.status === 'ok' \|\| covered/);
 });
 
 test('triage first pass: endorsement or rejection of a quoted post goes to review (operator exception)', () => {
@@ -306,4 +348,84 @@ test('triage first pass: endorsement or rejection of a quoted post goes to revie
   assert.equal(firstPass(q("he's right", { handle: 'x', text: '' })).decision, 'skip');
   assert.equal(firstPass(q("he's right", { unavailable: true, notice: 'This post is unavailable.' })).decision, 'skip');
   assert.equal(firstPass({ kind: 'post', text: "he's right", links: [], cashtags: [], quoted: null }).decision, 'skip');
+});
+
+test('inline quotations on a cited line must be verbatim from a post cited on that line', async () => {
+  const { inlineMisquotes } = await import('../tools/xmap/validate.mjs');
+  const byId = new Map([
+    ['1', { text: 'data and distribution are the only moats in software going forward', quoted: null }],
+    ['2', { text: 'cosigned', quoted: { text: 'memory prices double by Q3' } }],
+  ]);
+  const ok = [
+    'In 2026: "data and distribution are the only moats" [p:1].',
+    '| Moats | \u201cthe only moats [...] going forward\u201d | [p:1] |',
+    'It endorsed "memory prices double by Q3" [p:2], and wrote "data and distribution," [p:1].',
+    'A line with "quotes" and no citation is not checked.',
+    '> "anything" [p:1]',
+  ].join('\n');
+  assert.deepEqual(inlineMisquotes(ok, byId), []);
+  const bad = inlineMisquotes('It called data "the last moat" [p:1].\nThe "steady" theme [p:2].', byId);
+  assert.deepEqual(bad.map(b => b.fragment), ['the last moat', 'steady']);
+});
+
+test('read budget: signed-in reads of the last 24 hours, across accounts, including unfinished runs', async () => {
+  const { budgetState } = await import('../tools/xmap/lib/budget.mjs');
+  const root = path.join(tmp, 'accounts');
+  const mk = (h, run, man, openRows) => {
+    const rd = path.join(root, h, 'raw', run); fs.mkdirSync(rd, { recursive: true });
+    if (man) fs.writeFileSync(path.join(rd, 'run.json'), JSON.stringify({ run_id: run, ...man }));
+    if (openRows) fs.writeFileSync(path.join(rd, 'articles.jsonl'), Array.from({ length: openRows }, (_, i) => `{"id":"${i}"}`).join('\n') + '\n');
+  };
+  mk('budgeta', '20300102T100000Z', { auth: 'session', posts_captured: 2500 });
+  mk('budgetb', '20300102T110000Z', { auth: 'session', posts_captured: 3000 });
+  mk('budgetb', '20300102T113000Z', null, 700);                                   // killed before run.json
+  mk('budgeta', '20300102T120000Z', { auth: 'none', posts_captured: 5 });         // signed-out reads are not the session's
+  mk('budgeta', '20300101T090000Z', { auth: 'session', posts_captured: 9999 });   // older than 24 hours
+  const s = budgetState(Date.parse('2030-01-02T12:30:00Z'));
+  assert.equal(s.used, 6200);
+  assert.equal(s.budget, 6000);
+  assert.equal(s.remaining, 0);
+  assert.equal(budgetState(Date.parse('2030-01-03T10:30:00Z')).used, 3700); // the 10:00 run has aged out
+  for (const h of ['budgeta', 'budgetb']) fs.rmSync(path.join(root, h), { recursive: true });
+});
+
+test('capture refuses a signed-in run before the review gate is answered or once the read budget is spent', async () => {
+  const { spawnSync } = await import('node:child_process');
+  const run = h => spawnSync(process.execPath, [path.join(here, '../tools/xmap/capture.mjs'), h], { env: { ...process.env, XMAP_ROOT: tmp, X_AUTH_TOKEN: 'not-a-real-token' }, encoding: 'utf8' });
+  const dir = path.join(tmp, 'accounts', 'gatetest');
+  fs.mkdirSync(dir, { recursive: true });
+  fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'gatetest', capture: { since: '2026-01-01' } }));
+  let r = run('gatetest');
+  assert.equal(r.status, 2);
+  assert.match(r.stderr, /^gate_missing:/);
+  assert.ok(!fs.existsSync(path.join(dir, 'raw')), 'no run directory, no browser');
+
+  fs.writeFileSync(path.join(dir, 'account.json'), JSON.stringify({ handle: 'gatetest', gate: { confirmed: '2026-11-27' }, capture: { since: '2026-01-01' } }));
+  const now = new Date(Date.now() - 3600e3).toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
+  const spent = path.join(tmp, 'accounts', 'spender', 'raw', now);
+  fs.mkdirSync(spent, { recursive: true });
+  fs.writeFileSync(path.join(spent, 'run.json'), JSON.stringify({ run_id: now, auth: 'session', posts_captured: 6000 }));
+  r = run('gatetest');
+  assert.equal(r.status, 5);
+  assert.match(r.stderr, /^read_budget: \d+ posts read in the last 24 hours, budget 6000/);
+  assert.ok(!fs.existsSync(path.join(dir, 'raw')));
+  fs.rmSync(path.join(tmp, 'accounts', 'spender'), { recursive: true }); fs.rmSync(dir, { recursive: true });
+});
+
+test('triage-sample is reproducible per seed; cited lists each cited post with the lines citing it', async () => {
+  const { sample } = await import('../tools/xmap/sample.mjs');
+  const { cited } = await import('../tools/xmap/cited.mjs');
+  const dir = path.join(tmp, 'accounts', 'astridwilde'); // dataset and map from the tests above
+  triage('astridwilde');
+  const a = sample('astridwilde', 2, '1'), b = sample('astridwilde', 2, '1');
+  assert.deepEqual(a.map(x => x.id), b.map(x => x.id));
+  assert.ok(a.length > 0 && a.every(x => /^(keep|skip)\/(rule|judged)$/.test(x.stratum) && x.post && x.post.id === x.id));
+  assert.ok(a.every(x => x.keep === x.stratum.startsWith('keep')));
+  fs.rmSync(path.join(dir, 'triage.jsonl'));
+  const c = cited('astridwilde');
+  const pinned = c.find(x => x.id === '1926763616964899185');
+  assert.equal(pinned.post.created_at.slice(0, 10), '2025-05-25');
+  assert.ok(pinned.lines.length >= 9 && pinned.lines.every(l => l.text.includes('[p:1926763616964899185]')));
+  assert.equal(c.find(x => x.id === '111').post, null, 'a citation with no captured post is shown as such');
+  assert.deepEqual(cited('astridwilde', 'Themes').map(x => x.id), ['1926763616964899185']);
 });

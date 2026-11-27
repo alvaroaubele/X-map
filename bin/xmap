@@ -6,6 +6,11 @@
 #   bin/xmap triage    <handle> [--review]        posts.jsonl + triage_overrides.jsonl -> triage.jsonl
 #   bin/xmap validate  <handle> [--require-map] [--allow-logged-out]
 #   bin/xmap run       <handle> [capture flags]   capture + normalize + stats + validate
+#   bin/xmap start     <handle> [capture flags]   capture, detached from this shell (survives the 2-hour command limit)
+#   bin/xmap status                               is a detached capture running; its last log lines and exit code
+#   bin/xmap budget                               posts read by the session in the last 24 hours vs the daily budget
+#   bin/xmap triage-sample <handle> [--n 15] [--seed 1]   reproducible sample of triage decisions to audit
+#   bin/xmap cited     <handle> [--section "<name>"]      every post the map cites, with its own date, author and text
 set -euo pipefail
 root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cmd="${1:-}"; shift || true
@@ -17,8 +22,30 @@ capture() {
     node "$root/tools/xmap/capture.mjs" "$@"
   fi
 }
+state="$root/.xmap"
+running() { [ -f "$state/capture.pid" ] && kill -0 "$(cat "$state/capture.pid")" 2>/dev/null; }
 case "$cmd" in
   capture)   capture "$@" ;;
+  start)
+    handle="${1:?usage: bin/xmap start <handle>}"
+    mkdir -p "$state"
+    if running; then echo "a capture is already running (pid $(cat "$state/capture.pid")): one at a time. bin/xmap status" >&2; exit 2; fi
+    log="$state/capture-${handle#@}-$(date -u +%Y%m%dT%H%M%SZ).log"
+    # Its own session, no controlling terminal: the capture outlives the command that started it.
+    setsid nohup bash -c '"$0" capture "$@"; echo "exit=$?"' "$root/bin/xmap" "$@" >"$log" 2>&1 </dev/null &
+    echo $! >"$state/capture.pid"; echo "$log" >"$state/capture.log"
+    echo "started pid=$! log=${log#$root/}"
+    ;;
+  status)
+    if [ ! -f "$state/capture.log" ]; then echo "state=none (no detached capture has been started here)"; exit 0; fi
+    log="$(cat "$state/capture.log")"
+    if running; then echo "state=running pid=$(cat "$state/capture.pid") log=${log#$root/}"
+    else echo "state=finished $(grep -E '^exit=[0-9]+$' "$log" | tail -1 || true) log=${log#$root/}"; fi
+    tail -n 6 "$log" | grep -v '^exit=' || true
+    ;;
+  budget)    node "$root/tools/xmap/lib/budget.mjs" ;;
+  triage-sample) node "$root/tools/xmap/sample.mjs" "$@" ;;
+  cited)     node "$root/tools/xmap/cited.mjs" "$@" ;;
   normalize) node "$root/tools/xmap/normalize.mjs" "$@" ;;
   stats)     node "$root/tools/xmap/stats.mjs" "$@" ;;
   triage)    node "$root/tools/xmap/triage.mjs" "$@" ;;
@@ -31,5 +58,5 @@ case "$cmd" in
     node "$root/tools/xmap/stats.mjs" "$handle"
     node "$root/tools/xmap/validate.mjs" "$handle" "${extra[@]}"
     ;;
-  *) sed -n '2,8p' "$0"; exit 2 ;;
+  *) sed -n '2,13p' "$0"; exit 2 ;;
 esac

@@ -1,0 +1,24 @@
+{
+  "handle": "HANDLE",
+  "added": "YYYY-MM-DD",
+  "gate": {
+    "confirmed": null,
+    "note": "Set confirmed to the date the operator answered the review gate in prompts/lead.md. Signed-in capture refuses to start while it is null."
+  },
+  "capture": {
+    "since": "YYYY-MM-DD",
+    "surfaces": [
+      "posts"
+    ],
+    "max_posts": 6000,
+    "max_minutes": 300,
+    "max_permalinks": 60,
+    "max_reposts": 300
+  },
+  "focus": "What the operator needs from this account's map.",
+  "relevance": {
+    "rule": null,
+    "endorsements": null
+  },
+  "amplification": "What the operator needs to know about who and what the account amplifies, and which surfaces serve it."
+}

@@ -4,7 +4,7 @@ import zlib from 'node:zlib';
 import { fileURLToPath } from 'node:url';
 
 export const ROOT = process.env.XMAP_ROOT || path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../../..');
-export const TOOL_VERSION = '1.0.0';
+export const TOOL_VERSION = '1.2.0';
 export const HANDLE_RE = /^[A-Za-z0-9_]{1,15}$/;
 
 // X post IDs are snowflakes since 2010-11-04: the high bits are milliseconds since the Twitter epoch.

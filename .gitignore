@@ -5,3 +5,4 @@ node_modules/
 # in-progress raw capture (finished runs are stored gzipped)
 accounts/*/raw/*/articles.jsonl
 CLAUDE.local.md
+.xmap/
