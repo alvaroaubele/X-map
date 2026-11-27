@@ -1,355 +1,300 @@
 # @astridwilde: Astrid Wilde 🌞
-<!-- xmap: posts=508 run=20261127T101916Z -->
+<!-- xmap: posts=3183 run=20261127T122804Z -->
 
 ## Identity
 
-- Profile (`profile.json`, from the page's own user record at capture 2026-11-27): handle `astridwilde`, display name "Astrid Wilde 🌞", user id 52549030, blue-verified, location San Francisco, CA, joined June 2009, website inheritance.ai. Counts: 20,037 followers, 8,273 following, 42,007 posts. Bio: "male ☼ we will end human menial labor this decade ☼".
-- Pinned post, from 2025-05-25, outside the window:
+- **Profile** (`profile.json`, the page's own user record at capture, 2026-11-27): handle `astridwilde`, display name "Astrid Wilde 🌞", user id 52549030, blue-verified, San Francisco, CA, joined June 2009, website inheritance.ai. Counts: 20,037 followers, 8,273 following, 42,007 posts. Bio: "male ☼ we will end human menial labor this decade ☼".
+- **Pinned post** (2025-05-25):
 
 > "do less do it well do it for a long time" [p:1926763616964899185]
 
-- **Interpretation: founder or lead at Inheritance (inheritance.ai), a physical-AI / robotics data effort.** The evidence is "led by @astridwilde" in a team member's post, the account's "we" in company posts, its hiring posts and a Series A reference. That team member's post, which the account quoted with "at least 4 alpha drops in this short clip", describes "markerless capture for https://inheritance.ai, led by @astridwilde" [p:2097383975924945373]. The account's own work posts cover:
-  - hand data and teacher data [p:2094730419669471594] [p:2094829777257635998];
-  - curating "2TB of images so far today, 98TB still to go" [p:2094985827264934042];
-  - human mesh recovery [p:2121747575409889742];
-  - temporal coherence [p:2123234423038718249].
-- **Company operations:**
-  - a "minor compute emergency" seeking 128 B300s [p:2100064066085486679];
-  - looking for datacenter colocation [p:2119129897994240186];
-  - hiring "someone to run international ops that has no chill" [p:2124929304387805536];
-  - "VCs when you run a hardware AI data company" [p:2109728336432034136].
-- **Personal investor.** The account states this outright:
+- **Handle.** Links the account posted in 2023 and 2024 point to `x.com/astridwilde1/status/...` [p:1703517997363871895] [p:1849569538276458827], so it posted as @astridwilde1 then. On 2026-09-08 it wrote "it took two decades but they finally let me have the @astridwilde handle" [p:2097338030965305572].
+- **Company, as the account describes it over time:**
+  - **2023: photogrammetry and media.** "still hiring folks with photogrammetry experience" [p:1694761104596205697]; a quoted meeting line, "this tool has brought our workload down from 5 days to about 4 hours" [p:1695121866002993597].
+  - **2024: employed at a big media company.** "i automated a few dozen people out of work this year at a big media company" [p:1867403920014028841]; "i'd rather make animation cheaper and more accessible for the masses" [p:1867403921964372222].
+  - **2025-03-27: leaves employment.** "today is my last full day of working for someone else for a while." [p:1905282348826100004]. Its Q1 2025 portfolio post says "most to all of my liquid net worth will be going into my startup" [p:1907225872282915216].
+  - **2025: KikiTora.** A cap-table call names "astrid@kikitora.com" [p:1915564810533765482]; fresh "off of fundraising" (2025-05-17) [p:1923536137894887939]; "rewriting the animation industry from first principles" [p:1898427348858368319]. From 2025-10-25 the pitch turns to robots: "KikiTora solves this by uprezzing 2d video to unlock internet scale video to solve spatial intelligence" [p:1981956564492886343]; "KikiTora makes robotic policy creation marginally free" [p:1985637156644376652].
+  - **2026-01: LearnFromHumans.** The account lists "http://AstridWilde.com / http://KikiTora.com / http://LearnFromHumans.com" [p:2010234935513325949] and writes "Less than a month until we release our first dataset" with a LearnFromHumans link [p:2010775288435917290].
+  - **2026-02: posts that name no company.** "Meta spent >$50M on this project over two years and tried to recruit me for it [...] We did it better for <$1.5M in 7 months" [p:2025801127149838456]; "just signed our first Fortune 500 company yesterday" [p:2027412952425582597].
+  - **2026-04: Inheritance** (first kept mention 2026-04-15): "Inheritance has the world's largest and richest 4D dataset" [p:2044432449581789483].
+  - Interpretation: KikiTora, LearnFromHumans and Inheritance look like one venture under successive names, or a product name beside a company name. The posts show the names but not how they relate.
+- **Prior work** the account claims: graphics at EA ("work my colleagues at EA did before my time") [p:2086533738167726518]; "water shader techniques i invented in a Zelda game" [p:2097350391398826402]; motion capture ("i literally invented this for mocap") [p:2092699114001817682]; modeling ("i used to teach runway models this") [p:2001458326232854702]; music ("i used to spend several hours a day practicing piano without even sitting in front of a keyboard") [p:1966473147240390705].
+- **Investor**, in its own words:
 
 > "i've been investing since 2019 and it accidentally turned into a job for two of those years" [p:2123872091816751518]
-> "i went from homeless to outperforming every hedge fund on earth for going on 6 years now" [p:2116067563151270020]
+> "my avg yearly performance is >100% for 5 years in a row" [p:1998930742534099048]
 
-- **Prior careers, as the account describes them:**
-  - graphics/shader work: "water shader techniques i invented in a Zelda game" [p:2097350391398826402]; "my entire undergrad research area has now been distilled" [p:2102591066016784832]; "companies making mobile games used to pay me A Lot of money to do this" [p:2112379465787658381];
-  - consumer marketing: "i used to literally teach people how to do this" [p:2112012960361279939];
-  - compute: pitching bitcoin miners on "converting their ASICs fleet to a GPU fleet" before ChatGPT [p:2103461871260983316].
-- **Self-disclosed biography:**
-
-> "VCs when they find out I grew up in a cult and was kidnapped and trafficked at 20 years old" [p:2104008291173233055]
-
-- **Handle history:** "it took two decades but they finally let me have the @astridwilde handle" (2026-09-08) [p:2097338030965305572]. What changed is unclear: the handle is already mentioned on 2023-04-09, in a goblinodds post the account quoted [p:2104958838332100944], and "two decades" does not fit the June 2009 join date.
-- **Politics:** the account calls election night (2026-11-04) "the one night a year I tweet about politics" [p:2117885734254469136]. The window still has political posts on other dates: datacenter-moratorium politics (2026-09-26) [p:2103858290828423182], and AI-pause politics (2026-11-05) [p:2118366042447921438] and a presidential-nomination forecast (2026-11-05) [p:2118194186734448670], both the day after election night.
-- **Register:** jokes about the company sit beside the serious posts, for example "getting engaged before Series A to heal the memetic waters" [p:2113110273783726234]. 🌞 appears in the text of 33 posts. "Joy" is a recurring word: "Share your Joy tokens with the world" [p:2098056873274716543], "Joy is the revolution" [p:2097934388336243005].
+- **Self-disclosure:**
+  - grew up in a cult [p:1689723781688999937], "kidnapped and trafficked at 20 years old" [p:2104008291173233055];
+  - "looking for a wife who is excited by the idea of having children and homeschooling them" (2024-11-14) [p:1857191645575270788];
+  - moved from LA to SF on 2025-07-05 [p:1941636665413664935];
+  - "my mom put hundreds of thousands of photos of my family on the internet. tagged them all as public domain [...] i am the training data." [p:1973267373533909452].
+- **Politics.** It calls election night 2026 "the one night a year I tweet about politics" [p:2117885734254469136]. Interpretation: kept posts show an anti-administrative-state view, for example celebrating that Chevron deference "is dead" (2024-06-28) [p:1806700179363651915]. On intellectual property and copyright, posted when the Internet Archive lost its appeal: "end intellectual monopoly. anything replicable shall be. copying is not theft." [p:1831389334462951443].
 
 ## Coverage
 
-- **Capture.** Run `20261127T101916Z`: signed-in session (`auth: session`), started 2026-11-27T10:19:18Z, ended 10:29:53Z. One surface, `posts` (`https://x.com/astridwilde`): 185 scroll steps, 508 posts, stop reason `reached_since`. The configured lower bound was 2026-08-29 (`since_days: 90`). No permalink pass ran: 0 posts were clipped, and `stats.truncated` is 0.
-- **Earlier run.** `20261127T100213Z` was signed-out (`auth: none`) and stopped at `signin_wall` after 5 posts. All 5 were seen again in the signed-in run.
-- **Dataset.** `posts_total` 508, `own_total` 508. `by_kind`: post 107, quote 377, reply 24, repost 0. The window of own, unpinned posts runs from 2026-08-27T23:54:12Z to 2026-11-27T06:41:13Z. By month: 2026-08: 14, 2026-09: 166, 2026-10: 138, 2026-11: 189, plus the 2025-05 pinned post.
-- **Engagement.** Medians over own posts: 47 likes, 4,154 views, 2 reposts. Metrics are a snapshot taken during the capture, so the newest posts have had the least time to accrue engagement.
-- **Absent from this map:**
-  - *Reposts.* Signed in, the profile timeline was served by X's `UserOriginalsTimeline` ("profileOriginals"), which leaves reposts out. The run holds no reposts, so amplification is visible only through quote posts.
-  - *Replies to other accounts.* The `replies` surface was not configured. Of the 24 replies captured, 23 are self-thread continuations (reply target `astridwilde`) and 1 replies to `eddybuild` [p:2097738399457362300]. Conversations in other people's threads are not covered.
-  - *Media surface.* Not captured. Media attached to captured posts is recorded; 53 posts carry media. Images and videos were not interpreted.
-  - *History before 2026-08-27.* The only exceptions are the pinned post and older posts the account re-quoted inside the window (for example 2023-03-01, 2023-05-09, 2025-03-30, 2025-05-30, 2026-04-30 and 2026-06-27, dated from their ids).
-- **Quoted posts.** 380 posts carry a quoted post; 379 of them have its id. 10 quoted posts were unavailable to the session (deleted, protected or limited), and 4 more carry only media, with no text [p:2123094706645303299] [p:2121991994344100195] [p:2110203914457166324] [p:2106875564661575884]. For those 14, only the account's own words were read.
-- **Extraction.** This dataset was rebuilt with extractor 1.1.0 from the stored article HTML of both runs. Quoted ids, expanded `t.co` targets, self-thread reply links and the profile come from the target profile's GraphQL responses (its timeline and user record), which the page itself loaded during the run. Like counts are corrected for the viewer-state word "Liked" in signed-in metric labels.
+- **Window.** 2023-07-14 to 2026-11-27, matching `account.json` `capture.since` "2023-07-14". History before 2023-07-14 is out of scope by operator decision.
+- **Runs** (from each `run.json`; the "Configured since" column is the value each run was launched with):
+
+| Run | Auth | Configured since | Steps | Posts | Stop | Duration |
+|---|---|---|---|---|---|---|
+| `20261127T100213Z` | none | 2026-08-29 | 7 | 5 | `signin_wall` | 0.5 min |
+| `20261127T101916Z` | session | 2026-08-29 | 185 | 508 | `reached_since` | 10.6 min |
+| `20261127T111218Z` | session | 2022-01-01 | 0 | 0 | status `error`, stop_detail "page.evaluate: Target page, context or browser has been closed" (stopped by the mapper so it could be relaunched detached) | 0.2 min |
+| `20261127T111242Z` | session | 2022-01-01 | 218 | 582 | `end_of_timeline`; the last timeline response, `raw/20261127T111242Z/net/0036-UserOriginalsTimeline.json.gz`, is a DependencyError from X, so the timeline did not actually end | 12.9 min |
+| `20261127T113414Z` | session | 2022-01-01 | 900 | 2,525 | `server_error` ("UserOriginalsTimeline: DependencyError Dependency: Unspecified"), reached 2024-12-09T15:50Z | 52.9 min |
+| `20261127T122804Z` | session | 2022-01-01 | 1,101 | 3,183 | **status `blocked`, `blocked:rate_limited`**, reached 2023-07-14 | 65.7 min |
+
+- **Rate-limit block.** X rate-limited the session during the last run, and capture is over for this session. Validate's `run.latest_ok` passes all the same, because that run's stored timeline responses include 13 own posts dated before `since` 2023-07-14, so the whole window was covered (`window_covered`).
+- **End of the capture.** The last run ended `blocked:rate_limited` with its oldest own post at 2023-07-14, the start of the window. Its last API page also held 13 posts dated 2023-07-01 to 2023-07-13 that the page had not rendered. They fall before the window and are not in `posts.jsonl`.
+- **Dataset.** `posts_total` 3,183, `own_total` 3,183. `by_kind`: post 815, quote 2,006, reply 362, repost 0. Window of own, unpinned posts: 2023-07-14T02:12:47Z to 2026-11-27T06:41:13Z.
+- **Low-volume months** (data, by command over `posts.jsonl` and the stored API pages):
+  - `stats.by_month` has 0 posts in 2023-10, 2024-02 and 2024-03, 9 in 2023-11, and 2, 6, 4 and 2 in 2024-04 to 2024-07.
+  - These are exactly the counts X's own originals-timeline API served. API page `net/0144` holds 25 posts spanning 2023-09-28 to 2023-12-10; `net/0138` holds 28 posts spanning 2024-01-26 to 2024-08-10. Both came back with no error.
+  - The DOM capture matches the API month by month (3,182 of 3,195 API timeline posts captured; the 13 missing are the July 2023 tail above).
+  - The only references to own posts from these months that are missing from `posts.jsonl` are replies to other accounts. One example is 1809023609555624170 (2024-07-05), which the originals timeline excludes by design.
+  - The account's own posts in kept triage give its reasons: "i simply refuse. find me on Threads or my blog." (2023-09-18) [p:1703919780657496110]; "intentionally stepped away from this place for a while." (2023-11-16) [p:1724992912621293900]; "i locked my accounts to try and encourage people to just follow me to Threads" (2024-01-21) [p:1748922440103952743]; "i tried moving to Threads for my financial posts" (2024-07-15) [p:1812704253263426009].
+  - So the low months reflect the account posting little original material on X, not a capture loss. Replies to others in those months are not observable on this surface.
+- **Relevance triage** (operator rule in `account.json` focus; `bin/xmap triage astridwilde`; first pass in `tools/xmap/triage.mjs`, per-post judgments in `triage_overrides.jsonl`; counted by command from `triage.jsonl`):
+  - **Kept 1,232, skipped 1,951, of 3,183.** Kept by kind: quote 776, post 317, reply 139. Kept per year: 2023 197 of 338, 2024 180 of 366, 2025 350 of 1,082, 2026 505 of 1,397.
+  - **Skip rule.** A post is skipped when its own words, with URLs and @mentions removed, carry no claim, position, prediction, number, ticker, link commentary or self-disclosure. That covers stock filler ("requesting more of this on the timeline", "he's right", "cosigned"), bare reactions, emoji or media alone, one-line agreement, engagement questions, jokes, praise, song lyrics and quotations. A quote post with filler words is skipped even when the post it quotes has content.
+  - **Skip reasons:** 201 matched a stock filler phrase automatically; 81 were bare reactions; 56 had no own words; 1,613 were judged on reading.
+  - **Keep reasons:** 761 automatic on substantive length; 205 automatic on a ticker; 10 on a link with commentary; 256 judged on reading.
+  - **This map cites kept posts only**, and validate checks that (`map.citations_kept`).
+- **Engagement.** Medians over all own posts (`stats.engagement_median_own`): 24 likes, 2,851 views, 2 reposts. Bookmarks are per post in `posts.jsonl`. Metrics are snapshots from the latest capture to see each post.
+- **Other gaps:**
+  - *Reposts.* None captured: the signed-in originals timeline excludes them.
+  - *Replies to others.* Excluded by the same surface; 360 of the 362 captured replies continue the account's own threads.
+  - *The media surface.* Not captured; media were not interpreted.
+- **Extraction.** Extractor 1.1.0. Quoted ids, `t.co` targets and self-thread links come from the target profile's own stored API responses. 2,046 of 2,047 quoted posts have an id; 95 were unavailable to the session; 7 posts keep an unexpanded `t.co` link because their API record was not among the stored responses.
 
 ## Themes
 
-Counts in this section are keyword matches over post text, computed by command. They are not topic classifications.
+Drawn from kept posts across 2023-07 to 2026-11.
 
-1. **Data as the bottleneck for physical AI.** This is the account's professional core, and it is put as data engineering, not modelling:
+1. **Public markets as a craft: concentrated, contrarian, cash-heavy.** Tickers appear in 205 kept posts.
 
-> "we used to do product engineering now we do data engineering" [p:2093471519863411016]
-> "It is a solvable engineering problem. Everyone is used to thinking about product engineering problems, this is a data engineering problem." [p:2104658544134066434]
-> "guys i don't know if you know this but you can just keep throwing data at the models and they get better" [p:2124924496255852795]
+   Method:
 
-   Related posts:
-   - one developer beating the literature "by being slightly more thoughtful about data and slightly more lazy about training" [p:2097845734121066807];
-   - annotation as a discipline [p:2095701944618881413];
-   - "it's all just next state prediction from dense annotation of expert trajectories" [p:2096298744937664783].
+> "1. do i have a unique insight?" [p:1868862824602386864]
+> "think marketing tech will be an early sector beneficiary of diffusion LLMs and ads related businesses are mispriced. my $META and $APP are both bets on this" [p:1848365500075479457]
 
-   The account claims SOTA from 2026-09-08 ("already SOTA by an order of magnitude" [p:2097383975924945373]), and posts specific results from 2026-11-14:
-   - human mesh recovery on "crowds, gloves, children+infants, and rare poses" [p:2121747575409889742] [p:2121955408290181580] [p:2121957871353311595];
-   - temporal coherence [p:2123234423038718249];
-   - "finally surpassing gt annotations" [p:2123681381708656909];
-   - near-segmentation-quality mesh reconstruction [p:2124429042900521400] [p:2124595813758484585].
+   That thesis was posted on 2022-12-09, before the window; the account re-quoted it on 2024-10-21 and 2024-12-06 [p:1865079708196467014]. Its 2023-07-28 post records selling too early: "sold out on a sentiment swing for +100% gain" [p:1684972690615242752].
 
-2. **Benchmarks and evaluation are broken.**
+   Recurring cash stance: "now >50% in cash again" (2023-07-14) [p:1679931444750323712]; "immediately went to 50% cash" (2024-11-12) [p:1856391266017095824]; ">50% cash position since January 19" (2025-03-10) [p:1899150866281795614]; "continue to sit out the market in cash" (2026-11-25) [p:2125440798909251770].
 
-> "Every benchmark is lying to you" [p:2100205250980319728]
-> "everything is overfit and nothing generalizes because everyone is hill climbing the wrong thing" [p:2121070473123598587]
+   Sector calls the account lists itself: "oil, coal, fertilizer, shipping, China, banks, cannabis, ponzi momo, uranium" [p:1857522584604258607]. It has also published calls in encoded form and revealed them later: "this alpha has now fully played out. the decryption key:" (2024-01-19) [p:1748224903395025324].
 
-   The "hill climbing" line is reused on 2026-11-16 and 2026-11-18 [p:2122478768996724939] [p:2122942553163243695]. Related:
-   - "once again gobsmacked that everyone is still using coco as a benchmark" [p:2094986353113244151];
-   - 🎯 on "if the eval is public, it's marketing" [p:2123227939613626610];
-   - an open call to build spatial/visual reasoning benchmarks [p:2111310671883464859].
+2. **AI compute, datacenters, memory.** It has reversed more than once (see "How the theses moved" and Positions):
+   - 2023 AI-compute bear [p:1735684126181925351];
+   - 2024–2025 Nvidia bull [p:1849070889091948561] [p:1996093470424052011];
+   - 2025 neocloud bear [p:1978115478527586350];
+   - 2026 "inference will eat the world" [p:2049734519830536669] and memory as a secular trade [p:2034366541790425478].
 
-3. **Capability acceleration, cheering register.** Recurring phrases, counted by command:
-   - "requesting more of this on the timeline": 14 posts, mostly on weddings, babies and friends;
-   - "what a time to be alive": 8;
-   - "cosigned" / "unconditionally endorsed": 8;
-   - "you absolutely love to see it": 6;
-   - "he's/she's right": 6;
-   - "you can't stop this train": 5, all on small or fast "system one" models [p:2101215527691559327] [p:2102947008793161783] [p:2112275094513058106];
-   - "golden age of media coming in hott": 4 [p:2095294202003542488] [p:2104252179548881342].
+3. **Data is the bottleneck, then the moat.** "the data bottleneck is real" (2023-03-01, re-quoted 2026-10-19) [p:2112067966145864120]. In 2026: "data and distribution are the only moats in software going forward" [p:2014781576484422071], and "we used to do product engineering now we do data engineering" [p:2093471519863411016]. One 2025 wobble is covered in "How the theses moved".
 
-   Substantive versions of the same view:
+4. **Media, animation and the cost of content.**
+   - 2023: "the golden age of media is coming" [p:1694760568580886647]; TikTok/ByteDance incentives "would reshape the moral landscape" [p:1679935346627452928].
+   - 2025: "come train a foundational model with us [...] let's take the marginal cost of content production to zero" [p:1902767155919327652]; "next year we are going to drop something that makes worldwide trademark law unenforceable overnight" (2025-04-11) [p:1910833115238445306].
 
-> "the future of everything is tiny models everywhere!!" [p:2094841091849925028]
-> "RL continues to be wildly underestimated" [p:2102585144083152951]
-> "cost of post-training continues to speedrun to $0" [p:2117813917959471399]
+5. **Robots learn from human video.** From 2025-10-25: KikiTora and then Inheritance as 4D human data from ordinary video [p:1986602082410057752] [p:1981956564492886343]. "We'll be able to accomplish this for $2 instead of $200 within the next 9 months" (2025-11-20) [p:1991522369668866309]. Model results in 2026 [p:2121747575409889742] [p:2123234423038718249].
 
-4. **AI compute, datacenters and the capital cycle.** The account presents itself as a compute buyer facing shortage:
-   - B300s [p:2100064066085486679] [p:2104735621575274632] [p:2102139194940219485];
-   - "can confirm we had to pay for our entire order up front" [p:2122925125070647661];
-   - attending the Haight Street Compute Market [p:2110841344507994146].
+6. **Against AI doom and for a right to compute.** A constant from 2023 to 2026:
 
-   It also analyses the macro side: datacenter returns, yields, compute credit and datacenter geography (see Theses and Positions).
+> "all people have the inalienable Natural Right to Compute." [p:1727422006575161404]
+> "i think the risk of AI causing a human extinction event inside of 20 years is not statistically significant and you should live your life as if it's an impossibility" [p:1790846593899368625]
+> "the cult of xrisk so convinced themselves of the dangers of AI they convinced the government to get involved." [p:2065717433084887418]
 
-5. **Public-market investing.** Disclosed holdings and sizing [p:2095870240035082499] [p:2118070900860076241], method statements, trade results and a turn to cash in November (see Theses and claims, and Positions and predictions).
+   Also effective altruism: "the Greater Good is Evil." [p:1729549028956762576].
 
-6. **Software margins and the end of SaaS.**
+7. **Prediction markets as gambling.**
 
-> "the consumer application SaaS era is officially over" [p:2108315420986048696]
-> "the era of high margin software is over" [p:2111934748117602675]
+> "prediction markets straightforwardly incentivize antisocial behaviors. this institution is a deep moral evil" [p:1877818017897464107]
 
-   That line quotes thdxr on 48 hours of nonstop attacks and the need for agents "going 24/7". The argument there is about security costs (see Theme 7), not only development costs.
+   Earlier: "it's just gambling with a different bookmaker" [p:1825420440472567913]. Later: "financially illiterate and intentionally dishonest" (2026-10-26) [p:2114576291018178918].
 
-   Related:
-   - "the personalized software era is here" [p:2097492605961642108];
-   - "as the cost of devleopment continues to fall precipitously, vertical integration will become a megatrend" [p:2103885459336142848];
-   - praise for Xbox's pivot instead of litigation [p:2110248668343460207].
+8. **Bitcoin miners, then GPUs.**
+   - BTC miners "operating at negative gross margins" [p:1692349293397709055];
+   - miners would "try to join the AI party" (>80%) [p:1696676310503076133];
+   - Christmas 2022 miners priced below asset value if rented "for AI/HPC" [p:1740060712448458916];
+   - pitching miners on GPU fleets before ChatGPT [p:2103461871260983316].
 
-7. **Internet security collapse (October 2026).**
+9. **Security and the internet.** "1/3 of all websites on the internet are compromised" (2026-10-21) [p:2112970807270117876] (views #2); earlier, freeze credit after a KYC leak [p:2095281535234760773] (views #4).
 
-> "1/3 of all websites on the internet are compromised" [p:2112970807270117876]
-
-   This is the account's most-viewed post in the window (2,059,266 views). Related:
-   - "the open internet as you know it is over" [p:2113136395103662210];
-   - "the internet is a PvP area" [p:2113113152372330520];
-   - earlier, advice to freeze credit after a KYC leak [p:2095281535234760773];
-   - a claim about card-network name fields [p:2117685033171570784].
-
-8. **Against AI doom and AI-safety culture.**
-
-> "Don't listen to chronically anxious and paranoid people" [p:2114042582171004935]
-> "an imaginary boogeyman invented by fan fiction writers on the internet in the 2000s has found its way to Congress and is crashing the stock market" [p:2118366042447921438]
-
-   Related:
-   - the ex-Evangelical "guilt center" post [p:2122112522824368588];
-   - effective altruism undone by a discount rate [p:2100917976497102870];
-   - "A future of Compute Abundance is a Pro Human future." [p:2106287313987031156].
-
-   Interpretation: the account is not against safety research. It reframes interpretability and alignment as capability work (see Theses).
-
-9. **Nvidia leadership saga (November 2026).** Five November posts (2026-11-09 to 11-23) mention Jensen, Nvidia or $NVDA in their own text. The sequence runs:
-   - "after hearing the news about Jensen" [p:2119626067975766420];
-   - a retirement-wave warning [p:2120982877827731488];
-   - "Nvidia is nothing without it's Person" [p:2121100560640491939];
-   - a board ultimatum [p:2122954901097742666];
-   - a victory lap [p:2124868031327424880];
-   - "leather jackets are officially cool again but you aren't allowed to wear them if you said anything bad about Jensen during his vacation" [p:2124873051569549693].
-
-10. **Joy, courtship and public sincerity.**
-
-> "You cannot find your people if you don't show them who you are in public!!" [p:2114029165431370047]
-> "my unsolicited advice to men is don't have casual sex" [p:2118251118451139020]
-
-   Related:
-   - "all aboard the courtship train" [p:2114533316947067258];
-   - "Date Everyday November" [p:2117365919022481451];
-   - "my moat is autistic earnestness without the autism" [p:2114213397625761843];
-   - a request for joy during "an unusually extended sad time" [p:2114156558942904644].
-
-    Interpretation: these personal and relational posts take up a large share of the feed. They are part of the account's persona, not filler.
-
-11. **Lighter recurring culture.** Zelda and Nintendo [p:2097350391398826402] [p:2099300165857194198], the Victoria's Secret show [p:2111952978768953696] [p:2112010612159156714], figure skating [p:2118122041102815370], Emi Blue [p:2122108058692403353].
+10. **Sincerity, courtship, family.** Social dance as a way to meet women [p:1691684237844664428] (views #9); the "granny shot" as proof that "many games are actually status games" [p:1898734395759947867] (views #7, likes #5); "You cannot find your people if you don't show them who you are in public!!" [p:2114029165431370047]; "flirting as a man is about getting her to tell you what she wants without saying it and then very confidently giving it to her" [p:1942934510989160562] (likes #10).
 
 ## Theses and claims
 
-**What the account argues.** Each item is the account's words or a close paraphrase, cited.
+**Standing theses** (kept posts):
 
-- **Datacenter capex earns real returns, and spending is too slow.** On 2026-09-02 the account re-quoted its own 2026-04-30 post ("they aren't spending fast enough or taking on enough debt") with:
+- **AI capex earns unprecedented returns.**
 
-> "still true" [p:2095277737212817915]
-> "a fundamental reorientation of the entire economic order is underway" [p:2095277737212817915]
+> "the ROIC for LLMs is going to be unlike anything we've ever seen before" [p:1851426844769194386]
+> "we're about to see very real positive return on incremental invested capital at a scale that was never before possible in the history of capital markets." [p:2049680170299400247]
 
-  It cites GCP payback numbers: "the numbers even after you do are incredible" [p:2097500111622611027]. It calls Anthropic "might be the most capital efficient business ever in the history of Capitalism", on spend under $10B [p:2114726391656923190].
+  In four phases: "phase 3: compute capacity has expanded 1,000x. it wasn't enough to meet demand." [p:2049734521227268557]. And: "in 2029 everyone will be asking why the hyperscalers didn't build more." [p:2083031730529636429].
+- **Memory is no longer cyclical.**
 
-- **Compute credit is repricing, not failing.**
+> "memory is no longer cyclical. secular demand is going to outstrip supply through at least 2030" [p:2034366541790425478]
 
-> "Fake news. Some banks are pausing all compute lending (it's become too much of their book), others are just now beginning to lend or expanding their book." [p:2101682818178773054]
-> "Coreweave is not in distress. Their peer's credit was repriced over the last 3 months similarly. I used to be able to put 20% down for compute, now everyone is asking for 30% down." [p:2110199566129922508]
+- **Software is repriced by AI.**
+  - "SaaS multiples across the board should be lower than they used to be as the cost of software development falls" (2025-03-29) [p:1906037790875480395];
+  - "the time has come to stop writing code." [p:1894971085982179681];
+  - "generational money will be made in the next 3 years in long/short software" [p:2011339153628434651];
+  - "the era of high margin software is over" [p:2111934748117602675].
+- **Advertising is AI's first winner.** The ad-platform thesis, stated on 2022-12-09 and re-quoted in [p:1848365500075479457], became the AppLovin position: "$APP carried my entire portfolio to a nearly 200% return since this tweet" (2025-06-04) [p:1930257653827285515].
+- **Interpretability and alignment are capability work.** "alignment is a capabilities problem, when you have data on it and spend compute on it it gets better" [p:2125404777257590857].
+- **AI safety means refusing the state.** "The only and I mean ONLY AI safety work that matters in the scope of human history is giving AI CEOs the fortitude to tell the state to GFYS" [p:2026402481908142389].
+- **Labor.** "My base case is compute prices go up >50% a year for the next 5 and layoffs will be 8-10% every year during the same period" (2026-02-26) [p:2027150440555856281]. Posed as a question, not a forecast: "am i living on another planet or does all knowledge work in the professions just get wrecked within the next 18 months" (2025-12-20) [p:2002497594329870775].
 
-  Also "Compute lending rates are still better than mortgage rates" [p:2106248610321231929].
+**How the theses moved, 2023 to 2026.** This is interpretation, anchored to dated kept posts, and each reversal is shown in the account's own words.
 
-- **Data spending will scale.**
-  - Endorses "top researchers believe the data market will grow by 100X" with "he's right" [p:2124736263664328966].
-  - On expert data at 5-10% of revenue: "can vouch" [p:2108625307611914613].
-  - On a company reaching a $240M run rate: "if you find and resell the data from 20 companies a month this is the number you'll hit btw" [p:2118562850440691803].
-
-- **Interpretability and alignment are capability work.**
-
-> "mech interp is just capabilities research by another name" [p:2111679527055442302]
-> "alignment is a capabilities problem, when you have data on it and spend compute on it it gets better" [p:2125404777257590857]
-
-- **Consciousness is not matrix multiplication.**
-
-> "Biology laughs in the face of your look up table and matrix multiplication" [p:2106221481797775857]
-
-  Interpretation: this sits beside the capability boosterism without contradicting it. The account separates "capable" from "conscious".
-
-- **Strategy over slowdown.** Quoting NathanpmYoung's "slow or don't slow" post:
-
-> "Make it appear that you are a long way off, then cover the distance rapidly and arrive on the scene before your opponent." [p:2102061881678561574]
-
-- **Investing method.**
-
-> "in which buying accelerating top lines where the street is materially offsides continues to be the only thing i know how to do" [p:2095250214286442987]
-> "all i know how to do is front run earnings revisions to the upside" [p:2123872091816751518]
-> "Gamma has been and will continue to be structurally mispriced" [p:2101341913013989396]
-
-  - On sizing: "my biggest winner ever in both % AND dollar terms was $APP which I put on at a 2.5% weight under $12/share" [p:2114383076239503412].
-  - On tooling: "i think basically no one is using agents to look for these things still" [p:2118359597228675448].
-
-- **Market hygiene.**
-
-> "don't make financial decisions based off of tweets (especially mine)" [p:2122520709868208413]
-> "regular reminder not to gamble!! including on public equities!!" [p:2125601506070278306]
-
-  Prediction-market participants are "some combination of financially illiterate and intentionally dishonest in shilling one of the worst gambling products of all time" [p:2114576291018178918].
-
-- **Datacenter politics.**
-
-> "Anyone who promises a moratorium on datacenter buildout has a huge political tailwind behind them." [p:2103858290828423182]
-
-  The account calls this "An absolutely catastrophic PR failure from big tech and the labs" and says "We need a positive vision of the future and we need it yesterday" [p:2103858292887806150].
-
-- **Agent-mediated communication.** "I say no to everyone who is using an agent to call or email me. Communication is sacred." [p:2104306193737130286]
-
-- **Community governance.** On 2026-10-03 the account called for the Manifest organiser to resign:
-
-> "Boycott Mox and Manifund events until he's out" [p:2106399215480181182]
-
-  The follow-up says "Resign @akrolsmir" [p:2106399218592321756].
-
-**How the arguments moved over the window.** All of this is interpretation, anchored to dated posts.
-
-- **Market stance: AI-capex bull with 36% cash in September, cash in late November.**
-  - *September.* On 2026-09-04 the account discloses 36% cash plus a long book [p:2095870240035082499]. It writes "none of us own enough semicap" (2026-09-29) [p:2104873855953379631] and that yields "will continue to go higher" (2026-09-25) [p:2103282061184282878].
-  - *Turn.* On 2026-11-01 it posts "i'm bearish market beta" [p:2116736100937224192]. It later credits that call: "crazy timing in hindsight for me to sell beta" [p:2118526296431137146]; "been a great two weeks for me" [p:2122735747241558312].
-  - *Late November.* "There are no rules in a bear market" (2026-11-16) [p:2122154019196211223], then "continue to sit out the market in cash" (2026-11-25) [p:2125440798909251770].
-  - *Unresolved.* On 2026-11-04 the account disclosed a 35% combined weight in $APP and $RELY [p:2118070900860076241]. How that fits with "sitting out the market" is open (see Open questions).
-- **Work output: data acquisition in September, specific results in November.** September posts are about collecting and cleaning data [p:2094730419669471594] [p:2094985827264934042], with a general SOTA claim on 2026-09-08 ("already SOTA by an order of magnitude" [p:2097383975924945373]). From 2026-11-15 the posts claim specific results over SOTA [p:2121955408290181580] [p:2123234423038718249].
-- **Nvidia: warning, then ultimatum, then claimed vindication** over 2026-11-09 to 2026-11-23 [p:2119626067975766420] [p:2120982877827731488] [p:2122954901097742666] [p:2124868031327424880].
+- **LLMs: valuable but not intelligent, a steady stance.**
+  - 2024-12-06: "people still are absolutely clueless how much enterprise value will be created by LLMs" [p:1865079708196467014].
+  - 2024-11-13: "LLMs are not and will never be intelligent. they are a very expensive compression algorithm." [p:1856592909123899656]
+  - It stays skeptical of the architecture: "tokens are a dead technology" (2025-07-15) [p:1944978210422235197] (2025-07-19) [p:1946460781668925941]; "the big labs are using the wrong foundation to scale to a truly generalized intelligence" (2025-10-21) [p:1980674751778664927]; LeCun's JEPA line will make him "directly responsible for saving tens of thousands of future lives" (2026-02-06) [p:2019907895102669006].
+  - Alongside that, practical praise of model products, for example "Opus 4.7 is clearly the best large model available right now for agentic optimization work." [p:2045539366953771315]
+- **Synthetic data: bear, then convert.**
+  - Before 2025, in its own post that it later re-quoted: "i have been bearish on synthetic data for some time" [p:1874462724362780968].
+  - 2025-01-01: "i was wrong. synthetic data will advance the frontier in video models well beyond the current State of the Art. continue to be bearish current training methods" [p:1874462724362780968]
+- **Data: scarce, then not, then the moat.**
+  - 2023: "the data bottleneck is real" [p:2112067966145864120].
+  - 2025-03-29: "private data stores are also probably also a lot less valuable than most initially thought and synthetic data generation is going to increasingly become a more valuable skill over time" [p:1906037792205127813].
+  - 2026: "data and distribution are the only moats in software going forward" [p:2014781576484422071].
+- **AI compute: bear, bull, bear, bull.**
+  - 2023-12-15: "the AI compute market will exactly parallel the BTC compute market. inside of three years the margins after depreciation will be negative and everyone with GPU backed loans will default." [p:1735684126181925351]
+  - 2024-01-25: semis "mispriced to me in the near term", yet "a multi-decade secular shift in demand for compute" [p:1750334625006989798] [p:1750334626114175194].
+  - 2024-10: "none of us own enough $NVDA" [p:1849070889091948561].
+  - 2025-03-31: "very little demand still for small scale compute" [p:1906705263354380744].
+  - 2025-10-14: "take your neo cloud exposure down to at least 0" [p:1978115478527586350].
+  - About 2025-11-04 (reported on 2025-11-18 as "two weeks ago"): "it was time to short the datacenter factor" [p:1990606919581802593].
+  - 2025-12-31: "if you are going to need compute in 2026 and you didn't lock in contracts [...] sorry, you're SOL now" [p:2006512377383240173].
+  - 2026: compute prices up >50% a year [p:2027150440555856281] and "inference will eat the world" [p:2049734519830536669]. On 2026-05-06: "realized all gains in neocloud and memory today" [p:2052078363637158196].
+- **Rates: higher-for-longer, then a bond rally, then higher yields.**
+  - 2023-09-13: "higher for longer thesis firmly on track. refiners and product tankers still cheap" [p:1701964787469406324]. Related commodity posts: "cracks still high, refiners still cheap" [p:1699785728870568350]; shipping as "the best hedge on war that money can buy" [p:1735705418067026066].
+  - 2025-02-25: "higher for longer trade will get wrecked this year imho" [p:1894218196476895297].
+  - 2025-08-27: "the US bond bubble will make every other historic bubble popping event look cute" [p:1960508109014577249].
+  - 2026-09-25: "global yields will continue to go higher" [p:2103282061184282878].
+- **Geography of the book.**
+  - 2023–2024 East Asia: "Chinese largecaps are now a 20% position for me and i'm still adding" (2024-01-05) [p:1743229653106803197].
+  - 2025: Nintendo, Coupang and Cipher as "my only material positions" [p:1924290564335587399].
+  - 2026: $ADBE at "an 8% position" [p:2018760073569599774] and $APP plus $RELY at a 35% combined weight [p:2118070900860076241], alongside memory trades [p:2052078363637158196].
+- **Constants.** Cash-heavy, low-beta, concentrated (Themes 1); anti-doom and pro-compute-rights from 2023-11 to 2026-06 [p:1727422006575161404] [p:2065605525224743245]; prediction markets as gambling (Theme 7).
 
 ## Positions and predictions
 
-These are dated statements of record, in UTC dates from post ids. "Checkable" names what would settle each one. Outcomes are not judged here unless the account itself reported them inside the window.
+Dated statements of record from kept posts, 2023-07-14 to 2026-11-27. "Checkable" names what would settle each; outcomes are noted only when the account reported them itself.
 
 | Date | Statement | Type | Checkable against |
 |---|---|---|---|
-| 2026-09-02 | 100% datacenter growth in 2027 and again in 2028 [p:2095277737212817915] | forecast | datacenter capex/capacity growth, 2027 and 2028 |
-| 2026-09-02 | Re-quoted its 2026-06-27 call (out of the model layer; "easier to own the AI beneficiary software basket", $SNOW and $DDOG) to restate its method: "buying accelerating top lines where the street is materially offsides" [p:2095250214286442987]. The 2026-09-04 book over 1% lists neither ticker [p:2095870240035082499] | restated method | none stated |
-| 2026-09-04 | Holdings over 1% by weight: cash 36%, $RELY, $NVDA, $QXO, $SKHY, $HROW, $NTDOY, $ACFN, $AMZN, plus two undisclosed [p:2095870240035082499] | disclosed book | prices from 2026-09-04 |
-| 2026-09-24 | Waiting to get "degenerately long housing through $BLDR" [p:2103099323093262452] | conditional intent | none stated |
-| 2026-09-25 | Global yields "will continue to go higher" [p:2103282061184282878], with a same-day hedge: "you all take me too seriously" [p:2103319667163234417] | forecast | global 10-year yields after 2026-09-25 |
-| 2026-09-25 | "cosigned" on: formal methods will produce a coding capability spike "within ~1 year" [p:2103632844606046409] | endorsed forecast | by about 2027-09 |
-| 2026-09-26 | A datacenter moratorium is a winning bipartisan issue [p:2103858290828423182]; on 2026-11-04, about ballot measures: "it has begun" [p:2117851365288624311] | forecast | 2026 ballot outcomes on datacenters |
-| 2026-09-29 | "none of us own enough semicap" [p:2104873855953379631] | position | semicap equities after 2026-09-29 |
-| 2026-09-29 | $QURE (AMT-130): "It's also clear this isn't the miracle I thought it was." [p:2104912895826100555] | revised view | FDA review of AMT-130 |
-| 2026-10-05 | "We are very firmly out of second inning for the Drug Discovery theme." [p:2106898708214534285] | market-cycle call | AI drug-discovery equities |
-| 2026-10-14 | "Coreweave is not in distress." [p:2110199566129922508] | claim | $CRWV credit after 2026-10-14 |
-| 2026-10-14 | Claims it had "material alpha" on the $BMBL acquisition but missed the gain ("Unlucky timing for personal reasons") [p:2110179615847395411]; congratulates others who bought $5 Oct calls [p:2110179618225565999] | claimed foresight; reported missing the gain | $BMBL deal timing and terms |
-| 2026-10-20 | "token price collapse incoming" [p:2112596910699913702] | forecast | inference token pricing |
-| 2026-10-21 | "1/3 of all websites on the internet are compromised" [p:2112970807270117876] | factual claim | incident reports, October 2026 |
-| 2026-10-23 | On evanjconrad's "end of startups" post: "This will unfortunately age very well very quickly" [p:2113439841010782388] | endorsed forecast | none stated |
-| 2026-11-01 | "i'm bearish market beta" [p:2116736100937224192] | position | index levels from 2026-11-01 |
-| 2026-11-02 | Would put a 30% weight in $APP under $180 [p:2117370896268898605] | conditional intent | $APP price |
-| 2026-11-04 | Selling "all exposure to Texas datacenters" after a Democratic win in Texas [p:2117801715680543132]; "I am now bullish Louisiana and Tennessee" [p:2117811989988987064] | position | none stated |
-| 2026-11-04 | "The compute flight to Malaysia will continue, in much larger size" [p:2118007605692150095] | forecast | Malaysian datacenter investment |
-| 2026-11-04 | $APP and $RELY at a 35% combined weight going into earnings [p:2118070900860076241]; reported +7% on the election [p:2118026405929955769] and +10% on $APP and $CCLD [p:2118360364153012240] | disclosed book and results | $APP, $RELY Q3 2026 reactions |
-| 2026-11-05 | On Jon Ossoff: "when he decides to make a run at the Democratic Presidential nomination, he will win" [p:2118194186734448670] | forecast | 2028 Democratic nomination |
-| 2026-11-08 | "tfw a single trade just put me ahead of the entire list" (hedge-fund YTD ranking), with its own caveat "R-squared still less than 0.1" [p:2119321163218506180] | performance claim | not independently checkable here |
-| 2026-11-10 | $HROW "is probably a 3x over the next 4 years from here" [p:2119955290154291353] | forecast | $HROW by 2030-11 |
-| 2026-11-12 | Nvidia faces a "huge retirement wave incoming that's going to be devastating for the future of the chip industry" [p:2120982877827731488] | forecast | Nvidia attrition |
-| 2026-11-18 | Nvidia's board must reappoint Huang or be removed; otherwise "1/10 of the employees will leave to join him" [p:2122954901097742666]. On 2026-11-23 the account declared itself vindicated [p:2124868031327424880] | forecast, claimed resolved by the account | Nvidia CEO status after 2026-11-23 |
-| 2026-11-19 | "I think the odds $ANT trades >$95/share within 10 minutes of opening are >95%" [p:2123301679869378752] | probabilistic forecast | $ANT first-day trading |
-| 2026-11-20 | Says it has been "sitting out the market for the last month" [p:2123644589282369940] | stated position | none stated |
-| 2026-11-25 | Best ideas: (1) stay in cash, (2) slowly accumulate $QURE, (3) a 64-hex-character string [p:2125440798909251770] | positions | Item 3 is undisclosed. Interpretation: it looks like a hash commitment to be revealed later |
-
-Unconditional claims of record outside markets:
-- **Profile bio.** "we will end human menial labor this decade" (`profile.json`, not a post).
-- **Astra on robots.** "When i told y'all Astra was deployable on robots today this is what I meant" (2026-10-16) [p:2110889666501284231].
+| 2023-07-14 | "now >50% in cash again" [p:1679931444750323712] | position | none stated |
+| 2023-07-18 | "BTC price volatility will increase as the price goes up, not decrease" [p:1681356875772878848] | forecast | BTC realized volatility |
+| 2023-08-02 | "my best idea right now is $NEXOY" [p:1686787974779084800] | position | $NEXOY from 2023-08-02 |
+| 2023-08-03 | $RELY: "is 47% year over year growth good??" [p:1687112633663774720]; later a buyer again (2024-10-12) [p:1845179197171319075] and (2025-06-26) [p:1938332883816743116] | position | $RELY |
+| 2023-08-24 | "i'm a buyer of $DIS at $70/share" [p:1694729808054571094] | conditional position | $DIS price |
+| 2023-08-30 | ">80%" of public BTC miners "will try to join the AI party" [p:1696676310503076133] | forecast | miner HPC pivots |
+| 2023-09-15 | "short $MGM" [p:1702742531723911195] | position | $MGM from 2023-09-15 |
+| 2023-12-04 | "the moral panic about AI hasn't even begun"; endorses another account's (AntonHand's) prediction of its form and political "solution", which "will unfortunately age incredibly well" [p:1731578512115720656] | endorsement of a forecast | AI regulation politics |
+| 2023-12-12 | "will be shocked if $BABA $BIDU $TCEHY $TME don't all outperform $SPY this year" [p:1734593893323415964] | forecast (ambiguous: posted with 19 days left in 2023, so "this year" may mean 2024) | returns vs $SPY |
+| 2023-12-15 | AI compute margins "negative" and GPU-backed loans in default "inside of three years" [p:1735684126181925351] | forecast (later reversed by the account) | by 2026-12 |
+| 2023-12-28 | A therapy "will not make it through phase 3" [p:1740423199836578092] | forecast | that trial's phase 3 |
+| 2023-12-29 | "national divorce" will be "a serious political issue again in my lifetime" [p:1740526088668012556] | forecast | none stated |
+| 2024-01-05 | China largecaps "now a 20% position" [p:1743229653106803197] | position | $TCEHY, $BIDU, $BABA from 2024-01-05 |
+| 2024-01-11 | Bitcoin ETFs "are bearish for" public miners; "GTFO" [p:1745459267162030092] | position | miner equities vs BTC |
+| 2024-01-19 | Revealed encoded call: "generational buying opportunity in BTCW.V" [p:1748224903395025324] | call reveal | BTCW.V |
+| 2024-01-25 | ">10% of my net worth is in $ENTG and $TSM" with semis "mispriced [...] in the near term" [p:1750334625006989798] | position | semis 2024 |
+| 2024-05-15 | AI extinction risk "inside of 20 years is not statistically significant" [p:1790846593899368625] | stance | to 2044 |
+| 2024-09-12 | "short $U, long $APP will continue to outperform" [p:1834251198536581287] | pair position | $APP vs $U |
+| 2024-10-03 | "the datacenter IPP trade has played out" ($VST, $CEG, $TLN) [p:1841863941762236917] | market call | IPPs vs market |
+| 2024-10-21 | "$APP a 15x from here $META a 5x from here" [p:1848365500075479457]; on 2024-12-06 "$APP a 40x from here $META a 6x" [p:1865079708196467014] | forecast | $APP, $META |
+| 2024-10-22 | Weights: undisclosed 55.4%, $APP 9.1%, $CPNG 8.3%, $TSM 7.4%, $GRUSF 6.1% [...] [p:1848753001634128192] | disclosed book | prices from 2024-10-22 |
+| 2024-11-13 | "LLMs are not and will never be intelligent" [p:1856592909123899656] | stance (still held in 2025, see Theses) | none stated |
+| 2025-01-01 | Synthetic data reversal: "i was wrong. synthetic data will advance the frontier in video models" [p:1874462724362780968] | revised view | video-model SOTA |
+| 2025-02-25 | "higher for longer trade will get wrecked this year" [p:1894218196476895297] | forecast | 2025 bond returns |
+| 2025-02-26 | Bought back its entire $APP position under $300 "while i was sitting in 50% cash" [p:1894763674654376113] | trade | $APP |
+| 2025-03-06 | "$APP revenue exceeds YouTube's revenue in 2028" [p:1897696825102233712] | forecast | 2028 revenues |
+| 2025-04-02 | Cash 35%, $CPH.TO 10.6%, $CPNG 6.5% [...]; net worth going into the startup [p:1907225874266726690] [p:1907225872282915216] | disclosed book | none stated |
+| 2025-04-11 | "next year we are going to drop something that makes worldwide trademark law unenforceable overnight" [p:1910833115238445306] | company forecast | a 2026 release |
+| 2025-05-17 | "owning US public equities right now seems like an unforced error" [p:1923807845742674069] | stance | US equities after 2025-05-17 |
+| 2025-08-22 | "the Katastrophenhausse [...] is the path of least political resistance which makes it the most likely political outcome" [p:1958906823161127202] | macro forecast | none stated |
+| 2025-08-29 | "+33% YTD and thinking it's time to go risk off" [p:1961474654964441395] | position | none stated |
+| 2025-09-10 | "Hynix and Micron are less than two years away from no longer being seen as companies with cyclical earnings" [p:1965802140703850705] | forecast | by 2027-09 |
+| 2025-10-14 | "take your neo cloud exposure down to at least 0" [p:1978115478527586350]; "the factor top to the day" (2025-10-22) [p:1981018647050301799] | position | neocloud equities |
+| 2025-11-20 | "$2 instead of $200 within the next 9 months" for robot data capture [p:1991522369668866309] | company forecast | by 2026-08 |
+| 2025-12-03 | "consensus for $NVDA 9-12 months out is materially offsides again" [p:1996093470424052011] | forecast | $NVDA estimates in 2026 |
+| 2025-12-20 | Asks whether "all knowledge work in the professions just get wrecked within the next 18 months" [p:2002497594329870775] | question, not a forecast | by 2027-06 |
+| 2026-01-21 | $ADBE from 2% to 5% [p:2014044628828184608], then "now an 8% position" (2026-02-03) [p:2018760073569599774] | position | $ADBE |
+| 2026-02-20 | $RELY ">120% upside [...] with an exit multiple of 8x EV/EBITDA in 2028" [p:2024773945195651301] | forecast | $RELY by 2028 |
+| 2026-02-25 | "SK Hynix will earn it's entire marketcap in FCF in the next 2 years" [p:2026598835355791411] | forecast | Hynix FCF to 2028-02 |
+| 2026-02-26 | Compute prices "up >50% a year for the next 5", layoffs "8-10% every year" [p:2027150440555856281] | forecast | to 2031 |
+| 2026-03-14 | "Within 4 years Meta will employ 50% fewer people" [p:2032639447469318355] | forecast | Meta headcount 2030 |
+| 2026-03-31 | "Elliptical curve cryptography will probably be cracked by 2030." [p:2038851494964015166] | forecast | by 2030 |
+| 2026-04-25 | "effectively zero memory capacity available for smartphones by early 2028" [p:2048092800160587811] | forecast | early 2028 |
+| 2026-05-06 | "realized all gains in neocloud and memory today" [p:2052078363637158196]; on 2026-07-28, sold memory for Nintendo, then "buying memory again" [p:2082110993606611098] | trades | none stated |
+| 2026-07-10 | "I'm projecting they will pass $85B in August" (a revenue run rate, quoting jukan05) [p:2075421769247379571] | forecast | August 2026 run rate |
+| 2026-08-04 | $SPCX "will bring on 3.5GW in the next 18 months" (bottom of range) [p:2084789281206464704]; on 2026-08-08, offers "$50k at 3:1" that $SPCX will not have "10GW online nor have $500B in ARR by January 1, 2028" [p:2085900328139149366] | forecast and wager | $SPCX capacity, 2028-01-01 |
+| 2026-09-02 | "100% growth in datacenters in 2027 and again in 2028" [p:2095277737212817915] | forecast | 2027, 2028 |
+| 2026-11-01 | "i'm bearish market beta" [p:2116736100937224192] | position | index from 2026-11-01 |
+| 2026-11-04 | $APP and $RELY at a 35% combined weight [p:2118070900860076241] | disclosed book | Q3 2026 reactions |
+| 2026-11-05 | Ossoff "will win" a Democratic presidential nomination run [p:2118194186734448670] | forecast | 2028 nomination |
+| 2026-11-18 | Nvidia's board "has two choices": reappoint Huang, or wait to be removed; "Either the man will rejoin or he will start a new company and 1/10 of the employees will leave to join him" [p:2122954901097742666]; the account claimed vindication on 2026-11-23 [p:2124868031327424880] | two-outcome forecast, claimed resolved by the account | Nvidia CEO status |
+| 2026-11-19 | "the odds $ANT trades >$95/share within 10 minutes of opening are >95%" [p:2123301679869378752] | probabilistic forecast | $ANT first day |
+| 2026-11-25 | Cash, slowly $QURE, plus a 64-hex-character string [p:2125440798909251770] | positions | Interpretation: given the 2024-01-19 encoded-call reveal [p:1748224903395025324], the string is likely a commitment to be revealed later |
 
 ## Network
 
-- **Who the account quotes.** It quoted 326 distinct accounts. The most frequent quoted author is itself, with 21 self-quotes (`stats.top_quoted_authors`). Each of the next 24 authors is quoted twice; no one else more than once:
-  - AI labs and model accounts: AnthropicAI, claudeai;
-  - investors and operators: saranormous, BrendanFoody, wallstengine;
-  - research builders: PINTO03091, spicey_lemonade, 0xdoug, _chenglou, iScienceLuvr, himanshustwts, GPTJustin;
-  - compute-market organisers: hscompute;
-  - the wider network: NathanpmYoung, chrislakin, goblinodds, evanjconrad;
-  - friends and lifestyle accounts: adele_bloch, clemissima, isabelunraveled, maebichka, moonandmouth, sporadica, itgirlbackup.
-- **Self-quotes.** Used to update or extend earlier calls: the Nvidia board call [p:2124868031327424880], bearish beta [p:2118526296431137146] [p:2122735747241558312], $TAN [p:2117998945876213903], $APP/$RELY [p:2118091716100276619], and the 2023 "the data bottleneck is real" [p:2112067966145864120]. One self-quote is used to hedge: on its own yields call, "you all take me too seriously, this tweet should be full of comments flaming me lmao" [p:2103319667163234417].
-- **Mentions.** @citrini appears most often, twice:
-  - "Huge congrats to both @citrini and @dylan522p !!" [p:2098520130099769439];
-  - "everyone mocking @citrini yesterday owes the man an apology" [p:2118371043899494625].
-- **Disclosed ties:**
-  - Precigenetics: "If you believe this (I do) you should give all your money to @Precigenetics (I have)" [p:2115829606293053917]; "Parm is my hero" [p:2105052088212594979]; "Preci is the common crawl of biology" [p:2120306667208446248].
-  - A podcast with marketplunger1 [p:2098519288089084346].
-  - A political-compass collaboration with goblinodds [p:2104958838332100944].
-  - Rune_Energy named as the only small cloud that "cares about uptime" [p:2106138258514309602].
-  - PurpleDrink_LLC named as "literally the only other person on my feed who has been sitting out the market for the last month" [p:2123644589282369940].
-- **How others refer to the account:**
-  - NathanpmYoung lists it among "difficult and disagreeable" sources of signal; the account answers "Couldn't ask for a better hater" [p:2124957104633217317];
-  - markov_maestro refers to an "Astrid Wilde apology form" after selling semis [p:2121320982778724718];
-  - cn4zc challenges the account's model [p:2123234423038718249].
-- **Antagonists:**
-  - akrolsmir, Manifest/Mox [p:2106399215480181182] [p:2106399218592321756];
-  - AI-pause politics [p:2118366042447921438];
-  - Dario Amodei, via a quoted post about his Y2K worries [p:2114042582171004935].
-- **Reposts and replies to others** are not in the dataset (see Coverage), so this section understates who the account amplifies and talks to.
+- **Quoted accounts.** Over all posts, by `stats.top_quoted_authors`, a ranking that includes skipped posts: astridwilde 201 (self-quotes), parmita 11, PINTO03091 10, AnthropicAI 9, Sino_Market 9, yacineMTB 8, jukan05 7, Aella_Girl 6. Kept posts quote 541 distinct accounts, counted by command.
+- **Ties the account itself discloses:**
+  - Precigenetics: "you should give all your money to @Precigenetics (I have)" [p:2115829606293053917]; "KikiTora will unlock [...] and @precigenetics will unlock a new universe of cellular discovery" [p:1986602082410057752];
+  - Threads, where it moved its financial posts in 2023–2024 [p:1812704253263426009], with a stock-picking contest there [p:1840092407087673779];
+  - PurpleDrink_LLC as the only other person on its feed sitting out the market [p:2123644589282369940].
+- **Self-quotes.** 124 kept posts quote the account itself (by command). Interpretation: it often uses them to keep score on earlier calls, for example APP [p:1930257653827285515], the data bottleneck [p:2112067966145864120], beta [p:2118526296431137146], Nvidia [p:2124868031327424880].
+- **Antagonists:** effective altruists and "the cult of xrisk" [p:1729549028956762576] [p:2065717433084887418]; AI-pause politics [p:2118366042447921438]; Mox and Manifund events (akrolsmir runs Manifest) [p:2106399215480181182].
+- **Not visible:** reposts and replies to others (see Coverage).
 
 ## Sources and links
 
-- **The account's own outbound links are few.** Five in the window, by command over `posts.jsonl`:
-  - arxiv.org/abs/2610.02140 [p:2106232488700096684], posted as a reply to its own recommendation of two post-training papers [p:2106232232004419775];
-  - redact.dev [p:2115235119292469400];
-  - three YouTube links, two music and one clip [p:2094621021718643001] [p:2122108846810505404] [p:2118532201486991557].
-- **Links inside quoted posts.** 27 domains. The most common are arxiv.org (3), github.com (3) and alignment.anthropic.com (2); the rest are once each. Combined with own links, `stats.top_domains` puts arxiv.org (4), github.com (3) and youtu.be (3) on top.
-- **In-text x.com links to quoted posts.** The account sometimes pastes the URL of the post it quotes, and 10 of those quoted posts were unavailable to the session, for example [p:2108315420986048696] [p:2116690570517283203] [p:2121074872067698719].
-- **Interpretation.** The account's sourcing is almost entirely other X posts: 377 of 508 rows are quotes, and research papers arrive mostly through others' announcement threads.
+- **Own data and tracking.** The account tracked its picks publicly on GitHub (`starfaerie/My-Bets`) in 2023 [p:1686942315468955648] [p:1689530373771075584], and posted portfolio check-ins with disclosed weights [p:1848753001634128192] [p:1907225874266726690].
+- **Company sites** it lists: AstridWilde.com, KikiTora.com, LearnFromHumans.com [p:2010234935513325949].
+- **Domains.** `stats.top_domains`, which includes links inside quoted posts, gives the domain ranking. Interpretation: research reaches the account mostly through quoted announcement threads.
+- **Interpretation.** Sourcing is overwhelmingly other X posts: 790 of the 1,232 kept posts quote another post (by command).
 
 ## Signal posts
 
-**By reach.** Every own post in the top 5 of `stats.top_by_views` or `stats.top_by_likes`, in order of best rank. The pinned 2025-05-25 post (views #6) is covered in Identity.
+**By reach.** Ranks from `stats.top_by_views` and `stats.top_by_likes` over all posts; kept posts in the top 5 of either list. Kept posts lower in the top 10: likes #7 [p:1973267373533909452], likes #8 [p:1966473147240390705], views #10 [p:2019907895102669006] and likes #10 [p:1942934510989160562]. Triage skips in the top 10, not cited here:
+- views #1 (1964089010764062997, 2,628,886 views);
+- views #6 (2071703649802473838);
+- likes #6 and #9 (2106224865577689558, 2072393230566764563).
 
 | Post | Date | Rank (views / likes) | Why it matters |
 |---|---|---|---|
-| [p:2112970807270117876] | 2026-10-21 | #1 (2,059,266) / #1 (18,849) | The "1/3 of all websites compromised" security claim |
-| [p:2098425809967231108] | 2026-09-11 | #2 (1,393,487) / #3 (11,307) | On communication skill, quoting a Mamdani clip |
-| [p:2095281535234760773] | 2026-09-02 | #3 (1,229,100) / #2 (13,389) | Advice to freeze credit after a KYC leak |
-| [p:2106224865577689558] | 2026-10-03 | #11 (65,115) / #4 (5,921) | "Adding this to my mantra lexicon" on "nibble and your appetite shall grow" |
-| [p:2097511500189782153] | 2026-09-09 | #4 (299,315) / #5 (2,584) | "literally not possible to vibe code a week ago" |
-| [p:2117075323670155708] | 2026-11-02 | #5 (150,202) / outside top 10 | On people failing to spot an AI image |
+| [p:2112970807270117876] | 2026-10-21 | #2 (2,059,270) / #1 (18,846) | The "1/3 of all websites on the internet are compromised" security claim |
+| [p:2098425809967231108] | 2026-09-11 | #3 (1,393,491) / #3 (11,307) | On communication skill, quoting a Mamdani clip |
+| [p:2095281535234760773] | 2026-09-02 | #4 (1,229,103) / #2 (13,389) | Advice to freeze credit after a KYC leak |
+| [p:2001458326232854702] | 2025-12-18 | #5 (1,039,629) / #4 (9,619) | Self-disclosure: "i used to teach runway models this" |
+| [p:1898734395759947867] | 2025-03-09 | #7 (513,503) / #5 (8,993) | The "granny shot" as proof that games are status games |
 
-Further down the top 10: [p:2115921892930711624] (likes #9, a prompt "incantation"), [p:2124876859322388482] (likes #10, "YOU ARE NOT TALKING TO SOMEONE WHO WOKE UP A LOSER") and [p:2095281906229326226] (views #10, a reply to the credit-freeze post: "just assume you've been pwned, because you have been", which fits Theme 7).
-
-**By thesis.** Posts that carry the account's arguments and positions.
+**By thesis.**
 
 | Post | Date | Why it matters |
 |---|---|---|
-| [p:2095277737212817915] | 2026-09-02 | The datacenter-capex thesis and the 2027/2028 growth forecast |
-| [p:2103282061184282878] | 2026-09-25 | The yields thesis tied to AI capex payback |
-| [p:2116736100937224192] | 2026-11-01 | "i'm bearish market beta", the turn in market stance, later self-credited |
-| [p:2117801715680543132] | 2026-11-04 | Selling Texas datacenter exposure after the election |
-| [p:2122954901097742666] | 2026-11-18 | The Nvidia board ultimatum, followed by a claimed vindication [p:2124868031327424880] |
-| [p:2123301679869378752] | 2026-11-19 | A quantified $ANT IPO forecast |
-| [p:2125440798909251770] | 2026-11-25 | Current best ideas, including the hash-like third item |
-| [p:2121747575409889742] | 2026-11-14 | Inheritance's human mesh recovery result, the work behind the data thesis |
-| [p:2093471519863411016] | 2026-08-28 | The data-engineering thesis in one line |
+| [p:1848365500075479457] | 2024-10-21 | Re-quotes the 2022-12-09 ad-platforms-as-AI-winners thesis behind the $APP trade, with "$APP a 15x from here" |
+| [p:1735684126181925351] | 2023-12-15 | The AI-compute bear call, later reversed: the checkable baseline for the compute arc |
+| [p:1748224903395025324] | 2024-01-19 | The encoded-call reveal, which explains the 2026 hash |
+| [p:1856592909123899656] | 2024-11-13 | "LLMs are not and will never be intelligent", a stance it keeps through 2025 |
+| [p:1874462724362780968] | 2025-01-01 | The synthetic-data reversal |
+| [p:1905282348826100004] | 2025-03-27 | Leaves employment to found the company |
+| [p:1978115478527586350] | 2025-10-14 | Neocloud exposure "down to at least 0" |
+| [p:2027150440555856281] | 2026-02-26 | The 5-year compute-price and layoffs base case |
+| [p:2049734519830536669] | 2026-04-30 | "inference will eat the world", in phases |
+| [p:2034366541790425478] | 2026-03-18 | Memory as secular through 2030 |
+| [p:2085900328139149366] | 2026-08-08 | The $SPCX wager, quantified and dated |
+| [p:2125440798909251770] | 2026-11-25 | Current best ideas plus the hash |
 
 ## Open questions
 
-- **Book versus stance.** On 2026-11-04 the account holds $APP and $RELY at a 35% combined weight [p:2118070900860076241]. By 2026-11-20 it says it has been "sitting out the market for the last month" [p:2123644589282369940], and on 2026-11-25 "continue to sit out the market in cash" [p:2125440798909251770]. It is open whether those positions were sold after earnings, or whether "the market" means index beta only.
-- **The hash.** What does the 64-character string in [p:2125440798909251770] commit to, and has it been revealed? Any reveal would fall after this window.
-- **Inheritance's business model.** Three posts point toward selling data: "if you find and resell the data from 20 companies a month" [p:2118562850440691803], "the largest image pretraining corpus that isn't on the internet" [p:2123562258261565794] and "VCs when you run a hardware AI data company" [p:2109728336432034136]. Interpretation, with no captured post as evidence: the company could also train its own models. The captured posts do not settle which.
-- **Sarcasm or forecast?** "*Fable 5.2 releases 6 weeks later and absolutely crushes*", posted on 2026-11-10 quoting a 2026-09-27 cmonkey post ("PCB routing is going to be the last engineering job") [p:2120040100889612295], could be either.
-- **Amplification.** Reposts are absent from the posts surface signed-in. Capturing a surface that includes reposts, or the `replies` surface, would be needed to map amplification and conversation.
+- **The 2023-12-15 compute call.** It resolves around 2026-12 ("inside of three years" [p:1735684126181925351]). The account has since reversed [p:2006512377383240173]; will it address the original call?
+- **The 2026-11-25 hash** [p:2125440798909251770]: what does it commit to? The 2024-01-19 reveal [p:1748224903395025324] suggests a reveal will follow.
+- **KikiTora, LearnFromHumans, Inheritance.** KikiTora and LearnFromHumans appear together on 2026-01-11 [p:2010234935513325949]; LearnFromHumans is the dataset release on 2026-01-12 [p:2010775288435917290]; the first kept Inheritance mention is 2026-04-15 [p:2044432449581789483]. Rename, product names or new entity?
+- **Book versus stance in November 2026.** A 35% weight in $APP and $RELY [p:2118070900860076241] against "sit out the market in cash" [p:2125440798909251770].
+- **Replies to others** are not captured; a replies surface would be needed. History before 2023-07-14 is out of scope, so the account's 2020–2022 claims ("my 2020 BTC mining thesis" [p:1740988663826440483], recession "call from two years ago" [p:1895507995192332508]) are not checked against its posts from those years.
