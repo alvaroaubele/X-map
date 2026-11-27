@@ -1,5 +1,5 @@
-{"id":"2126204678702792894","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2126069848719650891","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2126204678702792894","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2126069848719650891","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2126037238752706979","keep":true,"reason":"judged keep: self-disclosure"}
 {"id":"2126004771740176843","keep":false,"reason":"judged skip: reaction"}
 {"id":"2125601506070278306","keep":true,"reason":"judged keep: market position"}
@@ -21,7 +21,7 @@
 {"id":"2124873941818986580","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2124873051569549693","keep":false,"reason":"judged skip: joke"}
 {"id":"2124868031327424880","keep":true,"reason":"auto: substantive length"}
-{"id":"2124736263664328966","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2124736263664328966","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2124595813758484585","keep":true,"reason":"auto: substantive length"}
 {"id":"2124587029162062235","keep":false,"reason":"judged skip: engagement question"}
 {"id":"2124585825233244395","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -34,9 +34,9 @@
 {"id":"2124217372253024336","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2124166618666455150","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2124044023262523712","keep":false,"reason":"judged skip: reaction"}
-{"id":"2123984490825646355","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2123984490825646355","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2123946094631772619","keep":true,"reason":"auto: substantive length"}
-{"id":"2123876308488999213","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2123876308488999213","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2123872091816751518","keep":true,"reason":"auto: substantive length"}
 {"id":"2123867120190824483","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2123838930063896687","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -46,11 +46,11 @@
 {"id":"2123562258261565794","keep":true,"reason":"auto: substantive length"}
 {"id":"2123301679869378752","keep":true,"reason":"auto: ticker"}
 {"id":"2123234423038718249","keep":true,"reason":"auto: substantive length"}
-{"id":"2123227939613626610","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2123227939613626610","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2123196145442980349","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2123192747138138138","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2123135648412651708","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2123127734469906661","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2123127734469906661","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2123094706645303299","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2122955281831452824","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
 {"id":"2122954901097742666","keep":true,"reason":"auto: substantive length"}
@@ -68,7 +68,7 @@
 {"id":"2122423486962700337","keep":false,"reason":"judged skip: engagement question"}
 {"id":"2122366513651065180","keep":false,"reason":"judged skip: reaction"}
 {"id":"2122154019196211223","keep":true,"reason":"judged keep: market stance"}
-{"id":"2122148876748800406","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2122148876748800406","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2122112524804079979","keep":false,"reason":"judged skip: joke"}
 {"id":"2122112522824368588","keep":true,"reason":"auto: substantive length"}
 {"id":"2122108846810505404","keep":false,"reason":"judged skip: link with reaction only"}
@@ -82,20 +82,20 @@
 {"id":"2121991994344100195","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2121990022832460011","keep":true,"reason":"judged keep: model result vs SOTA"}
 {"id":"2121980102221410634","keep":true,"reason":"judged keep: model result vs ExMR"}
-{"id":"2121974472135889159","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2121974472135889159","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2121957871353311595","keep":true,"reason":"judged keep: model result vs SOTA"}
 {"id":"2121955408290181580","keep":true,"reason":"auto: substantive length"}
 {"id":"2121747575409889742","keep":true,"reason":"auto: substantive length"}
-{"id":"2121720338316943642","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2121459562985451989","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2121720338316943642","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2121459562985451989","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2121439456213528949","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2121345680992309712","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2121345680992309712","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
 {"id":"2121320982778724718","keep":true,"reason":"judged keep: market advice"}
-{"id":"2121280785546350737","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2121280785546350737","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2121139627323277745","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2121119080086446136","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2121119080086446136","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2121100560640491939","keep":true,"reason":"judged keep: Nvidia position"}
-{"id":"2121091788295618672","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2121091788295618672","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2121076219001340017","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2121074872067698719","keep":false,"reason":"judged skip: request"}
 {"id":"2121070473123598587","keep":true,"reason":"auto: substantive length"}
@@ -103,13 +103,13 @@
 {"id":"2120982877827731488","keep":true,"reason":"auto: ticker"}
 {"id":"2120665228300194136","keep":false,"reason":"judged skip: joke"}
 {"id":"2120640331087765516","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2120570191977529747","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2120570191977529747","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2120516857019130318","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2120306667208446248","keep":true,"reason":"auto: substantive length"}
 {"id":"2120284158270509163","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2120248500931977478","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2120040100889612295","keep":true,"reason":"judged keep: forecast (possibly sarcastic)"}
-{"id":"2120018487343255567","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2120018487343255567","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2120000737157775858","keep":true,"reason":"auto: substantive length"}
 {"id":"2119961404451287239","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2119958368181948574","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -119,7 +119,7 @@
 {"id":"2119626067975766420","keep":true,"reason":"auto: substantive length"}
 {"id":"2119611548440383527","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2119554539586293775","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2119482719856201990","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2119482719856201990","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2119479971752423451","keep":false,"reason":"judged skip: reaction"}
 {"id":"2119453606860792269","keep":true,"reason":"auto: substantive length"}
 {"id":"2119321163218506180","keep":true,"reason":"auto: substantive length"}
@@ -130,7 +130,7 @@
 {"id":"2119143659266584818","keep":true,"reason":"auto: substantive length"}
 {"id":"2119129897994240186","keep":true,"reason":"auto: substantive length"}
 {"id":"2118802420096770325","keep":true,"reason":"auto: substantive length"}
-{"id":"2118794854167904564","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2118794854167904564","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2118566561296568550","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2118565461361373373","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2118562850440691803","keep":true,"reason":"auto: substantive length"}
@@ -145,7 +145,7 @@
 {"id":"2118207047204516217","keep":true,"reason":"auto: substantive length"}
 {"id":"2118195794130202721","keep":false,"reason":"judged skip: joke"}
 {"id":"2118194186734448670","keep":true,"reason":"auto: substantive length"}
-{"id":"2118189269659549701","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2118189269659549701","keep":false,"reason":"judged skip: quoted post unavailable; nothing to endorse"}
 {"id":"2118122041102815370","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2118097923703812567","keep":true,"reason":"judged keep: company claim (Sezzle)"}
 {"id":"2118091716100276619","keep":true,"reason":"auto: ticker"}
@@ -153,22 +153,22 @@
 {"id":"2118026405929955769","keep":true,"reason":"auto: substantive length"}
 {"id":"2118007605692150095","keep":true,"reason":"judged keep: forecast"}
 {"id":"2117998945876213903","keep":true,"reason":"judged keep: trade outcome"}
-{"id":"2117891075402871172","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2117891075402871172","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2117885734254469136","keep":true,"reason":"auto: substantive length"}
 {"id":"2117881085317312586","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2117880672430014756","keep":false,"reason":"judged skip: joke"}
 {"id":"2117878324659958167","keep":true,"reason":"judged keep: position (Harvey secondaries)"}
-{"id":"2117877125143519742","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2117877125143519742","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2117871550615695481","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2117862061824700570","keep":true,"reason":"auto: substantive length"}
-{"id":"2117851365288624311","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2117844083330912762","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2117851365288624311","keep":true,"reason":"judged keep: endorsement:claim (its own datacenter-ballot forecast unfolding)"}
+{"id":"2117844083330912762","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2117813917959471399","keep":true,"reason":"auto: substantive length"}
 {"id":"2117811989988987064","keep":true,"reason":"judged keep: position"}
 {"id":"2117808500361593150","keep":true,"reason":"auto: substantive length"}
 {"id":"2117801715680543132","keep":true,"reason":"auto: substantive length"}
 {"id":"2117713600970396109","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2117696327698309505","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2117696327698309505","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2117685033171570784","keep":true,"reason":"auto: substantive length"}
 {"id":"2117655825573670946","keep":true,"reason":"auto: substantive length"}
 {"id":"2117635166785138733","keep":true,"reason":"auto: ticker"}
@@ -176,17 +176,17 @@
 {"id":"2117370896268898605","keep":true,"reason":"auto: ticker"}
 {"id":"2117365919022481451","keep":true,"reason":"auto: substantive length"}
 {"id":"2117350062854672503","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2117317470436630930","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2117288891489382803","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2117317470436630930","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"2117288891489382803","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2117243374013198504","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2117183057874817065","keep":true,"reason":"auto: substantive length"}
-{"id":"2117116294160097497","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2117116294160097497","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2117084656650916124","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2117075323670155708","keep":true,"reason":"auto: substantive length"}
 {"id":"2116994611193503811","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2116736100937224192","keep":true,"reason":"auto: substantive length"}
 {"id":"2116728033436692524","keep":false,"reason":"judged skip: reaction"}
-{"id":"2116690570517283203","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2116690570517283203","keep":false,"reason":"judged skip: quoted post unavailable; nothing to endorse"}
 {"id":"2116600641321902296","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2116177950244835479","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2116159707908088089","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -196,14 +196,14 @@
 {"id":"2115829606293053917","keep":true,"reason":"auto: substantive length"}
 {"id":"2115816263993921593","keep":false,"reason":"judged skip: reaction"}
 {"id":"2115550808834191383","keep":true,"reason":"judged keep: research stance"}
-{"id":"2115494992445841512","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2115489349471207706","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2115494992445841512","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2115489349471207706","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2115270815466070437","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2115235119292469400","keep":true,"reason":"auto: link with commentary"}
+{"id":"2115235119292469400","keep":true,"reason":"judged keep: own advice with a link"}
 {"id":"2114801992845701438","keep":true,"reason":"auto: substantive length"}
 {"id":"2114726391656923190","keep":true,"reason":"auto: substantive length"}
 {"id":"2114576291018178918","keep":true,"reason":"auto: substantive length"}
-{"id":"2114570336503234619","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2114570336503234619","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
 {"id":"2114533316947067258","keep":true,"reason":"auto: substantive length"}
 {"id":"2114526110285521008","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2114383076239503412","keep":true,"reason":"auto: ticker"}
@@ -214,22 +214,22 @@
 {"id":"2114075391594045729","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2114042582171004935","keep":true,"reason":"judged keep: position"}
 {"id":"2114029165431370047","keep":true,"reason":"auto: substantive length"}
-{"id":"2113841250218438955","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2113841250218438955","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"2113834979449069589","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2113833191433990186","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2113771312443482188","keep":false,"reason":"judged skip: joke"}
 {"id":"2113767504053145694","keep":false,"reason":"judged skip: congratulation"}
 {"id":"2113746825400422577","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2113465988259999801","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2113439841010782388","keep":true,"reason":"judged keep: endorsed forecast"}
-{"id":"2113306552476291149","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2113439841010782388","keep":true,"reason":"judged keep: endorsement:forecast"}
+{"id":"2113306552476291149","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2113301585828933696","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2113136395103662210","keep":true,"reason":"judged keep: claim"}
 {"id":"2113113152372330520","keep":true,"reason":"judged keep: claim"}
 {"id":"2113110275511697848","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2113110273783726234","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2113057674497802716","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2113003328124981323","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2113003328124981323","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2112970807270117876","keep":true,"reason":"auto: substantive length"}
 {"id":"2112964426848669795","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2112700751424454862","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -239,7 +239,7 @@
 {"id":"2112409242661785662","keep":true,"reason":"judged keep: research stance"}
 {"id":"2112379465787658381","keep":true,"reason":"auto: substantive length"}
 {"id":"2112283442138464325","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2112275094513058106","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2112275094513058106","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2112255751951655387","keep":true,"reason":"auto: substantive length"}
 {"id":"2112194991611101354","keep":true,"reason":"auto: substantive length"}
 {"id":"2112069299892564358","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -249,12 +249,12 @@
 {"id":"2111976384365293622","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2111975473433731422","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2111970457457250815","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2111967470634619122","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2111967470634619122","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2111952978768953696","keep":false,"reason":"judged skip: reaction"}
 {"id":"2111934748117602675","keep":true,"reason":"judged keep: thesis"}
 {"id":"2111889743567094176","keep":false,"reason":"judged skip: reaction"}
 {"id":"2111889099686842529","keep":true,"reason":"auto: substantive length"}
-{"id":"2111881302534484415","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2111881302534484415","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2111854506652938688","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2111679527055442302","keep":true,"reason":"judged keep: thesis"}
 {"id":"2111659252322320689","keep":true,"reason":"auto: substantive length"}
@@ -263,13 +263,13 @@
 {"id":"2111310671883464859","keep":true,"reason":"auto: substantive length"}
 {"id":"2111302682527117782","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2111208722383188460","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2111106813244694752","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2111106813244694752","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2111106185055400416","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2110889666501284231","keep":true,"reason":"auto: substantive length"}
 {"id":"2110841344507994146","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2110774379961516036","keep":true,"reason":"auto: substantive length"}
-{"id":"2110617916760834269","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2110506304704016649","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2110617916760834269","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2110506304704016649","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2110248668343460207","keep":true,"reason":"auto: substantive length"}
 {"id":"2110203914457166324","keep":false,"reason":"judged skip: exhortation"}
 {"id":"2110199566129922508","keep":true,"reason":"auto: substantive length"}
@@ -277,7 +277,7 @@
 {"id":"2110179615847395411","keep":true,"reason":"auto: ticker"}
 {"id":"2110170210821177686","keep":true,"reason":"auto: substantive length"}
 {"id":"2110102588398227779","keep":true,"reason":"judged keep: research claim"}
-{"id":"2110089760601723159","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2110089760601723159","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2110084950703948266","keep":true,"reason":"judged keep: claim"}
 {"id":"2110074045438079347","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2110013354697961676","keep":false,"reason":"judged skip: reaction"}
@@ -286,32 +286,32 @@
 {"id":"2109728336432034136","keep":true,"reason":"judged keep: self-disclosure (company type)"}
 {"id":"2109704444153897447","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2109531987476389949","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2109459595588731386","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2109426473170088011","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2109389950206755098","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2109459595588731386","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2109426473170088011","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2109389950206755098","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2109106561155276923","keep":true,"reason":"auto: substantive length"}
 {"id":"2108965939576447308","keep":true,"reason":"auto: substantive length"}
 {"id":"2108923827623432473","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2108674128647786692","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2108625307611914613","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2108584474179244506","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2108625307611914613","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"2108584474179244506","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2108315420986048696","keep":true,"reason":"judged keep: thesis"}
 {"id":"2108300847478378542","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2108260558806077525","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2108227986256511065","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2108216345158676482","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2108214931082678328","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2108214931082678328","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2108212861663338817","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2108200587397607473","keep":true,"reason":"auto: substantive length"}
 {"id":"2108035434974687275","keep":true,"reason":"auto: substantive length"}
-{"id":"2107966251624698184","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2107943864128639201","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2107966251624698184","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2107943864128639201","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2107907490201604338","keep":false,"reason":"judged skip: reaction"}
 {"id":"2107674385654088132","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2107667119198613992","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2107667119198613992","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2106898708214534285","keep":true,"reason":"auto: substantive length"}
 {"id":"2106875564661575884","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2106769111162478659","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2106769111162478659","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2106542346511032416","keep":false,"reason":"judged skip: reaction"}
 {"id":"2106399218592321756","keep":true,"reason":"auto: substantive length"}
 {"id":"2106399215480181182","keep":true,"reason":"auto: substantive length"}
@@ -326,9 +326,9 @@
 {"id":"2106138258514309602","keep":true,"reason":"judged keep: claim (cloud uptime)"}
 {"id":"2106126250712715465","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2105354139089961000","keep":true,"reason":"judged keep: skeptical claim on ARR"}
-{"id":"2105331952052314495","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2105331952052314495","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2105052088212594979","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2105041803946901516","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2105041803946901516","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2104958838332100944","keep":true,"reason":"judged keep: self-disclosure (collaboration)"}
 {"id":"2104944597684392256","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2104912895826100555","keep":true,"reason":"auto: substantive length"}
@@ -351,9 +351,9 @@
 {"id":"2103858292887806150","keep":true,"reason":"auto: substantive length"}
 {"id":"2103858290828423182","keep":true,"reason":"auto: substantive length"}
 {"id":"2103666831449887072","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2103632844606046409","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2103632844606046409","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2103579446351724917","keep":true,"reason":"auto: substantive length"}
-{"id":"2103536774647836784","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2103536774647836784","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2103501623536337354","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2103497889779417404","keep":false,"reason":"judged skip: praise"}
 {"id":"2103488879676248094","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -363,9 +363,9 @@
 {"id":"2103319667163234417","keep":true,"reason":"auto: substantive length"}
 {"id":"2103282061184282878","keep":true,"reason":"auto: substantive length"}
 {"id":"2103106048915542138","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2103104786044252214","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2103104786044252214","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2103099323093262452","keep":true,"reason":"auto: ticker"}
-{"id":"2102947008793161783","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2102947008793161783","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2102900861273854210","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2102754160558985723","keep":false,"reason":"judged skip: filler"}
 {"id":"2102748752146509825","keep":false,"reason":"judged skip: joke"}
@@ -375,7 +375,7 @@
 {"id":"2102586986917761203","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2102585144083152951","keep":true,"reason":"judged keep: thesis"}
 {"id":"2102492640696766560","keep":true,"reason":"auto: substantive length"}
-{"id":"2102412527468494954","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2102412527468494954","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2102378539320316332","keep":true,"reason":"auto: ticker"}
 {"id":"2102203490730647889","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2102139194940219485","keep":true,"reason":"judged keep: compute demand disclosure"}
@@ -384,23 +384,23 @@
 {"id":"2102027525849321534","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2102020462171541930","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2101841728529702938","keep":true,"reason":"judged keep: research speculation"}
-{"id":"2101761255824368060","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2101761255824368060","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2101753881676198192","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2101730222919836054","keep":true,"reason":"judged keep: benchmark proposal"}
 {"id":"2101708893055299980","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2101682818178773054","keep":true,"reason":"auto: substantive length"}
 {"id":"2101664494837457248","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2101658960575041691","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2101658960575041691","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2101388739289186504","keep":false,"reason":"judged skip: caption"}
 {"id":"2101388094977237393","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2101341913013989396","keep":true,"reason":"auto: substantive length"}
-{"id":"2101328251691880578","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2101328251691880578","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2101327369432686800","keep":false,"reason":"judged skip: reaction"}
 {"id":"2101294074078662755","keep":false,"reason":"judged skip: exhortation"}
 {"id":"2101243456584548782","keep":false,"reason":"judged skip: reaction"}
 {"id":"2101237299602133306","keep":true,"reason":"judged keep: claim (data honeypots)"}
-{"id":"2101219937310171576","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2101215527691559327","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2101219937310171576","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2101215527691559327","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2101103423575957845","keep":false,"reason":"judged skip: joke"}
 {"id":"2101086316775850488","keep":true,"reason":"judged keep: claim"}
 {"id":"2101065278188892276","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -408,19 +408,19 @@
 {"id":"2100918616749167001","keep":false,"reason":"judged skip: reaction"}
 {"id":"2100917976497102870","keep":true,"reason":"auto: substantive length"}
 {"id":"2100734905223459054","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2100603910054432942","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2100603910054432942","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2100603625940586555","keep":false,"reason":"judged skip: anecdote"}
 {"id":"2100579218455167047","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2100205250980319728","keep":true,"reason":"judged keep: thesis"}
 {"id":"2100066927603245093","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2100064066085486679","keep":true,"reason":"auto: substantive length"}
 {"id":"2099962570471784577","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2099831543732596931","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2099831543732596931","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2099692534821761403","keep":true,"reason":"auto: substantive length"}
 {"id":"2099300553285071073","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2099300165857194198","keep":false,"reason":"judged skip: reaction"}
 {"id":"2099172216672002370","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2098970700497441097","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2098970700497441097","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2098817069118832891","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2098782348951146977","keep":false,"reason":"judged skip: praise"}
 {"id":"2098667803087892902","keep":true,"reason":"auto: substantive length"}
@@ -451,10 +451,10 @@
 {"id":"2097465187658022922","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2097454874221060579","keep":true,"reason":"auto: substantive length"}
 {"id":"2097383975924945373","keep":true,"reason":"auto: substantive length"}
-{"id":"2097381461523644461","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2097381461523644461","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2097350391398826402","keep":true,"reason":"auto: substantive length"}
 {"id":"2097338030965305572","keep":true,"reason":"judged keep: self-disclosure (handle)"}
-{"id":"2097336061592842489","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2097336061592842489","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2097194788613509266","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2097024085884879334","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2096298744937664783","keep":true,"reason":"judged keep: thesis"}
@@ -467,10 +467,10 @@
 {"id":"2095859749481066499","keep":true,"reason":"auto: substantive length"}
 {"id":"2095701944618881413","keep":true,"reason":"auto: substantive length"}
 {"id":"2095695818439504054","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2095673021805842649","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2095645075674141042","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2095673021805842649","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2095645075674141042","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
 {"id":"2095630364626866295","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2095587238772122063","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2095587238772122063","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2095453664265568391","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2095452120166318468","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2095294202003542488","keep":false,"reason":"auto: stock filler phrase"}
@@ -481,8 +481,8 @@
 {"id":"2094986353113244151","keep":true,"reason":"auto: substantive length"}
 {"id":"2094985827264934042","keep":true,"reason":"auto: substantive length"}
 {"id":"2094911045676707973","keep":false,"reason":"judged skip: joke"}
-{"id":"2094863281383190800","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2094860783666794512","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2094863281383190800","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2094860783666794512","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2094841091849925028","keep":true,"reason":"judged keep: thesis"}
 {"id":"2094840183640539360","keep":true,"reason":"auto: substantive length"}
 {"id":"2094829777257635998","keep":true,"reason":"judged keep: work disclosure"}
@@ -505,7 +505,7 @@
 {"id":"2093437704226873369","keep":false,"reason":"judged skip: exhortation"}
 {"id":"2093408627537461620","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2093124957656252788","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2093051607135228227","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2093051607135228227","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2092966854080045460","keep":false,"reason":"judged skip: aphorism"}
 {"id":"2092807410394255648","keep":false,"reason":"judged skip: reaction"}
 {"id":"2092782644258017639","keep":true,"reason":"auto: ticker"}
@@ -520,13 +520,13 @@
 {"id":"2091649861586456784","keep":true,"reason":"auto: substantive length"}
 {"id":"2091624795720786030","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2091431027428208959","keep":true,"reason":"auto: substantive length"}
-{"id":"2091286240221905359","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2091286240221905359","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2091180047478530056","keep":true,"reason":"judged keep: claim"}
 {"id":"2091014429030670683","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2090937756209881201","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2090772770934206781","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2090737917232656672","keep":true,"reason":"auto: substantive length"}
-{"id":"2090729978312761470","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2090729978312761470","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2090613951977447585","keep":true,"reason":"auto: substantive length"}
 {"id":"2090517758484369917","keep":true,"reason":"auto: substantive length"}
 {"id":"2090274559224320451","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -540,7 +540,7 @@
 {"id":"2089880838578360798","keep":false,"reason":"judged skip: praise"}
 {"id":"2089788983073202528","keep":false,"reason":"judged skip: referral"}
 {"id":"2089784615884173455","keep":false,"reason":"judged skip: joke"}
-{"id":"2089779896642126148","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2089779896642126148","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2089725679814541774","keep":true,"reason":"judged keep: market position (negative beta)"}
 {"id":"2089573827416400237","keep":true,"reason":"auto: substantive length"}
 {"id":"2089377920481378750","keep":true,"reason":"auto: substantive length"}
@@ -554,7 +554,7 @@
 {"id":"2088462277724840193","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2088406890896409007","keep":false,"reason":"judged skip: site complaint"}
 {"id":"2088325421691806113","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2088290436716827115","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2088290436716827115","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
 {"id":"2088144917826883690","keep":true,"reason":"auto: substantive length"}
 {"id":"2087980032102949322","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2087761992878891266","keep":false,"reason":"judged skip: engagement question"}
@@ -581,9 +581,9 @@
 {"id":"2085774528358289873","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2085752508799205526","keep":true,"reason":"auto: substantive length"}
 {"id":"2085599357823578535","keep":true,"reason":"auto: substantive length"}
-{"id":"2085568505878073374","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2085568505878073374","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2085416126633456028","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2085216935500001395","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2085216935500001395","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2085210393329467414","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2085106835464593835","keep":true,"reason":"auto: ticker"}
 {"id":"2085106834030158102","keep":true,"reason":"auto: substantive length"}
@@ -611,7 +611,7 @@
 {"id":"2083977586808635605","keep":true,"reason":"auto: substantive length"}
 {"id":"2083977584690483622","keep":true,"reason":"auto: substantive length"}
 {"id":"2083934579946365137","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2083802560100708498","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2083802560100708498","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"2083790293229588949","keep":true,"reason":"judged keep: claim"}
 {"id":"2083752714220298401","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2083670720962560479","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -649,20 +649,20 @@
 {"id":"2081911423106789852","keep":true,"reason":"auto: substantive length"}
 {"id":"2081846439945376069","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2081845289867218998","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2081705406863433927","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2081705406863433927","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2081695725541564531","keep":true,"reason":"judged keep: data thesis"}
-{"id":"2081652692334813320","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2081652692334813320","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2081478821883396236","keep":true,"reason":"judged keep: self-disclosure (companies incl. Inheritance)"}
 {"id":"2081288725057904896","keep":true,"reason":"auto: substantive length"}
 {"id":"2081226778765594888","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2081223366237987083","keep":true,"reason":"auto: substantive length"}
 {"id":"2081048439761347055","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2080819643426726294","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2080819643426726294","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2080592115843858702","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2080564579105735070","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2080564579105735070","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2080523868595486759","keep":true,"reason":"auto: ticker"}
 {"id":"2080507655240785985","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2080401450828751277","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2080401450828751277","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2080124853278130344","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2080117157233590637","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2080036287273373838","keep":true,"reason":"judged keep: number (Google Cloud growth)"}
@@ -680,7 +680,7 @@
 {"id":"2079407670986158415","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2079407669765681293","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2079103041975005613","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2079069601359712316","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2079069601359712316","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2078916062478012724","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2078761253640732924","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2078720620926562578","keep":true,"reason":"judged keep: memory thesis"}
@@ -689,16 +689,16 @@
 {"id":"2078642096966369323","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2078641057609469962","keep":true,"reason":"judged keep: market sentiment claim"}
 {"id":"2078328695274791365","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2078313414913658979","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2078313414913658979","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2077975775580708940","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2077975632546578861","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2077938670586462553","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2077938670586462553","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2077780381017964845","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2077623722719277158","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2077623722719277158","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2077606068528832813","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2077461012958343303","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2077459676875432410","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2077363832817930362","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2077363832817930362","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2077338865602592921","keep":false,"reason":"auto: bare reaction (<=2 words)"}
 {"id":"2077323932919837140","keep":true,"reason":"auto: substantive length"}
 {"id":"2077160090155761975","keep":true,"reason":"judged keep: capability claim"}
@@ -710,12 +710,12 @@
 {"id":"2076898755245449577","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2076767632112652720","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2076741785897111789","keep":true,"reason":"judged keep: research claim"}
-{"id":"2076710230965334259","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2076710230965334259","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2076521444411060302","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2076519376833093889","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2076442061663084570","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2076417088814756089","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2076218560230408235","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2076218560230408235","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2076204753957327199","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2076197377334239594","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2076038962330951981","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -732,10 +732,10 @@
 {"id":"2075355823279337490","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2075331802424909905","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2075328859361406998","keep":true,"reason":"judged keep: self-disclosure (hiring evals)"}
-{"id":"2075287444547948859","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2075272917458587838","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2075287444547948859","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2075272917458587838","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2075013862123053182","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2074997767219621969","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2074997767219621969","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2074968864539168894","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2074967566897041908","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2074726246886658447","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -751,9 +751,9 @@
 {"id":"2074369597139193946","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2074195234100249061","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2074160685517517090","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2073902071024427391","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2073902071024427391","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2073863986194559129","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2073483963260453173","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2073483963260453173","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"2073255718736851180","keep":true,"reason":"auto: substantive length"}
 {"id":"2073248548683166056","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2073218609862861163","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -792,7 +792,7 @@
 {"id":"2069846581688619123","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
 {"id":"2069842393474683379","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2069835510428963098","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2069619580503552336","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2069619580503552336","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2069493946070507934","keep":true,"reason":"judged keep: technical claim"}
 {"id":"2069152642451058799","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2068878698212950462","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -808,14 +808,14 @@
 {"id":"2067635972423266754","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2067483112037319038","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2067483107671093343","keep":true,"reason":"auto: substantive length"}
-{"id":"2067320596661498051","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2067320596661498051","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2067262108228849870","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2067108650649584015","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2067108030127493188","keep":true,"reason":"auto: substantive length"}
 {"id":"2066724817467064650","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2066415547554922568","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2066403670225539217","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2066351133023699273","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2066351133023699273","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2065871258777174028","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2065859746549416364","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2065718498379350261","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -848,7 +848,7 @@
 {"id":"2060085979172745621","keep":true,"reason":"auto: substantive length"}
 {"id":"2060062582975946816","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2060034340600594830","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2060023304975700296","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2060023304975700296","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2059702209936494643","keep":true,"reason":"auto: substantive length"}
 {"id":"2059381258178965762","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2059364629076422925","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -859,7 +859,7 @@
 {"id":"2058980929234997254","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2058795158993621122","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2058634665477673302","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2058614944418222352","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2058614944418222352","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2058604152297754679","keep":true,"reason":"auto: substantive length"}
 {"id":"2058359562428887455","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2058258743582933322","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -875,12 +875,12 @@
 {"id":"2057455543476973951","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2057345547313590362","keep":true,"reason":"judged keep: claim (SpaceX launch)"}
 {"id":"2057304689197367646","keep":true,"reason":"auto: substantive length"}
-{"id":"2057137109497176365","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2056963634233057789","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2057137109497176365","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"2056963634233057789","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2056813244657099156","keep":true,"reason":"auto: substantive length"}
 {"id":"2056604886603796748","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2056560092628349336","keep":true,"reason":"judged keep: thesis"}
-{"id":"2056404827115336184","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2056404827115336184","keep":true,"reason":"judged keep: endorsement:position (linked article, as with 2113439841010782388)"}
 {"id":"2056387518401265922","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2056217661420511687","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2056045735951708469","keep":true,"reason":"judged keep: forecast"}
@@ -900,10 +900,10 @@
 {"id":"2054601564988613121","keep":true,"reason":"auto: substantive length"}
 {"id":"2054467598272897168","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2054416949820764372","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2054413476454662298","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2054413476454662298","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2054211137139519585","keep":true,"reason":"auto: substantive length"}
 {"id":"2054209619992662299","keep":true,"reason":"auto: ticker"}
-{"id":"2054200179470028862","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2054200179470028862","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2054008408131698802","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2053953208490602520","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2053866617281655262","keep":false,"reason":"auto: stock filler phrase"}
@@ -911,7 +911,7 @@
 {"id":"2053534148481130882","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2052902811541885204","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2052883941376610410","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2052833933361139984","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2052833933361139984","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2052817098939015459","keep":true,"reason":"auto: ticker"}
 {"id":"2052812132610425027","keep":true,"reason":"judged keep: self-disclosure (labels)"}
 {"id":"2052571677704470678","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -927,7 +927,7 @@
 {"id":"2051915823066103817","keep":true,"reason":"auto: substantive length"}
 {"id":"2051484006525673914","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2051188266385412434","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2051163572097675408","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2051163572097675408","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2050280491488887038","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2049911347987796337","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2049734521227268557","keep":true,"reason":"auto: substantive length"}
@@ -967,8 +967,8 @@
 {"id":"2046930946243641674","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2046809501987434610","keep":true,"reason":"auto: substantive length"}
 {"id":"2046808760874893644","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2046736290335568178","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2046725256124227978","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2046736290335568178","keep":true,"reason":"judged keep: own position in few words (Anthropic still undervalued at $1.05T)"}
+{"id":"2046725256124227978","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2046456314654867912","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2046222525345190387","keep":true,"reason":"auto: substantive length"}
 {"id":"2045895131711295896","keep":true,"reason":"judged keep: technical claim"}
@@ -1000,12 +1000,12 @@
 {"id":"2042489050825965852","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2042326975814254671","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2042070033564872806","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2042034016468267415","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"2041925542279311816","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2042034016468267415","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"2041925542279311816","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2041898813007524209","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2041689217819144516","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2041619325984108651","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2041233991991521392","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2041233991991521392","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2041233990456365400","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2041227591500406939","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2041042996083511520","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1036,8 +1036,8 @@
 {"id":"2039170897903509746","keep":true,"reason":"auto: substantive length"}
 {"id":"2038926772126007511","keep":true,"reason":"judged keep: model result"}
 {"id":"2038914949947494601","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2038914399029846191","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2038856608844046694","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2038914399029846191","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2038856608844046694","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2038855693013520394","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2038851494964015166","keep":true,"reason":"auto: substantive length"}
 {"id":"2038831643864211612","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1060,7 +1060,7 @@
 {"id":"2036854520077283658","keep":true,"reason":"auto: substantive length"}
 {"id":"2036854518298927585","keep":true,"reason":"auto: substantive length"}
 {"id":"2036564351038136375","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2036453124337180927","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2036453124337180927","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2036346199712932259","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2036161406735884701","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2036127411990102239","keep":true,"reason":"auto: substantive length"}
@@ -1074,7 +1074,7 @@
 {"id":"2034691659058094587","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2034681208597356914","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2034366541790425478","keep":true,"reason":"auto: substantive length"}
-{"id":"2034327718465245544","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2034327718465245544","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2034317168041677274","keep":true,"reason":"auto: substantive length"}
 {"id":"2034143481678245929","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2034139191207174215","keep":true,"reason":"judged keep: model result vs GEM-X"}
@@ -1083,7 +1083,7 @@
 {"id":"2034074706006175779","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2034055906078703981","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2033982215500271777","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2033977667251540322","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2033977667251540322","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2033419124886716849","keep":true,"reason":"judged keep: forecast"}
 {"id":"2033270269725544663","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2033029040421089389","keep":true,"reason":"auto: substantive length"}
@@ -1092,16 +1092,16 @@
 {"id":"2032881471233601678","keep":false,"reason":"auto: bare reaction (<=2 words)"}
 {"id":"2032639447469318355","keep":true,"reason":"auto: substantive length"}
 {"id":"2032542660058296425","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2032541197332554069","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2032541197332554069","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2032540542626902334","keep":true,"reason":"judged keep: research thesis"}
 {"id":"2032148829622190367","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2032096985063571847","keep":true,"reason":"auto: substantive length"}
 {"id":"2032060675548409979","keep":true,"reason":"auto: substantive length"}
-{"id":"2031884354851651683","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2031884354851651683","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2031829630668481002","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2031804543143682263","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2031623043848745084","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2031582861690868032","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2031623043848745084","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2031582861690868032","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2031515224646500611","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2031189977313505325","keep":true,"reason":"auto: substantive length"}
 {"id":"2031169558741135447","keep":true,"reason":"auto: substantive length"}
@@ -1111,26 +1111,26 @@
 {"id":"2030844663532499093","keep":true,"reason":"auto: substantive length"}
 {"id":"2030488830600786068","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2030369832986873942","keep":true,"reason":"judged keep: policy claim"}
-{"id":"2030368318469869574","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2030368318469869574","keep":true,"reason":"judged keep: own forecast in few words"}
 {"id":"2030119186882875466","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2029950334685339746","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2029773678381314145","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2029772282865013162","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2029610872403038370","keep":true,"reason":"judged keep: research stance"}
-{"id":"2029402710320263346","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2029297639750348857","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2029402710320263346","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"2029297639750348857","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"2029268094993268991","keep":true,"reason":"judged keep: self-disclosure"}
 {"id":"2029226393016696839","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2029097442071986640","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2029097442071986640","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2029049768190853127","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2029049766391488907","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2029033556031471960","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2029033556031471960","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2029001241188286548","keep":true,"reason":"judged keep: claim"}
 {"id":"2028917479985299923","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2028697000427020362","keep":true,"reason":"judged keep: technical claim"}
-{"id":"2028597222569660680","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2028597222569660680","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2028557409145524643","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2028466137521086589","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2028466137521086589","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2028369364588900419","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2028369362923713001","keep":true,"reason":"auto: substantive length"}
 {"id":"2028341814009438512","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1154,7 +1154,7 @@
 {"id":"2027120081797550269","keep":true,"reason":"auto: substantive length"}
 {"id":"2026877962679890234","keep":true,"reason":"judged keep: thesis validation claim"}
 {"id":"2026793335533482088","keep":true,"reason":"judged keep: research claim"}
-{"id":"2026747661404327944","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2026747661404327944","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2026598835355791411","keep":true,"reason":"auto: substantive length"}
 {"id":"2026525299849179542","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2026468237727379874","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1167,7 +1167,7 @@
 {"id":"2026164904647110923","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2026148767133741323","keep":true,"reason":"auto: substantive length"}
 {"id":"2026090287081337040","keep":true,"reason":"judged keep: research claim"}
-{"id":"2026049135925948422","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2026049135925948422","keep":true,"reason":"judged keep: rejection:claim"}
 {"id":"2026038771557490735","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
 {"id":"2025801898318786773","keep":true,"reason":"auto: substantive length"}
 {"id":"2025801127149838456","keep":true,"reason":"auto: substantive length"}
@@ -1179,10 +1179,10 @@
 {"id":"2025093796682498383","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2025027834130170295","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2024773945195651301","keep":true,"reason":"auto: ticker"}
-{"id":"2024685125729165483","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2024685125729165483","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2024684573704278338","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2024621069462835632","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2024580136839074249","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2024580136839074249","keep":true,"reason":"judged keep: own position in few words (none of us own enough)"}
 {"id":"2024575683469693214","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2024546896505950389","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2024281815603958101","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1192,9 +1192,9 @@
 {"id":"2023990055702802891","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2023990054344159398","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2023987174702477370","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2023962982003138659","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2023962982003138659","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2023926401897034011","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2023630124038369425","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2023630124038369425","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2023565171881615676","keep":true,"reason":"auto: substantive length"}
 {"id":"2023564327882813712","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2023508508042539042","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1205,24 +1205,24 @@
 {"id":"2023170689939968054","keep":true,"reason":"auto: substantive length"}
 {"id":"2023127726283272258","keep":true,"reason":"judged keep: position (short)"}
 {"id":"2022762969952882776","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2022589029603250470","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2022589029603250470","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2022529177547870557","keep":true,"reason":"auto: substantive length"}
-{"id":"2022512746634588565","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2022512746634588565","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2022456683667296554","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2022119355140727005","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2022060661191455106","keep":true,"reason":"auto: substantive length"}
 {"id":"2022029483453403621","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2022003966985613828","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2022003966985613828","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2021685754418573629","keep":true,"reason":"judged keep: forecast"}
 {"id":"2021464815538143257","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2021439836473917735","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2021375611672088802","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2021367213270368336","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2021341273375039744","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2021314181715099724","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2021314181715099724","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2020997173064994823","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2020954589802135770","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2020944375606542342","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2020944375606542342","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2020388965103333676","keep":true,"reason":"auto: substantive length"}
 {"id":"2020379579026927760","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2020271674021802241","keep":true,"reason":"auto: substantive length"}
@@ -1240,8 +1240,8 @@
 {"id":"2019496760377581752","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2019485232844652914","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2019264755802992912","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2019252338956128297","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2019243890625425462","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2019252338956128297","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"2019243890625425462","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2019236040482107692","keep":true,"reason":"auto: substantive length"}
 {"id":"2019178357674635732","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2019178353836843144","keep":true,"reason":"auto: substantive length"}
@@ -1274,7 +1274,7 @@
 {"id":"2017262371501449413","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2017131048589807955","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2017101161934078079","keep":true,"reason":"judged keep: self-disclosure (dataset release)"}
-{"id":"2017067840260755948","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2017067840260755948","keep":true,"reason":"judged keep: own position in few words (still undervalued)"}
 {"id":"2017055285710639461","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2017054975818604846","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2017051862680408438","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1286,17 +1286,17 @@
 {"id":"2016628792928981345","keep":true,"reason":"judged keep: position (AI capex spenders, 5 years)"}
 {"id":"2016566390602551460","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2016553153077125169","keep":true,"reason":"auto: substantive length"}
-{"id":"2016546451879526861","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2016546451879526861","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2016387849915126248","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2016371547670511883","keep":true,"reason":"judged keep: research claim"}
 {"id":"2016370994081104390","keep":true,"reason":"auto: substantive length"}
-{"id":"2016358904817713650","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2016358904817713650","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2016282881480646874","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2016282828879937725","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2016190356015268118","keep":true,"reason":"auto: substantive length"}
 {"id":"2016175139042558009","keep":true,"reason":"auto: substantive length"}
 {"id":"2016148820665761985","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2016065482445729860","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"2016065482445729860","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2016050066189123732","keep":true,"reason":"auto: substantive length"}
 {"id":"2015973351903350909","keep":true,"reason":"judged keep: self-disclosure"}
 {"id":"2015909345385709581","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1328,8 +1328,8 @@
 {"id":"2012358208996974720","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2012357869216182456","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2012259406994612444","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2012255196991385840","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"2012225292173980068","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2012255196991385840","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
+{"id":"2012225292173980068","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2011892700971413600","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2011876323321590023","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2011711979334066499","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
@@ -1353,7 +1353,7 @@
 {"id":"2010957982662868995","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2010775288435917290","keep":true,"reason":"auto: link with commentary"}
 {"id":"2010775263299391675","keep":true,"reason":"auto: substantive length"}
-{"id":"2010710446488379399","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2010710446488379399","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2010684397893083634","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2010600602980725123","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2010592904197357584","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1379,17 +1379,17 @@
 {"id":"2009064299281699096","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2008817085485592817","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2008793808335761552","keep":true,"reason":"auto: substantive length"}
-{"id":"2008764706127818914","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"2008764706127818914","keep":false,"reason":"judged skip: quoted post unavailable; nothing to endorse"}
 {"id":"2008747301536493631","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2008715640283230413","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2008619967743508620","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2008429356063092856","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2008364606754820487","keep":true,"reason":"auto: substantive length"}
 {"id":"2008364603923681521","keep":true,"reason":"auto: substantive length"}
-{"id":"2008040888732393481","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2008040888732393481","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"2008030737665298767","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2007640832179077165","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2007356816792137811","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2007356816792137811","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2007318195691192632","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2007181145142899089","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2007180414906183808","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1404,11 +1404,11 @@
 {"id":"2006202656415789448","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2006200317763813652","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"2005930509118173335","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"2005924037986509103","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2005924037986509103","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2005858650179469529","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2005814761297154524","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2005803830039175531","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"2005803401767199029","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2005803401767199029","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2005783827399000398","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2005764712060051907","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2005647716819612087","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1428,11 +1428,11 @@
 {"id":"2004300931496825129","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2004271802005258354","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2004235655690572226","keep":true,"reason":"auto: substantive length"}
-{"id":"2004083357328855084","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2004083357328855084","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2004081856988467708","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2003976180962341214","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2003962106568495445","keep":true,"reason":"auto: substantive length"}
-{"id":"2003892626496618635","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"2003892626496618635","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"2003704612575150342","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2003667446839058780","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2003124143093690491","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1446,7 +1446,7 @@
 {"id":"2002876006328365261","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2002875837633507699","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"2002839655151251880","keep":true,"reason":"judged keep: forecast (quant finance)"}
-{"id":"2002740889257714089","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"2002740889257714089","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"2002601526016291283","keep":true,"reason":"auto: substantive length"}
 {"id":"2002591352870285805","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2002520037673087388","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1478,7 +1478,7 @@
 {"id":"2000121948383453357","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"2000069616278859801","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1999906335614476407","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1999734060302893416","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1999734060302893416","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1999727800392253520","keep":true,"reason":"auto: ticker"}
 {"id":"1999651936250048913","keep":true,"reason":"judged keep: competitive claim"}
 {"id":"1999651718771146798","keep":true,"reason":"auto: substantive length"}
@@ -1493,23 +1493,23 @@
 {"id":"1998930742534099048","keep":true,"reason":"auto: substantive length"}
 {"id":"1998839868290478360","keep":true,"reason":"judged keep: number"}
 {"id":"1998799061206577347","keep":true,"reason":"auto: substantive length"}
-{"id":"1998651513187741780","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1998651513187741780","keep":true,"reason":"judged keep: self-disclosure in few words (purpose: eliminate work)"}
 {"id":"1998556346334220292","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1998541844024799325","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1998536978791571866","keep":true,"reason":"judged keep: forecast"}
 {"id":"1998479713652850829","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1998479712386167174","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1998254189261258978","keep":true,"reason":"auto: substantive length"}
-{"id":"1998247266243797156","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1998247266243797156","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1998185842788245837","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1998135567750705348","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1997881015814279369","keep":true,"reason":"auto: substantive length"}
 {"id":"1997745625006489887","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1997726312446996874","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1997592162725511274","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1997501877366452722","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1997501877366452722","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1997501248564785603","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1997081270162194727","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1997081270162194727","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1997053326966551036","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1997013761065091429","keep":true,"reason":"auto: substantive length"}
 {"id":"1996978528085221598","keep":true,"reason":"auto: substantive length"}
@@ -1526,19 +1526,19 @@
 {"id":"1995988726116474978","keep":true,"reason":"judged keep: research claim"}
 {"id":"1995935983880253627","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1995742952149451237","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1995716446261813378","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1995716446261813378","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1995715705681920322","keep":true,"reason":"auto: substantive length"}
 {"id":"1995697192229847261","keep":true,"reason":"auto: substantive length"}
 {"id":"1995628844439798071","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1995628842887905631","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1995599316451545165","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1995485650800574744","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1995376401474806153","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1995376401474806153","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1994995747138539972","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1994934286940868882","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1994934286940868882","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1994643767291514964","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1994478892237951278","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1994473095911059763","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1994473095911059763","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1994472488819200098","keep":true,"reason":"auto: substantive length"}
 {"id":"1994461180883046409","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1994259076084322646","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1602,9 +1602,9 @@
 {"id":"1989428750128407000","keep":true,"reason":"auto: substantive length"}
 {"id":"1989421803186569217","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1989106766412653022","keep":true,"reason":"judged keep: claim"}
-{"id":"1989062104025010494","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"1988995037947130230","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"1988994508470776164","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1989062104025010494","keep":true,"reason":"judged keep: endorsement:claim"}
+{"id":"1988995037947130230","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"1988994508470776164","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1988973775602466998","keep":true,"reason":"auto: substantive length"}
 {"id":"1988773881424011450","keep":true,"reason":"judged keep: claim"}
 {"id":"1988694234703290725","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1641,7 +1641,7 @@
 {"id":"1985891930841235855","keep":true,"reason":"auto: substantive length"}
 {"id":"1985740522762485830","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1985738355653689742","keep":true,"reason":"judged keep: thesis"}
-{"id":"1985674437992333657","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1985674437992333657","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1985669886006468878","keep":true,"reason":"auto: substantive length"}
 {"id":"1985637156644376652","keep":true,"reason":"auto: substantive length"}
 {"id":"1985503335122956497","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1655,12 +1655,12 @@
 {"id":"1984324368588292263","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1983966664908849458","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1983839694132760707","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1983836718093758482","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1983836718093758482","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1983683939974971525","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1983668449575571462","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1983620014046638472","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1983585150551388188","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"1983584134015644078","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1983584134015644078","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1983549077733450230","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1983247349137981542","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1983222781849547183","keep":true,"reason":"auto: ticker"}
@@ -1687,7 +1687,7 @@
 {"id":"1981748369585590628","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1981601897078567152","keep":true,"reason":"auto: substantive length"}
 {"id":"1981464074170093823","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"1981128464771186730","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1981128464771186730","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1981075091401429418","keep":true,"reason":"judged keep: position"}
 {"id":"1981018647050301799","keep":true,"reason":"auto: ticker"}
 {"id":"1980674751778664927","keep":true,"reason":"auto: substantive length"}
@@ -1696,12 +1696,12 @@
 {"id":"1980128933170626629","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1980084242555302008","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1979996676451426454","keep":true,"reason":"auto: substantive length"}
-{"id":"1979754893801140733","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1979754893801140733","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1979740087773794497","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1979632699490066616","keep":true,"reason":"auto: substantive length"}
 {"id":"1979511682117620172","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1979245348246950054","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1979021487722885219","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1979021487722885219","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1978981448636911650","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1978891075973714257","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1978867443012636682","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1723,14 +1723,14 @@
 {"id":"1977151750978334903","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1976832090953203717","keep":true,"reason":"auto: substantive length"}
 {"id":"1976737584983515270","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1976484450927263868","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1976484450927263868","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1976453575137165372","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1976351667655410022","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1976309012296761706","keep":true,"reason":"auto: ticker"}
 {"id":"1976138865191813285","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1976125616589242843","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1976125616589242843","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1975996983249862836","keep":true,"reason":"judged keep: forecast (long/short software)"}
-{"id":"1975946313243197540","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1975946313243197540","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1975756187422630073","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1975753509430530347","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1975738480056848619","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1739,14 +1739,14 @@
 {"id":"1975389871016710323","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1975387322662457446","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1975294331432124884","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1975215835137618281","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"1975083108975407164","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"1975072564956553605","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1975215835137618281","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"1975083108975407164","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"1975072564956553605","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1975072490633543944","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1975038133319487728","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1974992054087487962","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1974992054087487962","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1974988695553130718","keep":true,"reason":"judged keep: position (Japan)"}
-{"id":"1974909873155649624","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1974909873155649624","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1974718004194890185","keep":true,"reason":"judged keep: number"}
 {"id":"1974718002257068290","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1974325838117318737","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1761,7 +1761,7 @@
 {"id":"1973755921382932881","keep":true,"reason":"auto: substantive length"}
 {"id":"1973724879670419568","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1973522457261920438","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1973399250798043493","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1973399250798043493","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1973267373533909452","keep":true,"reason":"judged keep: self-disclosure (family photos as public-domain training data)"}
 {"id":"1972903007919702278","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1972170758832218499","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1772,9 +1772,9 @@
 {"id":"1971438297240211846","keep":true,"reason":"judged keep: position (inference)"}
 {"id":"1971438054029263088","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1971423096633725058","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1971419301279392246","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1971419301279392246","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1971315706039066794","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1971300247176609907","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1971300247176609907","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1971250746298597629","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1970938103738269780","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1970937692738465960","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1798,11 +1798,11 @@
 {"id":"1969048983780700513","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1968895393426465265","keep":true,"reason":"judged keep: market claim"}
 {"id":"1968880190219534826","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1968814546350465512","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1968814546350465512","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1968319731301240887","keep":true,"reason":"auto: ticker"}
 {"id":"1968017380518543704","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1967923591292588280","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1967917900737692083","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1967917900737692083","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1967741345075957921","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1967700250568876082","keep":true,"reason":"judged keep: number"}
 {"id":"1967357813132603423","keep":true,"reason":"judged keep: market-cycle call"}
@@ -1830,25 +1830,25 @@
 {"id":"1965389934476624181","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1965389552916615478","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1965263365229650357","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1965094086060507511","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1965094086060507511","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1965026688074727473","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1965025724794130748","keep":true,"reason":"auto: substantive length"}
 {"id":"1964728623560343634","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1964514480815247387","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1964504500796084570","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1964479190188904876","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1964089010764062997","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1964089010764062997","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1964018423580758096","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1963974993320304797","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1963797799608471874","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1963757319986012340","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1963746552868123000","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1963623210684912027","keep":true,"reason":"judged keep: dated forecast"}
-{"id":"1963314162207199367","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1963314162207199367","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1963071355940987315","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1963005357212729577","keep":true,"reason":"auto: substantive length"}
 {"id":"1962860419615461708","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1962475529346703861","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1962475529346703861","keep":true,"reason":"judged keep: own forecast in few words (UK long yields)"}
 {"id":"1962469683740938637","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1961492130456817935","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1961482772620497263","keep":true,"reason":"auto: substantive length"}
@@ -1857,7 +1857,7 @@
 {"id":"1960855385696559586","keep":true,"reason":"auto: substantive length"}
 {"id":"1960773897693094255","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1960508109014577249","keep":true,"reason":"auto: substantive length"}
-{"id":"1960200883855347989","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1960200883855347989","keep":false,"reason":"judged skip: endorses engagement bait"}
 {"id":"1960195366865031224","keep":true,"reason":"auto: substantive length"}
 {"id":"1960175673324220868","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1959812295749775838","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1867,7 +1867,7 @@
 {"id":"1958982962923676120","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1958906823161127202","keep":true,"reason":"auto: substantive length"}
 {"id":"1958299414935883871","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1957891128482804046","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1957891128482804046","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1957886124543864918","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1957857153089433952","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1957453159997075482","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1879,17 +1879,17 @@
 {"id":"1956168394325287376","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1956168337970668030","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1956058306021351696","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1956038959412486230","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1956038959412486230","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1956015587936886847","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1955849648784204054","keep":true,"reason":"judged keep: position disclosure"}
-{"id":"1955849546614894605","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1955849546614894605","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1955525897072816342","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1955525019028926684","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1955412011053137981","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1955411908263285153","keep":true,"reason":"auto: substantive length"}
 {"id":"1955356104399130749","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1954996346206966019","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1954935230282002935","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1954935230282002935","keep":false,"reason":"judged skip: quoted post unavailable; nothing to endorse"}
 {"id":"1954406077312979190","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1953668457368891837","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1953646010389213521","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1905,9 +1905,9 @@
 {"id":"1953136680560672778","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1953130699281842549","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1953130697209856130","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1952855077141791214","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1952855077141791214","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1952818361295143183","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1952775010805817385","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1952775010805817385","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1952734297422540859","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1952478376230518850","keep":true,"reason":"judged keep: position"}
 {"id":"1952478373458169935","keep":true,"reason":"auto: ticker"}
@@ -1918,7 +1918,7 @@
 {"id":"1950761369684553924","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1950653975939969513","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1950653896579600835","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1950209976619720899","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1950209976619720899","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1950038524478075217","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1950032850339746059","keep":true,"reason":"auto: substantive length"}
 {"id":"1950012563334299789","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -1942,13 +1942,13 @@
 {"id":"1948002839411966165","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1947702474942648494","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1947701378891321764","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1947686552639078837","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1947686552639078837","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1947686086056284617","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1947686084269511038","keep":true,"reason":"judged keep: position"}
 {"id":"1947671877172007374","keep":true,"reason":"judged keep: moral thesis"}
 {"id":"1947660442236817606","keep":true,"reason":"auto: substantive length"}
 {"id":"1947632473468506140","keep":true,"reason":"auto: substantive length"}
-{"id":"1947502058904453442","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1947502058904453442","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1947454453810102309","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1947419344625140185","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1947156066690846722","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -1957,12 +1957,12 @@
 {"id":"1946945828733775966","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1946778049657377231","keep":true,"reason":"judged keep: number"}
 {"id":"1946460781668925941","keep":true,"reason":"auto: link with commentary"}
-{"id":"1946420371072364948","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1946420371072364948","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1946393717545546220","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1946343576654479370","keep":true,"reason":"auto: substantive length"}
 {"id":"1946343574804779194","keep":true,"reason":"auto: substantive length"}
 {"id":"1946334042653446513","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1946296206155722769","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1946296206155722769","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1945955125010547174","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1945947604845752595","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1945942909771211055","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2009,7 +2009,7 @@
 {"id":"1939462913376580073","keep":true,"reason":"auto: substantive length"}
 {"id":"1939417460920459338","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1939413947410677845","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1939413866980737320","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1939413866980737320","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1939270250761216260","keep":true,"reason":"auto: substantive length"}
 {"id":"1939270248513048936","keep":true,"reason":"auto: substantive length"}
 {"id":"1939189367907795354","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2024,7 +2024,7 @@
 {"id":"1937141535906435283","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1936084087166714054","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1936083346486108335","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1935830594547556620","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1935830594547556620","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1935686710073159939","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1935433349331620220","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1935419192490283100","keep":true,"reason":"auto: substantive length"}
@@ -2051,7 +2051,7 @@
 {"id":"1930735222896869695","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1930728896561098939","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1930674203004731500","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1930672850375188661","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1930672850375188661","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1930656113059573812","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1930494474758565960","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1930257653827285515","keep":true,"reason":"auto: ticker"}
@@ -2075,7 +2075,7 @@
 {"id":"1926665162913644775","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1926299288683831474","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1926160639866597881","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1925757910237200482","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1925757910237200482","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1925745675267871011","keep":true,"reason":"auto: ticker"}
 {"id":"1925745004535783625","keep":true,"reason":"auto: ticker"}
 {"id":"1925706642613514271","keep":true,"reason":"auto: substantive length"}
@@ -2085,7 +2085,7 @@
 {"id":"1924894484925710511","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1924888143381348827","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1924872572782670180","keep":true,"reason":"auto: substantive length"}
-{"id":"1924845639592247312","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1924845639592247312","keep":false,"reason":"judged skip: the endorsed claim sits in a nested quote that was not captured"}
 {"id":"1924542044154036244","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1924542042631455038","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1924502402436337825","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2095,7 +2095,7 @@
 {"id":"1924163721758458194","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1923807845742674069","keep":true,"reason":"auto: substantive length"}
 {"id":"1923536137894887939","keep":true,"reason":"auto: substantive length"}
-{"id":"1923440355736944994","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1923440355736944994","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1923081766308368820","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1923070688878813465","keep":true,"reason":"auto: substantive length"}
 {"id":"1922804659372069289","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2117,11 +2117,11 @@
 {"id":"1920630779719151676","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1920617723819970567","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1920597351544066210","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1920483667836551433","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1920483667836551433","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1920230168427442300","keep":true,"reason":"auto: ticker"}
 {"id":"1920088290717466719","keep":true,"reason":"judged keep: position (AdX divestiture)"}
 {"id":"1919950066539745777","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1919821421187866928","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1919821421187866928","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1919496409784713465","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1919477292511735949","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1919476810976248232","keep":true,"reason":"auto: substantive length"}
@@ -2134,7 +2134,7 @@
 {"id":"1917449957260550275","keep":true,"reason":"auto: substantive length"}
 {"id":"1917409877280055420","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1917383569573568597","keep":true,"reason":"auto: substantive length"}
-{"id":"1917228190390718617","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1917228190390718617","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1917064873751810413","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1917064872342524208","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1916742638323355897","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2156,7 +2156,7 @@
 {"id":"1915491540811866172","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1915491294220267942","keep":true,"reason":"judged keep: claim"}
 {"id":"1915447335666233524","keep":true,"reason":"auto: substantive length"}
-{"id":"1915399732182343710","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1915399732182343710","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1915398648780968389","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1915386019551338645","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1915250237511544927","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2169,11 +2169,11 @@
 {"id":"1914839396173644065","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1914839079507910877","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1914833326755734012","keep":true,"reason":"judged keep: position (Bridgit)"}
-{"id":"1914796478989787334","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1914796478989787334","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1914529707112218782","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1914529317306212423","keep":true,"reason":"auto: substantive length"}
 {"id":"1914174769194516966","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1914011540191412416","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1914011540191412416","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1913418472627064970","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1913259797904085377","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1912967391052763228","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2195,7 +2195,7 @@
 {"id":"1909351332471095455","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1909292268789653575","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1908916986123522204","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1908881348007502311","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1908881348007502311","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1908744619900518556","keep":true,"reason":"judged keep: thesis"}
 {"id":"1908739800057995573","keep":true,"reason":"auto: substantive length"}
 {"id":"1908676124760256708","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2233,7 +2233,7 @@
 {"id":"1906037790875480395","keep":true,"reason":"auto: substantive length"}
 {"id":"1905511053217411470","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1905481746763972888","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1905382703186505987","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1905382703186505987","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1905347772074873322","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1905282350461927782","keep":true,"reason":"auto: substantive length"}
 {"id":"1905282348826100004","keep":true,"reason":"auto: substantive length"}
@@ -2241,7 +2241,7 @@
 {"id":"1905162305828200709","keep":true,"reason":"auto: substantive length"}
 {"id":"1905098556790489400","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1905096252779553010","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1905094804754842010","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1905094804754842010","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1904999431390593494","keep":true,"reason":"auto: substantive length"}
 {"id":"1904999259705073957","keep":true,"reason":"auto: substantive length"}
 {"id":"1904966654850990438","keep":true,"reason":"judged keep: self-disclosure"}
@@ -2259,7 +2259,7 @@
 {"id":"1902779825930285109","keep":false,"reason":"auto: stock filler phrase"}
 {"id":"1902767155919327652","keep":true,"reason":"auto: substantive length"}
 {"id":"1902766647624306994","keep":true,"reason":"auto: substantive length"}
-{"id":"1902748019159970132","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1902748019159970132","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1902158153661477222","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1902066757583696149","keep":true,"reason":"auto: substantive length"}
 {"id":"1902066755343946097","keep":true,"reason":"auto: substantive length"}
@@ -2271,7 +2271,7 @@
 {"id":"1901457322414952712","keep":true,"reason":"auto: substantive length"}
 {"id":"1901449744993735090","keep":true,"reason":"auto: substantive length"}
 {"id":"1900755043890196784","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1900010122346467602","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1900010122346467602","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1900002895757721742","keep":true,"reason":"auto: substantive length"}
 {"id":"1899967497115492360","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1899967390332699131","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2283,7 +2283,7 @@
 {"id":"1899324123932926414","keep":true,"reason":"auto: substantive length"}
 {"id":"1899239241164722427","keep":true,"reason":"auto: substantive length"}
 {"id":"1899239239684120748","keep":true,"reason":"auto: substantive length"}
-{"id":"1899237681147855286","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1899237681147855286","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1899150866281795614","keep":true,"reason":"auto: ticker"}
 {"id":"1899121761607995763","keep":true,"reason":"judged keep: position (5253)"}
 {"id":"1899113582891249899","keep":true,"reason":"auto: substantive length"}
@@ -2299,7 +2299,7 @@
 {"id":"1897926061742018860","keep":true,"reason":"judged keep: market thesis"}
 {"id":"1897905708655366632","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1897870119386136650","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1897761980091609354","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1897761980091609354","keep":true,"reason":"judged keep: rejection:position"}
 {"id":"1897696825102233712","keep":true,"reason":"auto: ticker"}
 {"id":"1897524829760131369","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1897171262038008098","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2307,7 +2307,7 @@
 {"id":"1896975190137143656","keep":true,"reason":"judged keep: position (calls)"}
 {"id":"1896946302887547079","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1896945031992484147","keep":true,"reason":"auto: ticker"}
-{"id":"1896942331661787503","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1896942331661787503","keep":true,"reason":"judged keep: endorsement:claim (of 'a corner of fintwit' named in its own earlier post)"}
 {"id":"1896937660188598488","keep":true,"reason":"auto: substantive length"}
 {"id":"1896633118129574171","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1896605521752555865","keep":true,"reason":"judged keep: position (Regeneron)"}
@@ -2330,7 +2330,7 @@
 {"id":"1894940795276239005","keep":true,"reason":"judged keep: number"}
 {"id":"1894888493945590213","keep":true,"reason":"auto: ticker"}
 {"id":"1894887278423744765","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1894865816681881734","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1894865816681881734","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1894763674654376113","keep":true,"reason":"auto: ticker"}
 {"id":"1894603971496743307","keep":true,"reason":"auto: substantive length"}
 {"id":"1894600699146592744","keep":true,"reason":"judged keep: claim"}
@@ -2375,7 +2375,7 @@
 {"id":"1888232767390904547","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1888232444148494705","keep":true,"reason":"auto: ticker"}
 {"id":"1888051695617515683","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1887961751549002136","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1887961751549002136","keep":true,"reason":"judged keep: endorsement:position"}
 {"id":"1887922190315831572","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1887881160052867122","keep":true,"reason":"judged keep: self-disclosure"}
 {"id":"1886231847098609864","keep":true,"reason":"judged keep: market claim"}
@@ -2388,7 +2388,7 @@
 {"id":"1885334311777313079","keep":true,"reason":"judged keep: number (performance)"}
 {"id":"1885189608993951812","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1884799481369035103","keep":true,"reason":"judged keep: position (NVDA)"}
-{"id":"1883908040728174905","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1883908040728174905","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1883896783476277302","keep":true,"reason":"judged keep: position"}
 {"id":"1883885685884743930","keep":false,"reason":"auto: bare reaction (<=2 words)"}
 {"id":"1883750327817785504","keep":true,"reason":"auto: substantive length"}
@@ -2398,10 +2398,10 @@
 {"id":"1883364839357317275","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1883226043584319900","keep":true,"reason":"auto: substantive length"}
 {"id":"1883224722986639582","keep":true,"reason":"auto: substantive length"}
-{"id":"1883186503565881645","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1883186503565881645","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1883184817384407363","keep":true,"reason":"auto: substantive length"}
 {"id":"1883176640391663877","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1882911335727665485","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1882911335727665485","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1882852963192053887","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1882852550740980178","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1882582829353308366","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2410,7 +2410,7 @@
 {"id":"1882559354362302608","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1882527031126302928","keep":true,"reason":"auto: substantive length"}
 {"id":"1882150684604367194","keep":true,"reason":"judged keep: claim"}
-{"id":"1882073376203923822","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1882073376203923822","keep":false,"reason":"judged skip: endorses a one-line tool remark ('uv just works'), no substantive claim"}
 {"id":"1881961939049566564","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1881957184076165388","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1881956188100895223","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2421,7 +2421,7 @@
 {"id":"1880293316425830528","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1880285279896105463","keep":true,"reason":"auto: ticker"}
 {"id":"1880158359053299811","keep":true,"reason":"auto: substantive length"}
-{"id":"1880097990800732542","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1880097990800732542","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1880077559117029725","keep":true,"reason":"auto: ticker"}
 {"id":"1879762943887462640","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1879712113809375555","keep":true,"reason":"auto: ticker"}
@@ -2445,7 +2445,7 @@
 {"id":"1877251140649197813","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1877250449021006222","keep":true,"reason":"auto: substantive length"}
 {"id":"1877115708456194048","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1877062121940222247","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1877062121940222247","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1877061807484907992","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1877043951464505499","keep":true,"reason":"auto: ticker"}
 {"id":"1876859610440565053","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2458,7 +2458,7 @@
 {"id":"1876439169146470844","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1876336344554963259","keep":true,"reason":"auto: substantive length"}
 {"id":"1876335963099766964","keep":true,"reason":"auto: substantive length"}
-{"id":"1876333274106323322","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1876333274106323322","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1876295505816453491","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1876121951758098546","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1876086041947619450","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2500,7 +2500,7 @@
 {"id":"1870273647421919719","keep":true,"reason":"auto: ticker"}
 {"id":"1869780242690437330","keep":true,"reason":"auto: substantive length"}
 {"id":"1869518699276931499","keep":true,"reason":"auto: ticker"}
-{"id":"1869165059211210758","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1869165059211210758","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1869013849283916097","keep":true,"reason":"auto: substantive length"}
 {"id":"1869005430527332823","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1868862824602386864","keep":true,"reason":"auto: substantive length"}
@@ -2512,7 +2512,7 @@
 {"id":"1867593633697808604","keep":true,"reason":"auto: substantive length"}
 {"id":"1867403921964372222","keep":true,"reason":"auto: substantive length"}
 {"id":"1867403920014028841","keep":true,"reason":"auto: substantive length"}
-{"id":"1867365152502558968","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1867365152502558968","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1867334771254452299","keep":true,"reason":"auto: substantive length"}
 {"id":"1867334131329511749","keep":true,"reason":"auto: ticker"}
 {"id":"1867305811414069598","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2560,10 +2560,10 @@
 {"id":"1856374410015343074","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1856356257608724837","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1856348569873027261","keep":true,"reason":"auto: ticker"}
-{"id":"1856237005371298230","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1856237005371298230","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1856236932717527340","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1856025524654743584","keep":true,"reason":"auto: substantive length"}
-{"id":"1856006370278961227","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1856006370278961227","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1856002303129526739","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1856001569008840890","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1855997646764191935","keep":false,"reason":"auto: stock filler phrase"}
@@ -2590,13 +2590,13 @@
 {"id":"1851969827226656854","keep":true,"reason":"auto: substantive length"}
 {"id":"1851959259900019087","keep":true,"reason":"auto: ticker"}
 {"id":"1851822993392992397","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1851446930913554529","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1851446930913554529","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1851446740286660697","keep":true,"reason":"judged keep: self-disclosure"}
 {"id":"1851426844769194386","keep":true,"reason":"auto: substantive length"}
 {"id":"1850748969665650789","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1850748733790593141","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1850704424282263800","keep":true,"reason":"auto: substantive length"}
-{"id":"1850684268881854710","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1850684268881854710","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1850596834483601713","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1850054033223905706","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1850054032158491071","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2623,7 +2623,7 @@
 {"id":"1848440512711139505","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1848365500075479457","keep":true,"reason":"auto: ticker"}
 {"id":"1847838812971430239","keep":true,"reason":"auto: ticker"}
-{"id":"1847410296824221971","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1847410296824221971","keep":true,"reason":"judged keep: own claim ('lol called it')"}
 {"id":"1847399974046487025","keep":true,"reason":"auto: substantive length"}
 {"id":"1847138883483345385","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1846912181482246436","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2636,7 +2636,7 @@
 {"id":"1846426070695706939","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1846402979940675974","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1846381906838896975","keep":true,"reason":"auto: ticker"}
-{"id":"1846016520637309408","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1846016520637309408","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1845913955837092095","keep":true,"reason":"judged keep: thesis (datacenter capex)"}
 {"id":"1845876216714178971","keep":true,"reason":"auto: substantive length"}
 {"id":"1845859441964716139","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2651,7 +2651,7 @@
 {"id":"1843678671695163442","keep":true,"reason":"auto: substantive length"}
 {"id":"1843499313210814553","keep":true,"reason":"auto: link with commentary"}
 {"id":"1843491636594327880","keep":true,"reason":"auto: substantive length"}
-{"id":"1843458225901117477","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1843458225901117477","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1843457902696357895","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1843423343674044506","keep":true,"reason":"auto: ticker"}
 {"id":"1843146013873475913","keep":true,"reason":"judged keep: advice (index funds)"}
@@ -2668,7 +2668,7 @@
 {"id":"1840884002154057911","keep":true,"reason":"auto: ticker"}
 {"id":"1840802689245937860","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1840787018017878526","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"1840589723288383659","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1840589723288383659","keep":true,"reason":"judged keep: own position in few words (long China)"}
 {"id":"1840283057934188596","keep":true,"reason":"auto: substantive length"}
 {"id":"1840269031653167337","keep":true,"reason":"auto: substantive length"}
 {"id":"1840119785784520921","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2689,7 +2689,7 @@
 {"id":"1837342152579502588","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1837323803665518745","keep":true,"reason":"auto: substantive length"}
 {"id":"1836972789808394707","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1836617233763577882","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1836617233763577882","keep":true,"reason":"judged keep: own position in few words (not priced in)"}
 {"id":"1836608189288403272","keep":true,"reason":"auto: substantive length"}
 {"id":"1836284100791156760","keep":true,"reason":"auto: substantive length"}
 {"id":"1835864615785509247","keep":true,"reason":"auto: substantive length"}
@@ -2708,9 +2708,9 @@
 {"id":"1833531996079083561","keep":true,"reason":"auto: substantive length"}
 {"id":"1833272817472946193","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1833243778586710338","keep":false,"reason":"auto: stock filler phrase"}
-{"id":"1832866977985212536","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1832866977985212536","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1832844103731814699","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1832498695247724973","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1832498695247724973","keep":true,"reason":"judged keep: endorsement:forecast"}
 {"id":"1831935200575811851","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1831895640160530867","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1831871752944939108","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2762,7 +2762,7 @@
 {"id":"1812704253263426009","keep":true,"reason":"auto: substantive length"}
 {"id":"1806706191273509152","keep":true,"reason":"auto: substantive length"}
 {"id":"1806700179363651915","keep":true,"reason":"auto: substantive length"}
-{"id":"1805409587677610355","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1805409587677610355","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1799671738642706458","keep":true,"reason":"auto: substantive length"}
 {"id":"1795974399343903123","keep":true,"reason":"auto: substantive length"}
 {"id":"1795974397389398420","keep":true,"reason":"auto: substantive length"}
@@ -2799,12 +2799,12 @@
 {"id":"1748224905710297256","keep":true,"reason":"auto: ticker"}
 {"id":"1748224903395025324","keep":true,"reason":"auto: substantive length"}
 {"id":"1747997191195779250","keep":true,"reason":"auto: substantive length"}
-{"id":"1747824106257764522","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1747824106257764522","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1747564387458810208","keep":true,"reason":"auto: substantive length"}
 {"id":"1747345693868806526","keep":true,"reason":"auto: ticker"}
-{"id":"1746771227384086619","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1746771227384086619","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1746737571433247144","keep":true,"reason":"auto: substantive length"}
-{"id":"1746732607440834790","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1746732607440834790","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1746708003590701549","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1746599685085933643","keep":true,"reason":"auto: ticker"}
 {"id":"1746357855375241426","keep":true,"reason":"judged keep: claim (grid)"}
@@ -2816,7 +2816,7 @@
 {"id":"1746165610843922832","keep":true,"reason":"auto: substantive length"}
 {"id":"1746162024571371657","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1746144237048201645","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1745838789480812926","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1745838789480812926","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1745823368170094619","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1745462169607782711","keep":true,"reason":"auto: ticker"}
 {"id":"1745461283875663872","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2824,7 +2824,7 @@
 {"id":"1745458169089048636","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1745256546911801809","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1745256369769652692","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1745196277720404274","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1745196277720404274","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1745154560421998879","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1744932591139197279","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
 {"id":"1744633473774792855","keep":true,"reason":"auto: substantive length"}
@@ -2845,7 +2845,7 @@
 {"id":"1741666513646682434","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1741555549454713253","keep":true,"reason":"auto: substantive length"}
 {"id":"1741297409953530012","keep":true,"reason":"auto: substantive length"}
-{"id":"1741028858605039703","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1741028858605039703","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1740989357140619295","keep":true,"reason":"auto: substantive length"}
 {"id":"1740988663826440483","keep":true,"reason":"auto: substantive length"}
 {"id":"1740931228004745305","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2872,7 +2872,7 @@
 {"id":"1738064329856192559","keep":true,"reason":"auto: ticker"}
 {"id":"1737914940026159624","keep":true,"reason":"auto: substantive length"}
 {"id":"1737692483361067308","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"1737692413806981211","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1737692413806981211","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1737678279409283177","keep":true,"reason":"judged keep: political/market view"}
 {"id":"1737486130658820420","keep":true,"reason":"auto: ticker"}
 {"id":"1737182103954206952","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2888,7 +2888,7 @@
 {"id":"1735684126181925351","keep":true,"reason":"auto: substantive length"}
 {"id":"1735502688274796610","keep":true,"reason":"auto: substantive length"}
 {"id":"1735450545689919668","keep":true,"reason":"auto: substantive length"}
-{"id":"1735447427359084977","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1735447427359084977","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1735373076509147423","keep":true,"reason":"auto: substantive length"}
 {"id":"1735345945892753884","keep":true,"reason":"judged keep: forecast"}
 {"id":"1734771103774708122","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2911,7 +2911,7 @@
 {"id":"1729549028956762576","keep":true,"reason":"auto: substantive length"}
 {"id":"1728904588768711096","keep":true,"reason":"auto: substantive length"}
 {"id":"1728202685579657474","keep":true,"reason":"auto: substantive length"}
-{"id":"1727422648991559798","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1727422648991559798","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1727422006575161404","keep":true,"reason":"auto: substantive length"}
 {"id":"1726476446900850724","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1724994065572438429","keep":true,"reason":"auto: substantive length"}
@@ -2927,7 +2927,7 @@
 {"id":"1703110948750520707","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1702768597062607089","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1702742531723911195","keep":true,"reason":"auto: ticker"}
-{"id":"1702727158295306284","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1702727158295306284","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1702726755470168390","keep":true,"reason":"judged keep: claim (Unity)"}
 {"id":"1702445688624144581","keep":true,"reason":"auto: substantive length"}
 {"id":"1702349139726794939","keep":true,"reason":"auto: substantive length"}
@@ -2940,7 +2940,7 @@
 {"id":"1701074802382164295","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1701045390022525207","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1700637785613647944","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1700630404418699274","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1700630404418699274","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1700152747599823357","keep":true,"reason":"auto: ticker"}
 {"id":"1700138307668287879","keep":true,"reason":"judged keep: forecast"}
 {"id":"1700138063954170217","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2950,13 +2950,13 @@
 {"id":"1699629767430119671","keep":true,"reason":"auto: substantive length"}
 {"id":"1699625944607314355","keep":true,"reason":"auto: substantive length"}
 {"id":"1699227645102465102","keep":true,"reason":"auto: ticker"}
-{"id":"1699067061656535470","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1699047106584182849","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1699067061656535470","keep":true,"reason":"judged keep: endorsement:forecast"}
+{"id":"1699047106584182849","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1698897531844100180","keep":true,"reason":"auto: ticker"}
 {"id":"1698894720729297385","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1698773612508193053","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1698753311644754071","keep":true,"reason":"auto: ticker"}
-{"id":"1698581814510854548","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1698581814510854548","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1698555574064185560","keep":true,"reason":"auto: ticker"}
 {"id":"1698190233446342694","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1697827123665502298","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2975,7 +2975,7 @@
 {"id":"1696976578113393009","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1696976576725004559","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1696924688096903178","keep":true,"reason":"auto: substantive length"}
-{"id":"1696923003567718724","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1696923003567718724","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1696922314234065164","keep":true,"reason":"auto: ticker"}
 {"id":"1696676310503076133","keep":true,"reason":"auto: ticker"}
 {"id":"1696673039155687737","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -2988,7 +2988,7 @@
 {"id":"1696365532122145165","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1696327479466836328","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1696327095172116915","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1695977864112533505","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1695977864112533505","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1695974119085642210","keep":true,"reason":"auto: ticker"}
 {"id":"1695855246441173119","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1695855244914327860","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -2996,16 +2996,16 @@
 {"id":"1695607505387487237","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1695607449871679983","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1695572311682973948","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1695349935137489204","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1695349935137489204","keep":false,"reason":"judged skip: endorsement of a quoted post that is filler, a joke or a picture"}
 {"id":"1695247422627401960","keep":true,"reason":"auto: link with commentary"}
 {"id":"1695235438980862051","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1695217028813262912","keep":false,"reason":"auto: bare reaction (<=2 words)"}
-{"id":"1695131046889787692","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1695217028813262912","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
+{"id":"1695131046889787692","keep":true,"reason":"judged keep: endorsement:position (its own $BB thesis)"}
 {"id":"1695121866002993597","keep":true,"reason":"auto: substantive length"}
 {"id":"1695081542773870624","keep":true,"reason":"auto: substantive length"}
 {"id":"1695079188511002840","keep":true,"reason":"auto: ticker"}
 {"id":"1694894217661919465","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1694887645099540551","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1694887645099540551","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1694837389506793546","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1694761104596205697","keep":true,"reason":"auto: substantive length"}
 {"id":"1694760568580886647","keep":true,"reason":"auto: substantive length"}
@@ -3042,7 +3042,7 @@
 {"id":"1691625512588980673","keep":true,"reason":"auto: ticker"}
 {"id":"1691593420136178021","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1691584945175818331","keep":true,"reason":"auto: substantive length"}
-{"id":"1691508230168735744","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1691508230168735744","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1691508228797112320","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1691466229570322432","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1691311003584368640","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
@@ -3063,7 +3063,7 @@
 {"id":"1689723781688999937","keep":true,"reason":"auto: substantive length"}
 {"id":"1689674022945263616","keep":true,"reason":"auto: ticker"}
 {"id":"1689653035965059072","keep":true,"reason":"auto: ticker"}
-{"id":"1689532613290262528","keep":false,"reason":"auto: stock filler phrase"}
+{"id":"1689532613290262528","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1689530373771075584","keep":true,"reason":"auto: ticker"}
 {"id":"1689518685545975813","keep":true,"reason":"auto: ticker"}
 {"id":"1689490793340481536","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
@@ -3075,7 +3075,7 @@
 {"id":"1688339677169037314","keep":false,"reason":"auto: bare reaction (<=2 words)"}
 {"id":"1687998096284983296","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1687851001121034240","keep":true,"reason":"auto: substantive length"}
-{"id":"1687595651658563584","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1687595651658563584","keep":true,"reason":"judged keep: endorsement:claim (endorses @ODELL's earlier call, not the quoted Dexerto report)"}
 {"id":"1687484226311229440","keep":true,"reason":"auto: ticker"}
 {"id":"1687112633663774720","keep":true,"reason":"auto: ticker"}
 {"id":"1687108120991129600","keep":false,"reason":"judged skip: curiosity about another account, no claim"}
@@ -3108,7 +3108,7 @@
 {"id":"1685024784516890624","keep":true,"reason":"auto: ticker"}
 {"id":"1684973228224401408","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1684972690615242752","keep":true,"reason":"auto: substantive length"}
-{"id":"1684935329680343040","keep":false,"reason":"auto: no own words (media/emoji/link only)"}
+{"id":"1684935329680343040","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1684721702071394304","keep":true,"reason":"auto: substantive length"}
 {"id":"1684721701110808576","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1684590562807279616","keep":true,"reason":"auto: ticker"}
@@ -3124,7 +3124,7 @@
 {"id":"1683998703521255425","keep":true,"reason":"auto: substantive length"}
 {"id":"1683967782831157248","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1683950181656694784","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
-{"id":"1683939169159245828","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1683939169159245828","keep":false,"reason":"judged skip: short quote: reaction, praise or filler; endorses no forecast, claim or position"}
 {"id":"1683938793332813824","keep":true,"reason":"auto: ticker"}
 {"id":"1683929689025572865","keep":true,"reason":"auto: ticker"}
 {"id":"1683868473678757888","keep":true,"reason":"auto: ticker"}
@@ -3147,7 +3147,7 @@
 {"id":"1682531601501290496","keep":true,"reason":"auto: substantive length"}
 {"id":"1682488994347773952","keep":true,"reason":"auto: ticker"}
 {"id":"1682388179666731008","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1682211526651035648","keep":false,"reason":"auto: bare reaction (<=2 words)"}
+{"id":"1682211526651035648","keep":true,"reason":"judged keep: own position in few words (long tin on China stimulus)"}
 {"id":"1682145535732613121","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1682141576401920001","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1682068545562378240","keep":true,"reason":"auto: ticker"}
@@ -3164,7 +3164,7 @@
 {"id":"1681164591047536646","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1681162857407471619","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1681148049245220864","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
-{"id":"1680962488098238464","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
+{"id":"1680962488098238464","keep":true,"reason":"judged keep: endorsement:claim"}
 {"id":"1680958327407407105","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
 {"id":"1680881727982702595","keep":false,"reason":"judged skip: long but no claim, position, number or disclosure (reaction, praise, joke, quotation, anecdote or request)"}
 {"id":"1680678686121693184","keep":false,"reason":"judged skip: no claim, position, number or disclosure in own words"}
