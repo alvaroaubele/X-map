@@ -3,6 +3,20 @@
 Lessons from real runs, each with the evidence behind it and the prompt or tool change it calls for. Read this
 before changing `prompts/lead.md`, `.claude/agents/*.md` or `tools/xmap/`. Add new runs at the top.
 
+## Run 1 follow-ups: ledger, backtest and playbook, 2026-11-27
+
+[PLAYBOOK.md](PLAYBOOK.md) now turns sections A–G into the ordered procedure for a new account, with run 1's
+planning numbers. Points not recorded above:
+
+| # | Lesson | Evidence | Status |
+|---|---|---|---|
+| H1 | Capture speed is steady at ~48 posts/min, ~2.9 posts per scroll step, so runtime and reads can be estimated before a run: an hour is ~2,900 reads. | `run.json` of `101916Z` (508 in 10.6 min) and `122804Z` (3,183 in 65.7 min, 1,101 steps) | Note, in PLAYBOOK §2 |
+| H2 | The budget counts a run from its start time, so capacity returns run by run, 24 h after each run started, not all at once. | `lib/budget.mjs` `runTime(run_id)` | Note |
+| H3 | Two thirds of posts needed a per-post triage judgment (2,103 overrides for 3,183 posts); the first-pass rules decided the rest. Triage is mapper work to budget for, not a filter that runs by itself. | `triage_overrides.jsonl` | Note |
+| H4 | The signed-in profile header reads wrong from the page (name "…’s posts", bio "Click to Unfollow …"), as stored in `run.json`. `profile.json` is built from the `UserByScreenName` response (`source: api`) and is correct. | `run.json` of `101916Z`..`122804Z` vs `profile.json` | Fixed for `profile.json`; `run.json.profile` still holds the page reading |
+| H5 | Analyses built on the posts (trade ledger, price backtest) live under `accounts/<handle>/<analysis>/` with a deterministic build script, stored external data and their own `verify.py`; `validate` does not cover them. | PR #6, `accounts/astridwilde/backtest/` | Pattern, in PLAYBOOK §9 |
+| H6 | The `reposts` surface opens `x.com/<handle>/reposts`. Whether X serves a reposts timeline at that URL is unverified; it has never run. | `capture.mjs` `SURFACE_URL` | Open: check on first use |
+
 ## Setup changes after run 1, 2026-11-27
 
 Sections A–F below proposed these; each row's Status column now says where it landed. Three further points

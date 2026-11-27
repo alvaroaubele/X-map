@@ -28,4 +28,5 @@ accounts/<handle>/
 
 Add an account by asking a session to map `@handle` with [prompts/lead.md](prompts/lead.md): it asks the review-gate
 questions once and writes `accounts/<handle>/account.json` from `tools/xmap/account.template.json`.
-Lessons from past runs: [docs/LESSONS.md](docs/LESSONS.md).
+New-account procedure and planning numbers: [docs/PLAYBOOK.md](docs/PLAYBOOK.md). Lessons from past runs, with
+evidence: [docs/LESSONS.md](docs/LESSONS.md).
