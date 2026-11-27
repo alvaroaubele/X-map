@@ -12,7 +12,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import { createRequire } from 'node:module';
-import { ROOT, TOOL_VERSION, accountDir, readJson, writeJson, snowflakeDate, parseArgs, HANDLE_RE } from './lib/util.mjs';
+import { ROOT, TOOL_VERSION, accountDir, readJson, writeJson, snowflakeDate, parseArgs, HANDLE_RE, netOperationKept } from './lib/util.mjs';
 
 const require = createRequire(import.meta.url);
 const args = parseArgs(process.argv.slice(2), { 'allow-logged-out': 'bool' });
@@ -64,10 +64,12 @@ page.on('response', async r => {
   try {
     const u = new URL(r.url());
     if (!/(^|\.)x\.com$/.test(u.hostname) || !/graphql/.test(u.pathname) || netN >= 400) return;
+    const op = u.pathname.split('/').pop();
+    if (!netOperationKept(op)) return; // operator-session responses (home feed, sidebars, Grok JWT) are never stored
     const body = await r.body();
     if (body.length < 300) return;
     fs.mkdirSync(path.join(runDir, 'net'), { recursive: true });
-    fs.writeFileSync(path.join(runDir, 'net', `${String(netN++).padStart(4, '0')}-${u.pathname.split('/').pop().replace(/\W/g, '')}.json.gz`), zlib.gzipSync(body));
+    fs.writeFileSync(path.join(runDir, 'net', `${String(netN++).padStart(4, '0')}-${op.replace(/\W/g, '')}.json.gz`), zlib.gzipSync(body));
   } catch { /* response body unavailable (navigation, cache): not an error */ }
 });
 
