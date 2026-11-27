@@ -1,0 +1,10 @@
+{
+ "AAMC": "search_contracts 'AAMC' and 'Altisource Asset Management' return no listing (delisted from NYSE American; no IBKR contract)",
+ "BTCW.V": "resolved (conid 505405381, VENTURE) but get_price_history returns 'No market data permissions' for TSX Venture",
+ "MOB.ST": "resolved (conid 631510127, SFB Stockholm) but get_price_history returns 'No market data permissions'",
+ "COVCF": "Covalon Technologies: COV (VENTURE, conid 131133081) has no market data permissions; US OTC line CVALF (conid 798837396) history starts 2025-07-14, after the 2024-09-30 entry",
+ "SEMR": "Semrush: IBKR lists conid 478483413 only on VALUE (delisted); get_price_history returns 'Details currently unavailable'",
+ "ARBKL": "Argo Blockchain 8.75% notes: IBKR lists conid 527039941 only on VALUE (delisted); get_price_history returns 'Details currently unavailable'",
+ "SATS": "EchoStar: now NASDAQ ECHO (conid 47965865) but IBKR weekly history for it starts 2026-06-24; the SATS-era series (entry 2025-08-26) is not returned; 'SATS' now maps to other issuers",
+ "VSCO": "search_contracts returns only a Mexican (MEXI) line for Victoria's Secret; no NYSE primary listing found"
+}

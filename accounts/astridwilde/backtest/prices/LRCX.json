@@ -1,0 +1,43 @@
+{
+"ticker": "LRCX",
+"conid": 732440574,
+"exchange": "NASDAQ",
+"currency": "USD",
+"security_type": "STK",
+"source": "IBKR weekly close",
+"fetched": "2026-11-27",
+"time_note": "week-start (Monday) labels rebuilt from IBKR chart_start; last bar keeps IBKR's own label",
+"time": [
+"2026-08-31",
+"2026-09-07",
+"2026-09-14",
+"2026-09-21",
+"2026-09-28",
+"2026-10-05",
+"2026-10-12",
+"2026-10-19",
+"2026-10-26",
+"2026-11-02",
+"2026-11-09",
+"2026-11-16",
+"2026-11-23",
+"2026-11-27"
+],
+"close": [
+307.65,
+298.22,
+288.11,
+315.21,
+347.49,
+318.84,
+263.94,
+230.1,
+239.11,
+200.44,
+225.92,
+183.27,
+185.01,
+190.53
+],
+"note": "endorsed pick"
+}

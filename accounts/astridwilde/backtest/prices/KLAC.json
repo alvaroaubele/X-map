@@ -1,0 +1,43 @@
+{
+"ticker": "KLAC",
+"conid": 270957,
+"exchange": "NASDAQ",
+"currency": "USD",
+"security_type": "STK",
+"source": "IBKR weekly close",
+"fetched": "2026-11-27",
+"time_note": "week-start (Monday) labels rebuilt from IBKR chart_start; last bar keeps IBKR's own label",
+"time": [
+"2026-08-31",
+"2026-09-07",
+"2026-09-14",
+"2026-09-21",
+"2026-09-28",
+"2026-10-05",
+"2026-10-12",
+"2026-10-19",
+"2026-10-26",
+"2026-11-02",
+"2026-11-09",
+"2026-11-16",
+"2026-11-23",
+"2026-11-27"
+],
+"close": [
+185.6,
+180.64,
+176.99,
+187.92,
+206.89,
+195.57,
+165.74,
+145.61,
+157.91,
+138.49,
+152.32,
+126.87,
+134.2,
+137.89
+],
+"note": "endorsed pick; split-adjusted by IBKR"
+}
