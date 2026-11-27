@@ -3,6 +3,7 @@
 #   bin/xmap capture   <handle> [capture flags]   browser run -> accounts/<handle>/raw/<run_id>/
 #   bin/xmap normalize <handle>                   raw runs -> posts.jsonl, profile.json
 #   bin/xmap stats     <handle>                   posts.jsonl -> stats.json
+#   bin/xmap triage    <handle> [--review]        posts.jsonl + triage_overrides.jsonl -> triage.jsonl
 #   bin/xmap validate  <handle> [--require-map] [--allow-logged-out]
 #   bin/xmap run       <handle> [capture flags]   capture + normalize + stats + validate
 set -euo pipefail
@@ -20,6 +21,7 @@ case "$cmd" in
   capture)   capture "$@" ;;
   normalize) node "$root/tools/xmap/normalize.mjs" "$@" ;;
   stats)     node "$root/tools/xmap/stats.mjs" "$@" ;;
+  triage)    node "$root/tools/xmap/triage.mjs" "$@" ;;
   validate)  node "$root/tools/xmap/validate.mjs" "$@" ;;
   run)
     handle="${1:?usage: bin/xmap run <handle>}"
@@ -29,5 +31,5 @@ case "$cmd" in
     node "$root/tools/xmap/stats.mjs" "$handle"
     node "$root/tools/xmap/validate.mjs" "$handle" "${extra[@]}"
     ;;
-  *) sed -n '2,7p' "$0"; exit 2 ;;
+  *) sed -n '2,8p' "$0"; exit 2 ;;
 esac

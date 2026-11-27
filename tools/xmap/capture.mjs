@@ -59,14 +59,27 @@ if (token) {
 const page = await context.newPage();
 
 // Passive record of JSON the page itself requested from X's API hosts (nothing is requested on our own).
+// A timeline page carries about 20 posts, so the cap scales with max_posts: a fixed cap would silently drop the
+// quoted ids, t.co targets and reply links of the oldest posts in a deep capture.
 let netN = 0;
+const NET_MAX = Math.max(400, Math.ceil(maxPosts / 10));
+// The last timeline page X answered with an error instead of entries. A timeline that stops growing right after
+// such a page did not end: X failed to serve the next page (seen 2026-11-27: DependencyError on UserOriginalsTimeline).
+let timelineError = null;
+const TIMELINE_OP = /^User(Originals)?Tweets(AndReplies)?$|^UserOriginalsTimeline$|^UserMedia$/;
 page.on('response', async r => {
   try {
     const u = new URL(r.url());
-    if (!/(^|\.)x\.com$/.test(u.hostname) || !/graphql/.test(u.pathname) || netN >= 400) return;
+    if (!/(^|\.)x\.com$/.test(u.hostname) || !/graphql/.test(u.pathname) || netN >= NET_MAX) return;
     const op = u.pathname.split('/').pop();
     if (!netOperationKept(op)) return; // operator-session responses (home feed, sidebars, Grok JWT) are never stored
     const body = await r.body();
+    if (TIMELINE_OP.test(op)) {
+      try {
+        const j = JSON.parse(body.toString('utf8'));
+        timelineError = j.errors && j.errors.length ? { op, name: j.errors[0].name || '', message: j.errors[0].message || '', at: new Date().toISOString() } : null;
+      } catch { /* not JSON */ }
+    }
     if (body.length < 300) return;
     fs.mkdirSync(path.join(runDir, 'net'), { recursive: true });
     fs.writeFileSync(path.join(runDir, 'net', `${String(netN++).padStart(4, '0')}-${op.replace(/\W/g, '')}.json.gz`), zlib.gzipSync(body));
@@ -112,7 +125,7 @@ try {
     await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 60000 });
     await page.waitForSelector('article', { timeout: 30000 }).catch(() => {});
     await sleep(jitter(2500, 4500));
-    let stale = 0; const recentOwn = [];
+    let stale = 0, retries = 0; const recentOwn = [];
     for (;;) {
       const s = await snap();
       rec.steps++;
@@ -134,7 +147,31 @@ try {
       if (tail.length === 5 && tail.every(d => d < since)) { rec.stop_reason = 'reached_since'; break; }
       if (seen.size >= maxPosts) { rec.stop_reason = 'max_posts'; break; }
       if (Date.now() > deadline) { rec.stop_reason = 'max_minutes'; break; }
-      if (stale >= 6) { rec.stop_reason = s.signals.signin_wall ? 'signin_wall' : s.signals.error ? 'page_error' : 'end_of_timeline'; break; }
+      // X answered the next timeline page with a server error: do what a reader does. Wait, press the page's own
+      // Retry / Try again control if it shows one, otherwise scroll back up and down so the page asks for the same
+      // cursor again. At most three times per surface; after that the stop is reported as server_error.
+      if (stale >= 3 && timelineError && retries < 3) {
+        retries++; rec.retries = retries;
+        const ctl = page.getByText(/^(Retry|Try again)$/);
+        const hasCtl = await ctl.count().catch(() => 0);
+        if (!rec.error_state) rec.error_state = await page.evaluate(() => {
+          const c = document.querySelector('[data-testid="primaryColumn"]') || document.body;
+          return c.innerText.slice(-600);
+        }).catch(() => '');
+        log(`  ${surface}: timeline error (${timelineError.name}); waiting, then ${hasCtl ? 'Retry control' : 'scroll back'} ${retries}/3`);
+        await sleep(jitter(20000, 40000));
+        timelineError = null;
+        if (hasCtl) await ctl.first().click({ timeout: 10000 }).catch(() => {});
+        else { await page.mouse.wheel(0, -2600); await sleep(jitter(3000, 5000)); await page.mouse.wheel(0, 3200); }
+        await sleep(jitter(4000, 7000));
+        stale = 0;
+        continue;
+      }
+      if (stale >= 6) {
+        rec.stop_reason = s.signals.signin_wall ? 'signin_wall' : timelineError ? 'server_error' : s.signals.error ? 'page_error' : 'end_of_timeline';
+        if (timelineError) rec.stop_detail = `${timelineError.op}: ${timelineError.name} ${timelineError.message}`.trim();
+        break;
+      }
       if (rec.steps % 10 === 0) log(`  ${surface}: steps=${rec.steps} posts=${seen.size} oldest_own=${recentOwn.length ? recentOwn[recentOwn.length - 1].toISOString().slice(0, 10) : '-'}`);
       // Reading pace: one partial-viewport scroll, then a pause; a longer rest every 25 steps.
       await page.mouse.wheel(0, Math.round(jitter(900, 1300)));

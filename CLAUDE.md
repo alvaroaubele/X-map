@@ -10,6 +10,7 @@ traces to a captured post, and every captured post traces to an immutable raw ru
 bin/xmap capture <handle>     browser run          -> accounts/<handle>/raw/<run_id>/{run.json,articles.jsonl.gz,net/}
 bin/xmap normalize <handle>   all raw runs         -> accounts/<handle>/posts.jsonl, profile.json
 bin/xmap stats <handle>       posts.jsonl          -> accounts/<handle>/stats.json
+bin/xmap triage <handle>      posts + overrides    -> accounts/<handle>/triage.jsonl (when focus sets a relevance rule)
 (account-mapper)              posts + stats        -> accounts/<handle>/map.md
 bin/xmap validate <handle> --require-map           -> one line per check, then pending=<n>
 bin/xmap run <handle>         capture + normalize + stats + validate (data checks)
@@ -18,6 +19,11 @@ npm test                      extractor and pipeline tests against real X markup
 
 - `accounts/<handle>/account.json` sets the capture window (`since_days` or `since`, `max_posts`, `surfaces`:
   `posts`, `replies`, `media`) and `focus`, the operator's statement of what matters for that account.
+- `triage.jsonl` holds one keep/skip decision per post, rebuilt by `bin/xmap triage` from first-pass rules plus
+  the per-post judgments in `triage_overrides.jsonl`. When it exists the map cites kept posts only;
+  `posts.jsonl` and `raw/` stay complete.
+- A run that stops blocked or with an error still satisfies `run.latest_ok` when its stored timeline responses
+  show X served the account's own posts from before the window start: the window is then fully read.
 - `raw/` is append-only evidence. Never edit or delete a run; a parsing fix goes in `tools/xmap/` and
   `normalize` rebuilds `posts.jsonl` from the raw runs.
 - `posts.jsonl` holds one post per line, newest first, upserted by post id. `created_at` is decoded from the
