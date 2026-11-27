@@ -1,0 +1,12 @@
+{
+  "handle": "astridwilde",
+  "added": "2026-11-27",
+  "capture": {
+    "surfaces": ["posts"],
+    "since_days": 90,
+    "max_posts": 1500,
+    "max_minutes": 45,
+    "max_permalinks": 60
+  },
+  "focus": "Default dossier: who this account is, what it argues, which positions and predictions it has put on record, who and what it amplifies, and which posts carry the signal."
+}

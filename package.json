@@ -1,0 +1,10 @@
+{
+  "name": "x-map",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Per-account mapping of specific X accounts through a signed-in browser session into versioned files.",
+  "engines": { "node": ">=20" },
+  "scripts": { "test": "node --test tests/*.test.mjs" },
+  "peerDependencies": { "playwright": ">=1.50" }
+}

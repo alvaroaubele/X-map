@@ -1,0 +1,44 @@
+{
+  "run_id": "20261127T100213Z",
+  "handle": "astridwilde",
+  "tool_version": "1.0.0",
+  "started_at": "2026-11-27T10:02:13.565Z",
+  "ended_at": "2026-11-27T10:02:42.306Z",
+  "auth": "none",
+  "browser": "chromium 158.0.8127.36 headed",
+  "since": "2026-08-29",
+  "max_posts": 1500,
+  "surfaces": [
+    {
+      "surface": "posts",
+      "url": "https://x.com/astridwilde",
+      "steps": 7,
+      "new_posts": 5,
+      "stop_reason": "signin_wall"
+    }
+  ],
+  "posts_captured": 5,
+  "profile": {
+    "handle": "astridwilde",
+    "name": "Astrid Wilde 🌞",
+    "user_id": "52549030",
+    "verified": true,
+    "bio": "male ☼ we will end human menial labor this decade ☼",
+    "location": "San Francisco, CA",
+    "website": {
+      "text": "inheritance.ai",
+      "via": "https://t.co/ONgAGQXCOd",
+      "url": null
+    },
+    "joined": "Joined June 2009",
+    "following": "8,273",
+    "followers": "20K",
+    "posts_count": "42K posts",
+    "avatar": "https://pbs.twimg.com/profile_images/1857615984397357056/JHke9IuD_400x400.jpg",
+    "banner": "https://pbs.twimg.com/profile_banners/52549030/1705727377/1500x500",
+    "captured_at": "2026-11-27T10:02:37.181Z"
+  },
+  "status": "ok",
+  "stop_detail": "",
+  "net_responses": 0
+}

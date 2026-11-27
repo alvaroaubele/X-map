@@ -1,0 +1,137 @@
+{
+  "handle": "astridwilde",
+  "posts_total": 5,
+  "own_total": 5,
+  "window": {
+    "oldest": "2026-11-26T17:26:51.498Z",
+    "newest": "2026-11-27T06:41:13.032Z"
+  },
+  "runs": [
+    {
+      "run_id": "20261127T100213Z",
+      "status": "ok",
+      "auth": "none",
+      "posts_captured": 5,
+      "since": "2026-08-29",
+      "stops": [
+        "posts:signin_wall"
+      ]
+    }
+  ],
+  "latest_run": "20261127T100213Z",
+  "latest_auth": "none",
+  "by_kind": {
+    "post": 1,
+    "quote": 4
+  },
+  "by_month": {
+    "2025-05": 1,
+    "2026-11": 4
+  },
+  "by_hour_utc": {
+    "17": 1,
+    "19": 1,
+    "21": 1,
+    "22": 1,
+    "06": 1
+  },
+  "truncated": 0,
+  "engagement_median_own": {
+    "likes": 82,
+    "views": 3103,
+    "reposts": 4
+  },
+  "top_mentions": [],
+  "top_reply_targets": [],
+  "top_reposted_authors": [],
+  "top_quoted_authors": [
+    {
+      "key": "austen",
+      "n": 1
+    },
+    {
+      "key": "equine__dentist",
+      "n": 1
+    },
+    {
+      "key": "mingfeiguo",
+      "n": 1
+    },
+    {
+      "key": "venturetwins",
+      "n": 1
+    }
+  ],
+  "top_domains": [
+    {
+      "key": "github.com",
+      "n": 1
+    }
+  ],
+  "cashtags": [],
+  "hashtags": [],
+  "top_by_likes": [
+    {
+      "id": "1926763616964899185",
+      "likes": 547,
+      "kind": "post",
+      "created_at": "2025-05-25T22:13:38.478Z"
+    },
+    {
+      "id": "2126004771740176843",
+      "likes": 249,
+      "kind": "quote",
+      "created_at": "2026-11-26T17:26:51.498Z"
+    },
+    {
+      "id": "2126037238752706979",
+      "likes": 82,
+      "kind": "quote",
+      "created_at": "2026-11-26T19:35:52.237Z"
+    },
+    {
+      "id": "2126069848719650891",
+      "likes": 29,
+      "kind": "quote",
+      "created_at": "2026-11-26T21:45:27.059Z"
+    },
+    {
+      "id": "2126204678702792894",
+      "likes": 9,
+      "kind": "quote",
+      "created_at": "2026-11-27T06:41:13.032Z"
+    }
+  ],
+  "top_by_views": [
+    {
+      "id": "1926763616964899185",
+      "views": 135384,
+      "kind": "post",
+      "created_at": "2025-05-25T22:13:38.478Z"
+    },
+    {
+      "id": "2126004771740176843",
+      "views": 11127,
+      "kind": "quote",
+      "created_at": "2026-11-26T17:26:51.498Z"
+    },
+    {
+      "id": "2126069848719650891",
+      "views": 3103,
+      "kind": "quote",
+      "created_at": "2026-11-26T21:45:27.059Z"
+    },
+    {
+      "id": "2126037238752706979",
+      "views": 2439,
+      "kind": "quote",
+      "created_at": "2026-11-26T19:35:52.237Z"
+    },
+    {
+      "id": "2126204678702792894",
+      "views": 841,
+      "kind": "quote",
+      "created_at": "2026-11-27T06:41:13.032Z"
+    }
+  ]
+}

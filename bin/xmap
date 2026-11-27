@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# xmap: one entry point for the per-account pipeline.
+#   bin/xmap capture   <handle> [capture flags]   browser run -> accounts/<handle>/raw/<run_id>/
+#   bin/xmap normalize <handle>                   raw runs -> posts.jsonl, profile.json
+#   bin/xmap stats     <handle>                   posts.jsonl -> stats.json
+#   bin/xmap validate  <handle> [--require-map] [--allow-logged-out]
+#   bin/xmap run       <handle> [capture flags]   capture + normalize + stats + validate
+set -euo pipefail
+root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+cmd="${1:-}"; shift || true
+capture() {
+  # The capture browser is headed. With no display (cloud container, SSH) give it a virtual one.
+  if [ -z "${DISPLAY:-}" ] && command -v xvfb-run >/dev/null 2>&1; then
+    xvfb-run -a -s "-screen 0 1280x1400x24" node "$root/tools/xmap/capture.mjs" "$@"
+  else
+    node "$root/tools/xmap/capture.mjs" "$@"
+  fi
+}
+case "$cmd" in
+  capture)   capture "$@" ;;
+  normalize) node "$root/tools/xmap/normalize.mjs" "$@" ;;
+  stats)     node "$root/tools/xmap/stats.mjs" "$@" ;;
+  validate)  node "$root/tools/xmap/validate.mjs" "$@" ;;
+  run)
+    handle="${1:?usage: bin/xmap run <handle>}"
+    extra=(); for a in "$@"; do [ "$a" = "--allow-logged-out" ] && extra+=("$a"); done
+    capture "$@"
+    node "$root/tools/xmap/normalize.mjs" "$handle"
+    node "$root/tools/xmap/stats.mjs" "$handle"
+    node "$root/tools/xmap/validate.mjs" "$handle" "${extra[@]}"
+    ;;
+  *) sed -n '2,7p' "$0"; exit 2 ;;
+esac
