@@ -224,6 +224,6 @@ test('capture stores only target-profile API responses, never operator-session o
   const src = fs.readFileSync(path.join(here, '..', 'tools', 'xmap', 'capture.mjs'), 'utf8');
   assert.match(src, /if \(!netOperationKept\(op\)\) return;/);
   // A timeline server error is retried through the page's own Retry button, bounded at two attempts.
-  assert.match(src, /stale >= 3 && timelineError && retries < 2/);
-  assert.match(src, /getByRole\('button', \{ name: \/\^Retry\$\/ \}\)/);
+  assert.match(src, /stale >= 3 && timelineError && retries < 3/);
+  assert.match(src, /getByText\(\/\^\(Retry\|Try again\)\$\/\)/);
 });

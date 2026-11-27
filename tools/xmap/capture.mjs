@@ -147,20 +147,25 @@ try {
       if (tail.length === 5 && tail.every(d => d < since)) { rec.stop_reason = 'reached_since'; break; }
       if (seen.size >= maxPosts) { rec.stop_reason = 'max_posts'; break; }
       if (Date.now() > deadline) { rec.stop_reason = 'max_minutes'; break; }
-      // X answered the next timeline page with a server error: do what a reader does, wait and press the page's own
-      // Retry button. At most twice per surface; a third error is reported as server_error, never retried further.
-      if (stale >= 3 && timelineError && retries < 2) {
-        const retry = page.getByRole('button', { name: /^Retry$/ });
-        if (await retry.count().catch(() => 0)) {
-          retries++; rec.retries = retries;
-          log(`  ${surface}: timeline error (${timelineError.name}); waiting, then Retry ${retries}/2`);
-          await sleep(jitter(20000, 40000));
-          timelineError = null;
-          await retry.first().click({ timeout: 10000 }).catch(() => {});
-          await sleep(jitter(4000, 7000));
-          stale = 0;
-          continue;
-        }
+      // X answered the next timeline page with a server error: do what a reader does. Wait, press the page's own
+      // Retry / Try again control if it shows one, otherwise scroll back up and down so the page asks for the same
+      // cursor again. At most three times per surface; after that the stop is reported as server_error.
+      if (stale >= 3 && timelineError && retries < 3) {
+        retries++; rec.retries = retries;
+        const ctl = page.getByText(/^(Retry|Try again)$/);
+        const hasCtl = await ctl.count().catch(() => 0);
+        if (!rec.error_state) rec.error_state = await page.evaluate(() => {
+          const c = document.querySelector('[data-testid="primaryColumn"]') || document.body;
+          return c.innerText.slice(-600);
+        }).catch(() => '');
+        log(`  ${surface}: timeline error (${timelineError.name}); waiting, then ${hasCtl ? 'Retry control' : 'scroll back'} ${retries}/3`);
+        await sleep(jitter(20000, 40000));
+        timelineError = null;
+        if (hasCtl) await ctl.first().click({ timeout: 10000 }).catch(() => {});
+        else { await page.mouse.wheel(0, -2600); await sleep(jitter(3000, 5000)); await page.mouse.wheel(0, 3200); }
+        await sleep(jitter(4000, 7000));
+        stale = 0;
+        continue;
       }
       if (stale >= 6) {
         rec.stop_reason = s.signals.signin_wall ? 'signin_wall' : timelineError ? 'server_error' : s.signals.error ? 'page_error' : 'end_of_timeline';
