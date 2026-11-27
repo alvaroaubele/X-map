@@ -6,10 +6,31 @@
 import fs from 'node:fs';
 import path from 'node:path';
 import { accountDir, readJson, readJsonl, snowflakeDate, cmpIdDesc, parseArgs } from './lib/util.mjs';
-import { timelineOwnIds } from './lib/net.mjs';
+import { timelineOwnIds, loadNet } from './lib/net.mjs';
 
 export const MAP_SECTIONS = ['Identity', 'Coverage', 'Themes', 'Theses and claims', 'Positions and predictions', 'Network', 'Sources and links', 'Signal posts', 'Open questions'];
 const norm = s => s.normalize('NFKC').replace(/[\u2018\u2019]/g, "'").replace(/[\u201c\u201d]/g, '"').replace(/\s+/g, ' ').trim().toLowerCase();
+
+// Stops that mean the surface was read to its intended end. Every other stop (max_posts, max_minutes, read_budget,
+// server_error, page_error, blocked:*) leaves the window open unless the stored timeline responses prove otherwise.
+const COMPLETE_STOPS = new Set(['reached_since', 'end_of_timeline', 'surface_cap', 'signin_wall', 'done']);
+
+// Every quoted fragment on a line that cites posts must be verbatim from one of the posts cited on that line (its
+// own text or the text of the post it quotes). Returns the fragments that are not.
+export function inlineMisquotes(md, byId) {
+  const bad = [];
+  for (const line of md.split('\n')) {
+    if (/^>/.test(line)) continue; // blockquote form has its own, stricter check
+    const ids = [...line.matchAll(/\[p:(\d+)\]/g)].map(m => m[1]).filter(id => byId.has(id));
+    if (!ids.length) continue;
+    const hay = norm(ids.map(id => byId.get(id)).map(p => p.text + ' ' + ((p.quoted && p.quoted.text) || '')).join(' \n '));
+    for (const m of line.matchAll(/["\u201c]([^"\u201c\u201d]{2,}?)["\u201d]/g)) {
+      const segs = m[1].split(/\s*(?:\[\u2026\]|\[\.\.\.\]|\u2026)\s*/).map(x => norm(x).replace(/[.,;:]$/, '')).filter(Boolean);
+      if (!segs.every(x => hay.includes(x))) bad.push({ ids, fragment: m[1] });
+    }
+  }
+  return bad;
+}
 
 export function validate(handle, opts = {}) {
   const dir = accountDir(handle); const res = [];
@@ -28,25 +49,48 @@ export function validate(handle, opts = {}) {
   const empty = posts.filter(p => !p.text && !p.media.length && !p.quoted && !p.links.length);
   check('data.no_empty_posts', !empty.length, empty.length ? `empty: ${empty.slice(0, 5).map(p => p.id).join(',')}` : '');
   check('data.profile', profile && profile.handle && profile.handle.toLowerCase() === handle.toLowerCase(), profile ? `followers=${profile.followers}` : 'profile.json missing');
+  const acct = readJson(path.join(dir, 'account.json'), {}) || {};
+  check('account.gate', (acct.gate && acct.gate.confirmed) || opts.allowLoggedOut, acct.gate && acct.gate.confirmed ? `confirmed=${acct.gate.confirmed}` : 'account.json has no gate.confirmed: the operator has not answered the review gate');
   check('data.stats_current', stats && stats.posts_total === posts.length, stats ? `stats.posts_total=${stats.posts_total}` : 'stats.json missing: run xmap stats');
   const lastRun = stats && stats.runs[stats.runs.length - 1];
-  // The latest run passes when it ended ok, or when it was stopped (blocked, error) only after X had already served
-  // the account's own timeline past the configured window start: then nothing inside the window is missing.
+  // The latest run passes when every surface was read to its intended end, or when it stopped early (blocked, error,
+  // max_posts, max_minutes, read_budget, server_error) only after X had already served the account's own timeline
+  // past the configured window start: then nothing inside the window is missing.
+  const cap = acct.capture || {};
+  const sinceStr = cap.since || (lastRun && cap.since_days != null ? new Date(Date.parse(lastRun.run_id.replace(/^(\d{4})(\d\d)(\d\d)T.*/, '$1-$2-$3')) - cap.since_days * 864e5).toISOString().slice(0, 10) : null);
+  const since = sinceStr ? new Date(sinceStr + 'T00:00:00Z') : null;
+  const complete = lastRun && lastRun.status === 'ok' && lastRun.stops.length > 0 && lastRun.stops.every(x => COMPLETE_STOPS.has(x.slice(x.indexOf(':') + 1)));
   let covered = '';
-  if (lastRun && lastRun.status !== 'ok') {
-    const acct = readJson(path.join(dir, 'account.json'), {}) || {};
-    const cap = acct.capture || {};
-    const sinceStr = cap.since || (cap.since_days != null ? new Date(Date.parse(lastRun.run_id.replace(/^(\d{4})(\d\d)(\d\d)T.*/, '$1-$2-$3')) - cap.since_days * 864e5).toISOString().slice(0, 10) : null);
-    if (sinceStr) {
-      const since = new Date(sinceStr + 'T00:00:00Z');
-      const older = timelineOwnIds(path.join(dir, 'raw', lastRun.run_id), handle).map(snowflakeDate).filter(d => d && d < since);
-      if (older.length) covered = ` window_covered: timeline served ${older.length} own posts before since=${sinceStr}`;
-    }
+  if (lastRun && !complete && since) {
+    const older = timelineOwnIds(path.join(dir, 'raw', lastRun.run_id), handle).map(snowflakeDate).filter(d => d && d < since);
+    if (older.length) covered = ` window_covered: timeline served ${older.length} own posts before since=${sinceStr}`;
   }
-  check('run.latest_ok', lastRun && (lastRun.status === 'ok' || covered), lastRun ? `run=${lastRun.run_id} status=${lastRun.status} ${lastRun.stops.join(' ')}${covered}` : 'no run');
+  check('run.latest_ok', lastRun && (complete || covered), lastRun ? `run=${lastRun.run_id} status=${lastRun.status} ${lastRun.stops.join(' ')}${covered}${complete || covered ? '' : ' (window not fully read)'}` : 'no run');
   check('run.signed_in', (lastRun && lastRun.auth === 'session') || opts.allowLoggedOut, lastRun ? `auth=${lastRun.auth}` : '');
   const trunc = posts.filter(p => p.truncated).length;
   check('data.full_text', trunc === 0, `truncated=${trunc}`);
+
+  // Cross-check of the page reading against the API responses the same pages requested (stored under raw/<run>/net/).
+  // Internal consistency cannot catch a misread page: extractor 1.0.0 read every signed-in quote as a plain post and
+  // every other check passed. Skipped for datasets with no stored timeline responses (signed-out captures).
+  const rawRoot = path.join(dir, 'raw');
+  const runDirs = fs.existsSync(rawRoot) ? fs.readdirSync(rawRoot).sort().map(r => path.join(rawRoot, r)) : [];
+  const apiOwn = new Set(runDirs.flatMap(d => timelineOwnIds(d, handle)));
+  if (apiOwn.size) {
+    const inWindow = [...apiOwn].filter(id => { const d = snowflakeDate(id); return !since || !d || d >= since; });
+    const lost = inWindow.filter(id => !byId.has(id));
+    check('xcheck.timeline_ids_captured', !lost.length, `api_own_in_window=${inWindow.length} missing_from_posts=${lost.length}${lost.length ? ' e.g. ' + lost.slice(0, 5).join(',') : ''}`);
+    const net = loadNet(runDirs); let both = 0, apiQ = 0; const diff = [];
+    for (const id of apiOwn) {
+      const p = byId.get(id), n = net.get(id);
+      if (!p || !n) continue;
+      both++;
+      const a = !!n.quoted_id, d = !!(p.quoted && p.quoted.from !== 'net'); // from:'net' = the page showed no quote card
+      if (a) apiQ++;
+      if (a !== d) diff.push(id);
+    }
+    check('xcheck.quotes_agree', !diff.length, `compared=${both} api_quotes=${apiQ} disagree=${diff.length}${diff.length ? ' e.g. ' + diff.slice(0, 5).join(',') : ''}`);
+  }
 
   // Relevance triage (when the account uses it): one decision per post, in posts.jsonl order, none left unjudged.
   const triageFile = path.join(dir, 'triage.jsonl');
@@ -87,6 +131,8 @@ export function validate(handle, opts = {}) {
       if (!m[1].split(/\s*(?:\[\u2026\]|\[\.\.\.\])\s*/).every(seg => hay.includes(norm(seg)))) misq.push(m[2]);
     }
     check('map.quotes_verbatim', !misq.length, misq.length ? `not verbatim: ${misq.slice(0, 8).join(',')}` : '');
+    const inl = inlineMisquotes(md, byId);
+    check('map.inline_quotes_verbatim', !inl.length, inl.length ? `${inl.length} not verbatim, e.g. ${inl.slice(0, 4).map(x => `"${x.fragment.slice(0, 50)}" [p:${x.ids[0]}]`).join(' | ')}` : '');
   }
   return res;
 }

@@ -2,17 +2,19 @@
 // xmap capture: drive one stock, headed Chromium through one account's profile surfaces at reading pace
 // and append what the page renders to an immutable raw run directory.
 //
-//   node tools/xmap/capture.mjs <handle> [--surfaces posts,replies] [--since YYYY-MM-DD] [--max N] [--max-minutes M] [--allow-logged-out]
+//   node tools/xmap/capture.mjs <handle> [--surfaces posts,replies,reposts,media] [--since YYYY-MM-DD] [--max N] [--max-minutes M] [--allow-logged-out]
 //
 // Auth: the signed-in session comes from the X_AUTH_TOKEN environment variable (the value of the x.com
 // `auth_token` cookie; X_CT0 optional). It is placed in the browser's cookie jar only: never logged,
 // never written to disk, never committed.
-// Exit codes: 0 captured, 2 usage, 3 auth failed, 4 blocked by X (challenge / rate limit / login wall).
+// Exit codes: 0 captured, 2 usage or review gate not confirmed, 3 auth failed, 4 blocked by X (challenge / rate
+// limit / login wall), 5 the day's read budget is already spent.
 import fs from 'node:fs';
 import path from 'node:path';
 import zlib from 'node:zlib';
 import { createRequire } from 'node:module';
 import { ROOT, TOOL_VERSION, accountDir, readJson, writeJson, snowflakeDate, parseArgs, HANDLE_RE, netOperationKept } from './lib/util.mjs';
+import { budgetState } from './lib/budget.mjs';
 
 const require = createRequire(import.meta.url);
 const args = parseArgs(process.argv.slice(2), { 'allow-logged-out': 'bool' });
@@ -27,8 +29,32 @@ const sinceStr = args.since || cap.since || new Date(Date.now() - (cap.since_day
 const since = new Date(sinceStr + 'T00:00:00Z');
 const maxPosts = Number(args.max || cap.max_posts || 1500);
 const maxMinutes = Number(args['max-minutes'] || cap.max_minutes || 45);
-const SURFACE_URL = { posts: h => `https://x.com/${h}`, replies: h => `https://x.com/${h}/with_replies`, media: h => `https://x.com/${h}/media` };
+const SURFACE_URL = { posts: h => `https://x.com/${h}`, replies: h => `https://x.com/${h}/with_replies`, reposts: h => `https://x.com/${h}/reposts`, media: h => `https://x.com/${h}/media` };
+// A repost carries the date of the original post, not of the repost, so the reposts tab cannot be cut at `since`:
+// it is read newest-first up to a fixed number of posts instead.
+const SURFACE_CAP = { reposts: Number(cap.max_reposts ?? 300) };
 for (const s of surfaces) if (!SURFACE_URL[s]) { console.error(`unknown surface: ${s}`); process.exit(2); }
+
+const token = process.env.X_AUTH_TOKEN || '';
+if (!token && !args['allow-logged-out']) {
+  console.error('auth_failed: X_AUTH_TOKEN is not set. See docs/SETUP.md, or pass --allow-logged-out for the few posts X shows without a session.');
+  process.exit(3);
+}
+// Signed-in reads are spent against the operator's session, so two things are settled before the browser opens:
+// the operator has answered the review gate for this account, and the day's read budget has room.
+let readsLeft = Infinity;
+if (token) {
+  if (!(cfg.gate && cfg.gate.confirmed)) {
+    console.error(`gate_missing: accounts/${handle.toLowerCase()}/account.json has no gate.confirmed. The operator answers the review gate (window, surfaces, relevance rule, amplification) before the first signed-in capture: see prompts/lead.md.`);
+    process.exit(2);
+  }
+  const b = budgetState();
+  readsLeft = b.remaining;
+  if (readsLeft <= 0) {
+    console.error(`read_budget: ${b.used} posts read in the last 24 hours, budget ${b.budget} (xmap.json). No capture until earlier runs age out: bin/xmap budget.`);
+    process.exit(5);
+  }
+}
 
 const runId = new Date().toISOString().replace(/[-:]/g, '').replace(/\.\d+Z$/, 'Z');
 const runDir = path.join(dir, 'raw', runId);
@@ -38,12 +64,6 @@ const extractSrc = fs.readFileSync(path.join(ROOT, 'tools/xmap/extract.js'), 'ut
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 const jitter = (lo, hi) => lo + Math.random() * (hi - lo);
 const log = (...a) => console.log(`[xmap ${new Date().toISOString().slice(11, 19)}]`, ...a);
-
-const token = process.env.X_AUTH_TOKEN || '';
-if (!token && !args['allow-logged-out']) {
-  console.error('auth_failed: X_AUTH_TOKEN is not set. See docs/SETUP.md, or pass --allow-logged-out for the few posts X shows without a session.');
-  process.exit(3);
-}
 
 const { chromium } = require('playwright');
 // Stock Chromium, headed, default fingerprint. No stealth patches, no user-agent override: if X challenges
@@ -89,6 +109,7 @@ page.on('response', async r => {
 const manifest = {
   run_id: runId, handle, tool_version: TOOL_VERSION, started_at: new Date().toISOString(), ended_at: null,
   auth: 'none', browser: `chromium ${browser.version()} headed`, since: sinceStr, max_posts: maxPosts,
+  read_budget_left_at_start: Number.isFinite(readsLeft) ? readsLeft : null,
   surfaces: [], posts_captured: 0, profile: null, status: 'running', stop_detail: '',
 };
 const finish = async (status, detail, code) => {
@@ -111,13 +132,15 @@ try {
     const authed = new URL(page.url()).pathname === '/home' && !s.signals.login_flow && !s.signals.signin_wall;
     if (!authed) await finish('auth_failed', `session not accepted (landed on ${new URL(page.url()).pathname}); the auth_token is expired, revoked or challenged`, 3);
     manifest.auth = 'session';
-    log('signed-in session confirmed');
+    log(`signed-in session confirmed; read budget left today: ${readsLeft}`);
   } else log('running WITHOUT a session: X shows only a handful of posts');
 
   const seen = new Set();
   const deadline = Date.now() + maxMinutes * 60000;
   let seq = 0;
+  let budgetSpent = false;
   for (const surface of surfaces) {
+    if (budgetSpent) break;
     const url = SURFACE_URL[surface](handle);
     const rec = { surface, url, steps: 0, new_posts: 0, stop_reason: '' };
     manifest.surfaces.push(rec);
@@ -145,6 +168,8 @@ try {
       stale = fresh ? 0 : stale + 1;
       const tail = recentOwn.slice(-5);
       if (tail.length === 5 && tail.every(d => d < since)) { rec.stop_reason = 'reached_since'; break; }
+      if (SURFACE_CAP[surface] && rec.new_posts >= SURFACE_CAP[surface]) { rec.stop_reason = 'surface_cap'; break; }
+      if (seen.size >= readsLeft) { rec.stop_reason = 'read_budget'; budgetSpent = true; break; }
       if (seen.size >= maxPosts) { rec.stop_reason = 'max_posts'; break; }
       if (Date.now() > deadline) { rec.stop_reason = 'max_minutes'; break; }
       // X answered the next timeline page with a server error: do what a reader does. Wait, press the page's own
@@ -186,7 +211,7 @@ try {
   const clipped = fs.existsSync(rawFile)
     ? fs.readFileSync(rawFile, 'utf8').split('\n').filter(Boolean).map(l => JSON.parse(l)).filter(p => p.truncated)
     : [];
-  const todo = [...new Map(clipped.map(p => [p.id, p])).values()].slice(0, Number(cap.max_permalinks ?? 60));
+  const todo = budgetSpent ? [] : [...new Map(clipped.map(p => [p.id, p])).values()].slice(0, Number(cap.max_permalinks ?? 60));
   if (todo.length) {
     const rec = { surface: 'permalink', url: '', steps: 0, new_posts: 0, stop_reason: 'done' };
     manifest.surfaces.push(rec);

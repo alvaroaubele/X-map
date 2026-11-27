@@ -10,20 +10,35 @@ traces to a captured post, and every captured post traces to an immutable raw ru
 bin/xmap capture <handle>     browser run          -> accounts/<handle>/raw/<run_id>/{run.json,articles.jsonl.gz,net/}
 bin/xmap normalize <handle>   all raw runs         -> accounts/<handle>/posts.jsonl, profile.json
 bin/xmap stats <handle>       posts.jsonl          -> accounts/<handle>/stats.json
-bin/xmap triage <handle>      posts + overrides    -> accounts/<handle>/triage.jsonl (when focus sets a relevance rule)
+bin/xmap triage <handle>      posts + overrides    -> accounts/<handle>/triage.jsonl (when account.json sets relevance.rule)
 (account-mapper)              posts + stats        -> accounts/<handle>/map.md
 bin/xmap validate <handle> --require-map           -> one line per check, then pending=<n>
 bin/xmap run <handle>         capture + normalize + stats + validate (data checks)
+bin/xmap start <handle>       the same capture, detached; bin/xmap status reports it and its exit code
+bin/xmap budget               posts the session read in the last 24 hours against xmap.json read_budget_per_day
+bin/xmap cited <handle>       every post the map cites, with the post's own date, author, text and quoted post
+bin/xmap triage-sample <handle> --seed <n>   reproducible sample of triage decisions for audit
 npm test                      extractor and pipeline tests against real X markup
 ```
 
-- `accounts/<handle>/account.json` sets the capture window (`since_days` or `since`, `max_posts`, `surfaces`:
-  `posts`, `replies`, `media`) and `focus`, the operator's statement of what matters for that account.
+- `accounts/<handle>/account.json` holds the operator's answers to the review gate (template:
+  `tools/xmap/account.template.json`): `capture` (`since`, `surfaces` from `posts`, `replies`, `reposts`,
+  `media`, and the caps), `focus` (what matters for this account), `relevance` (`rule` and `endorsements`;
+  null means every post is considered and there is no triage), `amplification`, and `gate.confirmed`, the
+  date the operator answered. A signed-in capture refuses to start without `gate.confirmed`.
+- The signed-in Posts tab serves the account's own posts, quotes and self-threads only. Reposts and replies
+  to other accounts need the `reposts` and `replies` surfaces. A repost row carries the original post's
+  date, so `reposts` is read newest-first up to `max_reposts`, not cut at `since`.
 - `triage.jsonl` holds one keep/skip decision per post, rebuilt by `bin/xmap triage` from first-pass rules plus
   the per-post judgments in `triage_overrides.jsonl`. When it exists the map cites kept posts only;
   `posts.jsonl` and `raw/` stay complete.
-- A run that stops blocked or with an error still satisfies `run.latest_ok` when its stored timeline responses
-  show X served the account's own posts from before the window start: the window is then fully read.
+- `run.latest_ok` is about the window, not the exit status. It passes when every surface was read to its
+  end (`reached_since`, `end_of_timeline`, `surface_cap`), or when a run that stopped early (`blocked:*`,
+  `server_error`, `max_posts`, `max_minutes`, `read_budget`) had already been served the account's own posts
+  from before the window start.
+- `xcheck.*` compares the page reading with the API responses the same pages requested: every own post X
+  served inside the window is in `posts.jsonl`, and the page and the API agree on which posts are quotes. A
+  failure there is an extractor or capture defect to fix in `tools/xmap/`, never a row to edit by hand.
 - `raw/` is append-only evidence. Never edit or delete a run; a parsing fix goes in `tools/xmap/` and
   `normalize` rebuilds `posts.jsonl` from the raw runs.
 - `posts.jsonl` holds one post per line, newest first, upserted by post id. `created_at` is decoded from the
@@ -43,6 +58,9 @@ The map is the deliverable the operator reads instead of scrolling the account.
 - Every factual statement about what the account said cites its post as `[p:<post id>]`. Use ids from
   `posts.jsonl` only.
 - A quotation is a blockquote line of the form `> "verbatim text" [p:<id>]`; mark elisions with `[...]`.
+- On any other line that carries a citation, quotation marks enclose only verbatim text from a post cited on
+  that line (its own text, or the text of the post it quotes). Paraphrase goes without quotation marks, and
+  a reference to another part of the map is written in italics.
 - Counts, rankings, dates and medians come from `stats.json` or are computed from `posts.jsonl` with a
   command, never estimated by reading.
 - Coverage states the capture window, the auth mode, each surface's stop reason and what is therefore
@@ -60,12 +78,22 @@ The map is the deliverable the operator reads instead of scrolling the account.
   `bin/xmap capture`, which opens only profile surfaces and post pages. Nothing posts, likes, follows,
   messages, or opens notifications, messages or settings.
 - One capture runs at a time, accounts in sequence, because they share one session and one reading pace.
+- Reads are budgeted. X rate-limits the operator's session by posts served, across all accounts (run 1 was
+  blocked after about 6,800 in a day), and every capture reads from the newest post down, so a second run
+  over the same account re-reads all of the first. `capture` stops at the day's remaining budget
+  (`read_budget` stop) and refuses to start when none is left (exit code 5). The first signed-in run of an
+  account therefore covers the whole window the operator chose; a wider window later is a full re-read and
+  is the operator's decision.
+- A capture expected to run longer than an hour is started with `bin/xmap start` and followed with
+  `bin/xmap status`, because the harness ends ordinary and background commands after two hours.
 - The browser is stock headed Chromium with its default fingerprint. Stealth patches, user-agent overrides,
   CAPTCHA solving and IP rotation stay out of this repository: X's terms prohibit working around its
   technical limits, and repeated attempts against a challenge are what gets an account locked.
 - Exit code 4 (`blocked`) or 3 (`auth_failed`) ends capturing for the whole session. Report the run's
-  `run.json` and continue with the work that needs no browser. Exit code 1 (`error`, such as a navigation
-  timeout) may be retried once without asking. `normalize`, `stats`, `validate` and `npm test` are safe to
+  `run.json` and continue with the work that needs no browser. Exit code 5 (`read_budget`) ends capturing
+  until earlier runs are more than 24 hours old. Exit code 2 with `gate_missing` means the operator has not
+  answered the review gate for that account. Exit code 1 (`error`, such as a navigation timeout) may be
+  retried once without asking when `bin/xmap budget` shows room for the whole window again. `normalize`, `stats`, `validate` and `npm test` are safe to
   re-run any number of times.
 - `X_AUTH_TOKEN` and `X_CT0` are the operator's account. They are read from the environment by
   `capture.mjs` only. Never print them, write them to a file, or run a command that dumps the environment
@@ -73,7 +101,8 @@ The map is the deliverable the operator reads instead of scrolling the account.
 
 ## Git
 
-Commit one account per commit: raw run, `posts.jsonl`, `profile.json`, `stats.json`, `map.md`. Push to the
+Commit each raw run as soon as it finishes, so a lost container costs no capture. Then one commit per
+account: `account.json`, `posts.jsonl`, `profile.json`, `stats.json`, triage files, `map.md`. Push to the
 session's designated branch. Rewriting pushed history needs the operator's go-ahead first.
 Pull requests always target `main` and are merged into `main` once the account's validate and verifier
 checks pass (operator's standing instruction).

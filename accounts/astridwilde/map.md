@@ -86,13 +86,13 @@ Drawn from kept posts across 2023-07 to 2026-11.
 
    Sector calls the account lists itself: "oil, coal, fertilizer, shipping, China, banks, cannabis, ponzi momo, uranium" [p:1857522584604258607]. It has also published calls in encoded form and revealed them later: "this alpha has now fully played out. the decryption key:" (2024-01-19) [p:1748224903395025324].
 
-2. **AI compute, datacenters, memory.** It has reversed more than once (see "How the theses moved" and Positions):
+2. **AI compute, datacenters, memory.** It has reversed more than once (see *How the theses moved* and Positions):
    - 2023 AI-compute bear [p:1735684126181925351];
    - 2024–2025 Nvidia bull [p:1849070889091948561] [p:1996093470424052011];
    - 2025 neocloud bear [p:1978115478527586350];
    - 2026 "inference will eat the world" [p:2049734519830536669] and memory as a secular trade [p:2034366541790425478].
 
-3. **Data is the bottleneck, then the moat.** "the data bottleneck is real" (2023-03-01, re-quoted 2026-10-19) [p:2112067966145864120]. In 2026: "data and distribution are the only moats in software going forward" [p:2014781576484422071], and "we used to do product engineering now we do data engineering" [p:2093471519863411016]. One 2025 wobble is covered in "How the theses moved".
+3. **Data is the bottleneck, then the moat.** "the data bottleneck is real" (2023-03-01, re-quoted 2026-10-19) [p:2112067966145864120]. In 2026: "data and distribution are the only moats in software going forward" [p:2014781576484422071], and "we used to do product engineering now we do data engineering" [p:2093471519863411016]. One 2025 wobble is covered in *How the theses moved*.
 
 4. **Media, animation and the cost of content.**
    - 2023: "the golden age of media is coming" [p:1694760568580886647]; TikTok/ByteDance incentives "would reshape the moral landscape" [p:1679935346627452928].

@@ -7,7 +7,7 @@ X API.
 
 ```
 accounts/<handle>/
-  account.json    capture window and focus for this account
+  account.json    the operator's review-gate answers: window, surfaces, focus, relevance rule
   raw/<run_id>/   immutable evidence of each browser run (run.json, articles.jsonl.gz, net/)
   posts.jsonl     one post per line, newest first, exact UTC timestamps, exact engagement counts
   profile.json    latest profile snapshot
@@ -17,7 +17,8 @@ accounts/<handle>/
 
 | Command | Does |
 |---|---|
-| `bin/xmap run <handle>` | capture, normalize, stats, validate the data |
+| `bin/xmap start <handle>` then `bin/xmap status` | capture detached (long windows), then normalize, stats, validate |
+| `bin/xmap budget` | posts the session read in the last 24 hours against the daily budget |
 | `bin/xmap validate <handle> --require-map` | acceptance gate; ends with `pending=<n>` |
 | `npm test` | extractor and pipeline tests against real X markup |
 
@@ -25,4 +26,6 @@ accounts/<handle>/
 - Contracts and conduct every agent follows: [CLAUDE.md](CLAUDE.md).
 - Launch prompt for a mapping run: [prompts/lead.md](prompts/lead.md); workers: [.claude/agents/](.claude/agents/).
 
-Add an account by asking a session to map `@handle`, or by copying `accounts/astridwilde/account.json`.
+Add an account by asking a session to map `@handle` with [prompts/lead.md](prompts/lead.md): it asks the review-gate
+questions once and writes `accounts/<handle>/account.json` from `tools/xmap/account.template.json`.
+Lessons from past runs: [docs/LESSONS.md](docs/LESSONS.md).
