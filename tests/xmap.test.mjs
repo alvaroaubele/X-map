@@ -296,8 +296,11 @@ test('triage first pass: endorsement or rejection of a quoted post goes to revie
   for (const t of ['cosigned', "he's right", 'Unconditionally endorsed', 'absolutely unequivocally correct', 'tweets that will age well', '🎯', 'real btw', 'dead wrong', 'lol no'])
     assert.equal(firstPass(q(t)).decision, 'review', t);
   assert.match(firstPass(q('cosigned')).reason, /endorsement or rejection/);
-  // Not endorsements: reactions and stock filler still skip.
-  assert.equal(firstPass(q('unreal')).decision, 'skip');
+  // Structural backstop: any quote of a post with text in 6 or fewer own words is judged, whatever the wording.
+  for (const t of ['cry harder', 'Veritas agrees', 'slowly and then all at once', 'unreal', 'madness. this must be stopped'])
+    assert.equal(firstPass(q(t)).decision, 'review', t);
+  assert.match(firstPass(q('cry harder')).reason, /short quote \(2 words\)/);
+  // Longer filler is still skipped automatically.
   assert.equal(firstPass(q('requesting more of this on the timeline, forever!!')).decision, 'skip');
   // An endorsement of a picture, or of a post X would not show, has nothing to endorse.
   assert.equal(firstPass(q("he's right", { handle: 'x', text: '' })).decision, 'skip');

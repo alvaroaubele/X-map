@@ -8,7 +8,8 @@
 // post has content. Decisions come from two layers:
 //   1. a deterministic first pass (below), which keeps or skips the clear cases and marks the rest `review`;
 //   Exception: a quote whose own words only endorse or reject the quoted post ("cosigned", "he's right", "🎯", "wrong")
-//   goes to review, because it is kept when the quoted post carries a forecast, claim or position.
+//   goes to review, because it is kept when the quoted post carries a forecast, claim or position. So does every quote
+//   of a post with text whose own words are SHORT_QUOTE_WORDS or fewer: short quotes are never auto-skipped.
 //   2. accounts/<handle>/triage_overrides.jsonl, one {"id","keep","reason"} per judged post. Overrides decide every
 //      review post and may reverse a first-pass decision on reading. A review post with no override is skipped and
 //      counted as unjudged, so an incomplete judgment pass is visible rather than silent.
@@ -43,7 +44,9 @@ export const ENDORSE = new RegExp('^\\W*(' + [
 ].join('|') + ')\\W*$', 'iu');
 export const REJECT = /^\W*(dead wrong|wrong|lol no|no|nope|cope|fake news|false|not true|incorrect|doubt it)\W*$/iu;
 const AGREE_EMOJI = /^[\s🎯💯✅👆☝️🤝]+$/u;
-const endorsementShaped = (p, t) => !!(p.quoted && p.quoted.handle && (p.quoted.text || '').trim() && !p.quoted.unavailable)
+export const SHORT_QUOTE_WORDS = 6;
+const quotedHasText = p => !!(p.quoted && p.quoted.handle && (p.quoted.text || '').trim() && !p.quoted.unavailable);
+const endorsementShaped = (p, t) => quotedHasText(p)
   && (ENDORSE.test(t) || REJECT.test(t) || (t && AGREE_EMOJI.test(t)));
 
 const core = t => (t || '').replace(URL_RE, ' ').replace(MENTION_RE, ' ').replace(/\s+/g, ' ').trim();
@@ -56,8 +59,11 @@ export function firstPass(p) {
   const norm = t.toLowerCase().replace(/[^\p{L}\p{N}_' )]+/gu, '').trim();
   const bare = t.replace(/[^\p{L}\p{N}_$%]+/gu, ' ').trim().toLowerCase().replace(/^[!?. ]+|[!?. ]+$/g, '');
   if (p.kind === 'repost') return { decision: 'skip', reason: "repost: not the account's own words" };
-  if (endorsementShaped(p, t)) return { decision: 'review', reason: 'review: endorsement or rejection of the quoted post' };
   if ((p.cashtags || []).length) return { decision: 'keep', reason: 'auto: ticker' };
+  if (endorsementShaped(p, t)) return { decision: 'review', reason: 'review: endorsement or rejection of the quoted post' };
+  // Structural backstop: phrase lists cannot enumerate every way to agree or disagree ("cry harder", "Veritas agrees",
+  // "slowly and then all at once"). Any quote whose own words are this short, of a quoted post with text, is judged.
+  if (quotedHasText(p) && w.length <= SHORT_QUOTE_WORDS) return { decision: 'review', reason: `review: short quote (${w.length} words) of a post with text` };
   if (!w.length && !contentLinks.length) return { decision: 'skip', reason: 'auto: no own words (media/emoji/link only)' };
   if (FILLER.test(norm) || FILLER.test(bare)) return { decision: 'skip', reason: 'auto: stock filler phrase' };
   if (w.length <= 2 && !/\d/.test(t) && !contentLinks.length) return { decision: 'skip', reason: 'auto: bare reaction (<=2 words)' };
