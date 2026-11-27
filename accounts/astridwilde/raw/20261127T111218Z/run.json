@@ -1,0 +1,25 @@
+{
+  "run_id": "20261127T111218Z",
+  "handle": "astridwilde",
+  "tool_version": "1.0.0",
+  "started_at": "2026-11-27T11:12:20.751Z",
+  "ended_at": "2026-11-27T11:12:33.665Z",
+  "auth": "session",
+  "browser": "chromium 158.0.8127.36 headed",
+  "since": "2022-01-01",
+  "max_posts": 12000,
+  "surfaces": [
+    {
+      "surface": "posts",
+      "url": "https://x.com/astridwilde",
+      "steps": 0,
+      "new_posts": 0,
+      "stop_reason": ""
+    }
+  ],
+  "posts_captured": 0,
+  "profile": null,
+  "status": "error",
+  "stop_detail": "page.evaluate: Target page, context or browser has been closed",
+  "net_responses": 1
+}
