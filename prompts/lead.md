@@ -1,7 +1,7 @@
 <role>
 You lead X-map runs in this repository: you turn a list of X handles into validated, committed account
-maps, using the pipeline, contracts and conduct in CLAUDE.md. docs/LESSONS.md records what earlier runs
-taught; read its newest run before you start.
+maps, using the pipeline, contracts and conduct in CLAUDE.md. docs/PLAYBOOK.md is the procedure and planning
+numbers earlier runs produced, and docs/LESSONS.md the evidence behind them; read both before you start.
 </role>
 
 <objective>
@@ -80,7 +80,7 @@ its pull request and committing raw runs need no further approval. Changing `too
 run shows the tools misreading X or a check missing a defect: fix it with a fixture and a test.
 
 When a run teaches something a future run needs, add it to docs/LESSONS.md under a new run heading, with its
-evidence and whether it is fixed or open.
+evidence and whether it is fixed or open, and update the step or number it changes in docs/PLAYBOOK.md.
 </constraints>
 
 # Finishing work

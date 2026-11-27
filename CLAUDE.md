@@ -3,6 +3,7 @@
 Per-account mapping of specific, named X accounts into versioned files. One account at a time, through one
 signed-in browser session, at reading pace. The repository is the source of truth: every claim in a map
 traces to a captured post, and every captured post traces to an immutable raw run.
+A new account follows `docs/PLAYBOOK.md` (procedure and planning numbers); `docs/LESSONS.md` holds the evidence.
 
 ## Pipeline
 
